@@ -1,31 +1,45 @@
 export default function Js() {
   return (
     <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/typed.js"></script>
-        <script defer src="/js/popper.min.js"></script>
-        <script defer src="/js/bootstrap.min.js"></script>
-        <script defer src="/js/jquery.countdown.js"></script>
-        <script defer src="/js/jquery.magnific-popup.min.js"></script>
-        <script defer src="/js/slick.min.js"></script>
-        <script defer src="/js/owl.carousel.min.js"></script>
-
-        <script defer src="/js/isotope.min.js"></script>
-        <script defer src="/js/jquery.scrollme.min.js"></script>
-
-        <script defer src="/js/swiper.min.js"></script>
-        <script async src="/js/lazysizes.min.js"></script>
-        <script defer src="/js/flickity.pkgd.min.js"></script>
-        <script defer src="/js/flickity-fade.min.js"></script>
-        <script defer src="/js/aos.min.js"></script>
-
-
-
-        <script src="/js/wow.min.js"></script>
-        <script>new WOW().init();</script>
-        <script src="/js/theme-change.js"></script>
-
-        <script defer src="/js/scripts.js"></script>
+          <!-- jquery js -->
+          <script src="/js/plugins/jquery.min.js"></script>
+          <!-- jquery ui -->
+          <script src="/js/vendor/jqueryui.js"></script>
+          <!-- counter up -->
+          <script src="/js/plugins/counter-up.js"></script>
+          <script src="/js/plugins/swiper.js"></script>
+          <!-- twinmax -->
+          <script src="/js/vendor/twinmax.js"></script>
+          <!-- split text js -->
+          <script src="/js/vendor/split-text.js"></script>
+          <!-- text plugins -->
+          <script src="/js/plugins/text-plugins.js"></script>
+          <!-- metismenu js -->
+          <script src="/js/plugins/metismenu.js"></script>
+          <!-- waypoint js -->
+          <script src="/js/vendor/waypoint.js"></script>
+          <!-- waw -->
+          <script src="/js/vendor/waw.js"></script>
+          <!-- aos js -->
+          <script src="/js/plugins/aos.js"></script>
+          <!-- jquery ui js -->
+          <script src="/js/plugins/jquery-ui.js"></script>
+          <!-- timepickers -->
+          <script src="/js/plugins/jquery-timepicker.js"></script>
+          <!-- sal animation -->
+          <script src="/js/vendor/sal.min.js"></script>
+          <!-- bootstrap JS -->
+          <script src="/js/plugins/bootstrap.min.js"></script>
+          <!-- easing JS -->
+          <script src="/js/plugins/jquery-slideNav.js"></script>
+          <!-- easing JS -->
+          <script src="/js/plugins/hover-revel.js"></script>
+          <!-- contact form js -->
+          <script src="/js/plugins/contact-form.js"></script>
+          <!-- main js -->
+          <script src="/js/main.js"></script>
+          <!-- swip image -->
+          <script src="/js/plugins/swip-img.js"></script>
     </>
   )
 }
