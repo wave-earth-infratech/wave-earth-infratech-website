@@ -1,1 +1,1 @@
-# website
+# Next + Netlify Website for Ruralserver
