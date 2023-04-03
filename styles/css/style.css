@@ -1,47 +1,5 @@
 @charset "UTF-8";
-/*=======css indexing======
 
-1.Default css
-2.Typography
-3.Spacing
-4.Reset
-5.Forms
-6.Mixins
-7.Shortcods
-8.Common
-9.animation
-10. text-animation
-11. sal animation
-12. button style
-13. header
-14. nav style
-15. mobile-menu
-16. cart-side
-17. side-bar
-18. about style
-19. banner style
-20. social share
-21. project style hear
-22. funfacts styles
-23. blog
-24. cta
-25. team
-26. service
-27. testimonials
-28. working-process
-29. faq
-30. goal-time
-31. timeline
-32. contact
-33. date-picker
-34. pagination
-35. story-company
-36. backto-top
-37. Experience area
-38. footer
-
-==========================*/
-/* Default  */
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap");
 :root {
@@ -9897,262 +9855,262 @@ Background Image
 }
 
 .bg_image--1 {
-  background-image: url(../images/bg/bg-image-1.jpg);
+  background-image: url(/images/bg/bg-image-1.jpg);
 }
 
 .bg_image--2 {
-  background-image: url(../images/bg/bg-image-2.jpg);
+  background-image: url(/images/bg/bg-image-2.jpg);
 }
 
 .bg_image--3 {
-  background-image: url(../images/bg/bg-image-3.jpg);
+  background-image: url(/images/bg/bg-image-3.jpg);
 }
 
 .bg_image--4 {
-  background-image: url(../images/bg/bg-image-4.jpg);
+  background-image: url(/images/bg/bg-image-4.jpg);
 }
 
 .bg_image--5 {
-  background-image: url(../images/bg/bg-image-5.jpg);
+  background-image: url(/images/bg/bg-image-5.jpg);
 }
 
 .bg_image--6 {
-  background-image: url(../images/bg/bg-image-6.jpg);
+  background-image: url(/images/bg/bg-image-6.jpg);
 }
 
 .bg_image--7 {
-  background-image: url(../images/bg/bg-image-7.jpg);
+  background-image: url(/images/bg/bg-image-7.jpg);
 }
 
 .bg_image--8 {
-  background-image: url(../images/bg/bg-image-8.jpg);
+  background-image: url(/images/bg/bg-image-8.jpg);
 }
 
 .bg_image--9 {
-  background-image: url(../images/bg/bg-image-9.jpg);
+  background-image: url(/images/bg/bg-image-9.jpg);
 }
 
 .bg_image--10 {
-  background-image: url(../images/bg/bg-image-10.jpg);
+  background-image: url(/images/bg/bg-image-10.jpg);
 }
 
 .bg_image--11 {
-  background-image: url(../images/bg/bg-image-11.jpg);
+  background-image: url(/images/bg/bg-image-11.jpg);
 }
 
 .bg_image--12 {
-  background-image: url(../images/bg/bg-image-12.jpg);
+  background-image: url(/images/bg/bg-image-12.jpg);
 }
 
 .bg_image--13 {
-  background-image: url(../images/bg/bg-image-13.jpg);
+  background-image: url(/images/bg/bg-image-13.jpg);
 }
 
 .bg_image--14 {
-  background-image: url(../images/bg/bg-image-14.jpg);
+  background-image: url(/images/bg/bg-image-14.jpg);
 }
 
 .bg_image--15 {
-  background-image: url(../images/bg/bg-image-15.jpg);
+  background-image: url(/images/bg/bg-image-15.jpg);
 }
 
 .bg_image--16 {
-  background-image: url(../images/bg/bg-image-16.jpg);
+  background-image: url(/images/bg/bg-image-16.jpg);
 }
 
 .bg_image--17 {
-  background-image: url(../images/bg/bg-image-17.jpg);
+  background-image: url(/images/bg/bg-image-17.jpg);
 }
 
 .bg_image--18 {
-  background-image: url(../images/bg/bg-image-18.jpg);
+  background-image: url(/images/bg/bg-image-18.jpg);
 }
 
 .bg_image--19 {
-  background-image: url(../images/bg/bg-image-19.jpg);
+  background-image: url(/images/bg/bg-image-19.jpg);
 }
 
 .bg_image--20 {
-  background-image: url(../images/bg/bg-image-20.jpg);
+  background-image: url(/images/bg/bg-image-20.jpg);
 }
 
 .bg_image--21 {
-  background-image: url(../images/bg/bg-image-21.jpg);
+  background-image: url(/images/bg/bg-image-21.jpg);
 }
 
 .bg_image--22 {
-  background-image: url(../images/bg/bg-image-22.jpg);
+  background-image: url(/images/bg/bg-image-22.jpg);
 }
 
 .bg_image--23 {
-  background-image: url(../images/bg/bg-image-23.jpg);
+  background-image: url(/images/bg/bg-image-23.jpg);
 }
 
 .bg_image--24 {
-  background-image: url(../images/bg/bg-image-24.jpg);
+  background-image: url(/images/bg/bg-image-24.jpg);
 }
 
 .bg_image--25 {
-  background-image: url(../images/bg/bg-image-25.jpg);
+  background-image: url(/images/bg/bg-image-25.jpg);
 }
 
 .bg_image--26 {
-  background-image: url(../images/bg/bg-image-26.jpg);
+  background-image: url(/images/bg/bg-image-26.jpg);
 }
 
 .bg_image--27 {
-  background-image: url(../images/bg/bg-image-27.jpg);
+  background-image: url(/images/bg/bg-image-27.jpg);
 }
 
 .bg_image--28 {
-  background-image: url(../images/bg/bg-image-28.jpg);
+  background-image: url(/images/bg/bg-image-28.jpg);
 }
 
 .bg_image--29 {
-  background-image: url(../images/bg/bg-image-29.jpg);
+  background-image: url(/images/bg/bg-image-29.jpg);
 }
 
 .bg_image--30 {
-  background-image: url(../images/bg/bg-image-30.jpg);
+  background-image: url(/images/bg/bg-image-30.jpg);
 }
 
 .bg_image--31 {
-  background-image: url(../images/bg/bg-image-31.jpg);
+  background-image: url(/images/bg/bg-image-31.jpg);
 }
 
 .bg_image--32 {
-  background-image: url(../images/bg/bg-image-32.jpg);
+  background-image: url(/images/bg/bg-image-32.jpg);
 }
 
 .bg_image--33 {
-  background-image: url(../images/bg/bg-image-33.jpg);
+  background-image: url(/images/bg/bg-image-33.jpg);
 }
 
 .bg_image--34 {
-  background-image: url(../images/bg/bg-image-34.jpg);
+  background-image: url(/images/bg/bg-image-34.jpg);
 }
 
 .bg_image--35 {
-  background-image: url(../images/bg/bg-image-35.jpg);
+  background-image: url(/images/bg/bg-image-35.jpg);
 }
 
 .bg_image--36 {
-  background-image: url(../images/bg/bg-image-36.jpg);
+  background-image: url(/images/bg/bg-image-36.jpg);
 }
 
 .bg_image--37 {
-  background-image: url(../images/bg/bg-image-37.jpg);
+  background-image: url(/images/bg/bg-image-37.jpg);
 }
 
 .bg_image--38 {
-  background-image: url(../images/bg/bg-image-38.jpg);
+  background-image: url(/images/bg/bg-image-38.jpg);
 }
 
 .bg_image--39 {
-  background-image: url(../images/bg/bg-image-39.jpg);
+  background-image: url(/images/bg/bg-image-39.jpg);
 }
 
 .bg_image--40 {
-  background-image: url(../images/bg/bg-image-40.jpg);
+  background-image: url(/images/bg/bg-image-40.jpg);
 }
 
 .bg_tr-image--1 {
-  background-image: url(../images/bg/bg-image-1.png) !important;
+  background-image: url(/images/bg/bg-image-1.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--2 {
-  background-image: url(../images/bg/bg-image-2.png) !important;
+  background-image: url(/images/bg/bg-image-2.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--3 {
-  background-image: url(../images/bg/bg-image-3.png) !important;
+  background-image: url(/images/bg/bg-image-3.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--4 {
-  background-image: url(../images/bg/bg-image-4.png) !important;
+  background-image: url(/images/bg/bg-image-4.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--5 {
-  background-image: url(../images/bg/bg-image-5.png) !important;
+  background-image: url(/images/bg/bg-image-5.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--6 {
-  background-image: url(../images/bg/bg-image-6.png) !important;
+  background-image: url(/images/bg/bg-image-6.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--7 {
-  background-image: url(../images/bg/bg-image-7.png) !important;
+  background-image: url(/images/bg/bg-image-7.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--8 {
-  background-image: url(../images/bg/bg-image-8.png) !important;
+  background-image: url(/images/bg/bg-image-8.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--9 {
-  background-image: url(../images/bg/bg-image-9.png) !important;
+  background-image: url(/images/bg/bg-image-9.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--10 {
-  background-image: url(../images/bg/bg-image-10.png) !important;
+  background-image: url(/images/bg/bg-image-10.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--11 {
-  background-image: url(../images/bg/bg-image-11.png) !important;
+  background-image: url(/images/bg/bg-image-11.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--12 {
-  background-image: url(../images/bg/bg-image-12.png) !important;
+  background-image: url(/images/bg/bg-image-12.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--13 {
-  background-image: url(../images/bg/bg-image-13.png) !important;
+  background-image: url(/images/bg/bg-image-13.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--14 {
-  background-image: url(../images/bg/bg-image-14.png) !important;
+  background-image: url(/images/bg/bg-image-14.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--15 {
-  background-image: url(../images/bg/bg-image-15.png) !important;
+  background-image: url(/images/bg/bg-image-15.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--16 {
-  background-image: url(../images/bg/bg-image-16.png) !important;
+  background-image: url(/images/bg/bg-image-16.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--17 {
-  background-image: url(../images/bg/bg-image-17.png) !important;
+  background-image: url(/images/bg/bg-image-17.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--18 {
-  background-image: url(../images/bg/bg-image-18.png) !important;
+  background-image: url(/images/bg/bg-image-18.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--19 {
-  background-image: url(../images/bg/bg-image-19.png) !important;
+  background-image: url(/images/bg/bg-image-19.png) !important;
   background-size: cover !important;
 }
 
 .bg_tr-image--20 {
-  background-image: url(../images/bg/bg-image-20.png) !important;
+  background-image: url(/images/bg/bg-image-20.png) !important;
   background-size: cover !important;
 }
 
@@ -18197,7 +18155,7 @@ edit .quantity-edit button {
   line-height: 1;
 }
 .rts-about-area-about.career .sustain-inner {
-  background: url(../images/service/25.jpg);
+  background: url(/images/service/25.jpg);
   padding: 250px 0;
   background-size: cover;
   background-position: center;
@@ -18603,7 +18561,7 @@ edit .quantity-edit button {
 
 .bg-dark-3 {
   background: #171717;
-  background-image: url(../images/bg/bg-08.jpg);
+  background-image: url(/images/bg/bg-08.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -19100,11 +19058,11 @@ edit .quantity-edit button {
   }
 }
 .rts-banner-main-area-swiper.home-seven .swiper-container-h2 .swiper-wrapper .rts-banner-one.bg_image--1 {
-  background: url(../images/bg/bg-image-7.jpg);
+  background: url(/images/bg/bg-image-7.jpg);
   background-size: cover;
 }
 .rts-banner-main-area-swiper.home-seven .swiper-container-h2 .swiper-wrapper .rts-banner-one.bg_image--2 {
-  background: url(../images/bg/bg-image-8.jpg);
+  background: url(/images/bg/bg-image-8.jpg);
   background-size: cover;
 }
 .rts-banner-main-area-swiper.home-seven .swiper-container-h2 .swiper-wrapper .rts-banner-one .banner-one-wrapper .b_one-pre {
@@ -19470,7 +19428,7 @@ edit .quantity-edit button {
   width: 1220px;
   height: 607px;
   background-color: #fff;
-  background-image: url(../images/banner/03.jpg);
+  background-image: url(/images/banner/03.jpg);
 }
 @media (max-width: 1200px) {
   .rts-banner-area-two .banner-image-right {
@@ -19576,7 +19534,7 @@ edit .quantity-edit button {
 }
 
 .bg-breadcrumb {
-  background-image: url(../images/bg/breadcrumb.jpg);
+  background-image: url(/images/bg/breadcrumb.jpg);
 }
 
 .breadcrumb-inner .title {
@@ -19628,7 +19586,7 @@ edit .quantity-edit button {
 }
 
 .bg-four-banner {
-  background-image: url(../images/banner/05.jpg);
+  background-image: url(/images/banner/05.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -19768,7 +19726,7 @@ edit .quantity-edit button {
 }
 
 .banner-bg-five {
-  background-image: url(../images/bg/bg-image-6.jpg);
+  background-image: url(/images/bg/bg-image-6.jpg);
 }
 
 .banner-area-wrapper-five {
@@ -19997,15 +19955,15 @@ edit .quantity-edit button {
 }
 
 .bg-banner-eight {
-  background-image: url(../images/slider/06.jpg);
+  background-image: url(/images/slider/06.jpg);
 }
 
 .bg-banner-eight-1 {
-  background-image: url(../images/slider/07.jpg);
+  background-image: url(/images/slider/07.jpg);
 }
 
 .bg-banner-eight-2 {
-  background-image: url(../images/slider/08.jpg);
+  background-image: url(/images/slider/08.jpg);
 }
 
 .banner-eight-start span {
@@ -21068,7 +21026,7 @@ edit .quantity-edit button {
   width: 100%;
   height: 100%;
   bottom: -7px;
-  background-image: url(../images/project/icon/02.png);
+  background-image: url(/images/project/icon/02.png);
   z-index: 0;
   opacity: 0;
   transition: 0.3s;
@@ -21700,7 +21658,7 @@ edit .quantity-edit button {
 }
 
 .bg-h-5-project {
-  background-image: url(../images/project/30.jpg);
+  background-image: url(/images/project/30.jpg);
 }
 
 .latest-project-horizental-title-wrapper {
@@ -21864,7 +21822,7 @@ edit .quantity-edit button {
 }
 .nav-wrapper-title .swiper-pagination .swiper-pagination-bullet-active {
   background: none;
-  background-image: url(../images/project/icon/03.png);
+  background-image: url(/images/project/icon/03.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21886,7 +21844,7 @@ body.index-nine .single-case-wrapper {
 }
 
 .fun-facts-bg {
-  background-image: url(../images/fun-facts/01.jpg);
+  background-image: url(/images/fun-facts/01.jpg);
   background-size: cover;
 }
 
@@ -23757,7 +23715,7 @@ body.index-nine .single-case-wrapper {
 }
 
 .single-cta-area.bg {
-  background-image: url(../images/cta/01.jpg);
+  background-image: url(/images/cta/01.jpg);
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -23851,7 +23809,7 @@ body.index-nine .single-case-wrapper {
 }
 
 .bg-experience {
-  background-image: url(../images/cta/02.jpg);
+  background-image: url(/images/cta/02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -24096,7 +24054,7 @@ body.index-nine .single-case-wrapper {
 }
 
 .rts-cta-eight {
-  background-image: url(../images/cta/05.jpg);
+  background-image: url(/images/cta/05.jpg);
 }
 
 .rts-cta-eight .cta-main-wrapper {
@@ -24977,7 +24935,7 @@ body.index-nine .single-case-wrapper {
 }
 
 .bg-six-banner {
-  background-image: url(../images/banner/06.jpg);
+  background-image: url(/images/banner/06.jpg);
 }
 
 .bg-experties {
@@ -24985,11 +24943,11 @@ body.index-nine .single-case-wrapper {
 }
 
 .bg-service-six {
-  background-image: url(../images/bg/service-6.jpg);
+  background-image: url(/images/bg/service-6.jpg);
 }
 
 .rts-team-area-start.home-seven {
-  background: url(../images/team/team-bg.jpg);
+  background: url(/images/team/team-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25296,7 +25254,7 @@ body.index-nine .single-case-wrapper {
 }
 
 .service-about-bg {
-  background-image: url(../images/service/12.jpg);
+  background-image: url(/images/service/12.jpg);
 }
 
 .service-about-wrapper .title-three-left span.pre-title {
@@ -25310,7 +25268,7 @@ body.index-nine .single-case-wrapper {
   padding: 37px;
   text-align: center;
   transition: 0.3s;
-  background-image: url(../images/service/14.png);
+  background-image: url(/images/service/14.png);
   border: 1px solid #1f1f1f;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
@@ -25333,7 +25291,7 @@ body.index-nine .single-case-wrapper {
 }
 
 .accordion-service-bg {
-  background-image: url(../images/service/bg-03.jpg);
+  background-image: url(/images/service/bg-03.jpg);
 }
 @media only screen and (max-width: 1199px) {
   .accordion-service-bg {
@@ -25444,7 +25402,7 @@ body.index-nine .single-case-wrapper {
   content: "";
   position: absolute;
   left: 0;
-  background-image: url(../images/service/icon/dot.png);
+  background-image: url(/images/service/icon/dot.png);
   height: 20px;
   width: 20px;
   left: -11.5%;
@@ -26065,7 +26023,7 @@ form.appoinment-form select option {
   width: 100px;
   height: 100px;
   border-radius: 0;
-  background: url(../images/shop/shop-03.jpg);
+  background: url(/images/shop/shop-03.jpg);
   border-width: 2px;
   border-style: solid;
   border-color: #f9f9f9;
@@ -26081,12 +26039,12 @@ form.appoinment-form select option {
   }
 }
 .ms-main .single-product .ms-single-product .banner-horizental .slider-pagination-area .swiper-pagination .swiper-pagination-bullet:first-child {
-  background: url(../images/shop/shop-01.jpg) !important;
+  background: url(/images/shop/shop-01.jpg) !important;
   background-size: cover !important;
   background-position: center !important;
 }
 .ms-main .single-product .ms-single-product .banner-horizental .slider-pagination-area .swiper-pagination .swiper-pagination-bullet:last-child {
-  background: url(../images/shop/shop-02.jpg) !important;
+  background: url(/images/shop/shop-02.jpg) !important;
   background-size: cover !important;
   background-position: center !important;
 }
@@ -27487,7 +27445,7 @@ form.appoinment-form select option {
 }
 
 .bg-h4-why-chooseus {
-  background-image: url(../images/about/09.jpg);
+  background-image: url(/images/about/09.jpg);
   background-size: cover;
 }
 
@@ -27747,7 +27705,7 @@ form.appoinment-form select option {
 .single-varticle-product.one.active::after {
   position: absolute;
   content: "";
-  background-image: url(../images/project/31.jpg);
+  background-image: url(/images/project/31.jpg);
   height: 431px;
   max-width: 530px;
   width: 530px;
@@ -27760,7 +27718,7 @@ form.appoinment-form select option {
 .single-varticle-product.two.active::after {
   position: absolute;
   content: "";
-  background-image: url(../images/project/42.jpg);
+  background-image: url(/images/project/42.jpg);
   height: 431px;
   max-width: 530px;
   width: 530px;
@@ -27773,7 +27731,7 @@ form.appoinment-form select option {
 .single-varticle-product.three.active::after {
   position: absolute;
   content: "";
-  background-image: url(../images/project/43.jpg);
+  background-image: url(/images/project/43.jpg);
   height: 431px;
   max-width: 530px;
   width: 530px;
@@ -27786,7 +27744,7 @@ form.appoinment-form select option {
 .single-varticle-product.four.active::after {
   position: absolute;
   content: "";
-  background-image: url(../images/project/44.jpg);
+  background-image: url(/images/project/44.jpg);
   height: 431px;
   max-width: 530px;
   width: 530px;
@@ -27841,7 +27799,7 @@ form.appoinment-form select option {
 }
 
 .rts-service-bg-8 {
-  background-image: url(../images/service/26.jpg);
+  background-image: url(/images/service/26.jpg);
 }
 
 .index-eight .title-mid-wrapper-home-two span.pre {
@@ -27979,7 +27937,7 @@ form.appoinment-form select option {
 }
 
 .bg_cta-eight {
-  background-image: url(../images/cta/04.jpg);
+  background-image: url(/images/cta/04.jpg);
   background-repeat: no-repeat;
 }
 
@@ -28064,7 +28022,7 @@ form.appoinment-form select option {
 }
 .service-main-wrapper-swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: none;
-  background-image: url(../images/service/icon/pagi.png);
+  background-image: url(/images/service/icon/pagi.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 21px;
@@ -28141,7 +28099,7 @@ form.appoinment-form select option {
   bottom: 0;
   top: 70%;
   content: "";
-  background-image: url(../images/testimonials/logo/01.png);
+  background-image: url(/images/testimonials/logo/01.png);
   height: 150px;
   width: 150px;
   background-repeat: no-repeat;
@@ -28254,7 +28212,7 @@ form.appoinment-form select option {
 }
 
 .rts-testimonials-area-4 {
-  background-image: url(../images/cta/03.jpg);
+  background-image: url(/images/cta/03.jpg);
 }
 
 .cta-main-wrapper-4 {
@@ -28606,7 +28564,7 @@ form.appoinment-form select option {
   transition: all 0.5s;
 }
 .rts-working-process-area.home-seven .working-process-inner .working-wrapper .icon::before {
-  content: url("../images/working-process/icon/01.svg");
+  content: url("/images/working-process/icon/01.svg");
   position: absolute;
   right: -35px;
   bottom: -30px;
@@ -28619,13 +28577,13 @@ form.appoinment-form select option {
   transition: all 0.5s;
 }
 .rts-working-process-area.home-seven .working-process-inner .working-wrapper .icon.two::before {
-  content: url("../images/working-process/icon/02.svg");
+  content: url("/images/working-process/icon/02.svg");
 }
 .rts-working-process-area.home-seven .working-process-inner .working-wrapper .icon.three::before {
-  content: url("../images/working-process/icon/03.svg");
+  content: url("/images/working-process/icon/03.svg");
 }
 .rts-working-process-area.home-seven .working-process-inner .working-wrapper .icon.four::before {
-  content: url("../images/working-process/icon/04.svg");
+  content: url("/images/working-process/icon/04.svg");
 }
 .rts-working-process-area.home-seven .working-process-inner .working-wrapper .content {
   margin-top: 60px;
@@ -28986,13 +28944,13 @@ form.appoinment-form select option {
   align-items: center;
 }
 .award-single-wrapper.bg-1 {
-  background-image: url(../images/award/01.jpg);
+  background-image: url(/images/award/01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .award-single-wrapper.bg-2 {
-  background-image: url(../images/award/02.jpg);
+  background-image: url(/images/award/02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -29045,7 +29003,7 @@ form.appoinment-form select option {
 }
 
 .faq-bg-2 {
-  background-image: url(../images/faq-area/07.jpg);
+  background-image: url(/images/faq-area/07.jpg);
 }
 
 .accordion-two {
@@ -29952,7 +29910,7 @@ form.appoinment-form select option {
 }
 
 .bg-contact-6 {
-  background-image: url(../images/contact/06.jpg);
+  background-image: url(/images/contact/06.jpg);
   height: 598px;
 }
 @media only screen and (max-width: 575px) {
@@ -30820,11 +30778,11 @@ form.appoinment-form select option {
 }
 
 .footer-bg {
-  background-image: url(../images/footer/01.jpg);
+  background-image: url(/images/footer/01.jpg);
 }
 
 .fooetr-bg-3 {
-  background-image: url(../images/footer/02.jpg);
+  background-image: url(/images/footer/02.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -30980,7 +30938,7 @@ form.appoinment-form select option {
   content: "";
   left: 0;
   bottom: 0;
-  background-image: url(../images/footer/icon/01.png);
+  background-image: url(/images/footer/icon/01.png);
   width: 61px;
   height: 2px;
 }
@@ -31534,7 +31492,7 @@ form.appoinment-form select option {
 }
 
 #anywhere-home {
-  cursor: url(../images/banner/shape/close.png), auto;
+  cursor: url(/images/banner/shape/close.png), auto;
   background: #0e1013;
   position: fixed;
   width: 100%;
