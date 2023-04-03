@@ -10,7 +10,7 @@ export default function Home() {
         <>
             <Meta />
             <Head>
-            <title>RuralServer - Web Hosting India, India’s No.1 Web Hosting Company</title>
+            <title>Wave Earth Infratech</title>
             <meta name="description" content="" />
 
             </Head>
