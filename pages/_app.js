@@ -1,27 +1,18 @@
-import 'nextra-theme-blog/style.css'
-import Head from 'next/head'
+import "/styles/fonts/cloudicon/cloudicon.css";
+import "/styles/fonts/fontawesome/css/all.css";
+import "/styles/fonts/evafeat/evafeat.css";
+import "/styles/filter.css";
+import "/styles/bootstrap.min.css";
+import "/styles/owl.carousel.min.css";
+import "/styles/swiper.min.css";
+import "/styles/animate.min.css";
+import "/styles/mixitup.css";
+import "/styles/style.min.css";
+import "/styles/theme-change.css";
+import "/styles/custom.css";
 
-import '../styles/main.css'
-
-export default function Nextra({ Component, pageProps }) {
-  return (
-    <>
-      <Head>
-        <link
-          rel="alternate"
-          type="application/rss+xml"
-          title="RSS"
-          href="/feed.xml"
-        />
-        <link
-          rel="preload"
-          href="/fonts/Inter-roman.latin.var.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-      </Head>
-      <Component {...pageProps} />
-    </>
-  )
+function Application({ Component, pageProps }) {
+  return <Component {...pageProps} />
 }
+
+export default Application
