@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <>
-        <!-- footer style three start -->
+
         <div class="rts-footer-area-start fooetr-bg-3">
             <div class="container">
                 <div class="row">
@@ -89,20 +89,14 @@ export default function Footer() {
                 </div>
             </div>
         </div>
-        <!-- footer style three end -->
 
-
-        <!-- header style two -->
-
-        <!-- progress area start -->
         <div class="progress-wrap">
             <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
                 <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
             </svg>
         </div>
-        <!-- progress area end -->
 
-        <!-- cart area start -->
+        
         <div class="cart-bar">
             <div class="cart-header">
                 <h3 class="cart-heading">MY CART (3 ITEMS)</h3>
