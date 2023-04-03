@@ -17,7 +17,7 @@ export default function Home() {
 
             <div className="box-container limit-width">
 
-                <Header />
+               
 
              <h3>Test index</h3>
 
