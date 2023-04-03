@@ -8,7 +8,16 @@ import Js from '@components/Js'
 export default function Home() {
     return (
         <>
-            <h3>Test</h3>
+            <Meta />
+            <Head>
+            <title>Wave Earth Infratech</title>
+            <meta name="description" content="" />
+
+            </Head>
+
+            
+
+            <Js />
         </>
     )
 }
