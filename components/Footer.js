@@ -96,7 +96,7 @@ export default function Footer() {
             </svg>
         </div>
 
-        
+
         <div class="cart-bar">
             <div class="cart-header">
                 <h3 class="cart-heading">MY CART (3 ITEMS)</h3>

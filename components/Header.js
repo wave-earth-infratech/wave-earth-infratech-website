@@ -245,8 +245,6 @@ export default function Header() {
                                       </ul>
                                   </nav>
                               </div>
-                              <!-- nav-area end -->
-                              <!-- header style two End -->
                               <div className="rts-button-area">
                                   <a href="contact.html" className="rts-btn btn-seconday">Send Message</a>
                                   <div className="menu-area" id="menu-btn">
