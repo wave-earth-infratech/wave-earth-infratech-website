@@ -50,7 +50,7 @@ export default function Header() {
                                   </nav>
                               </div>
                               <div className="rts-button-area">
-                                  <a href="contact.html" className="rts-btn btn-seconday">Send Message</a>
+                                  <a href="contact.html" className="rts-btn btn-seconday">Get Quotation</a>
                                   <div className="menu-area" id="menu-btn">
                                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"
                                            fill="none">
