@@ -41,8 +41,9 @@ export default function Header() {
                                               </ul>
                                           </li>
                                           <li className="has-droupdown pages">
-                                              <a className="nav-link" href="#">Support</a>
+                                              <a className="nav-link" href="#">Company</a>
                                               <ul className="submenu inner-page">
+                                                  <li><a href="#">About Us</a></li>
                                                   <li><a href="#">Contact Us</a></li>
                                               </ul>
                                           </li>
