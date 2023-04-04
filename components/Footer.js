@@ -17,8 +17,8 @@ export default function Footer() {
                                 Great Together!
                             </h3>
                             <div class="button-group-footer" data-sal="slide-up" data-sal-delay="350" data-sal-duration="800">
-                                <a href="#" class="rts-btn btn-primary">Get started</a>
-                                <a href="contact.html" class="rts-btn btn-seconday">Contact Us</a>
+                                <a href="#" class="rts-btn btn-primary">Portfolio</a>
+                                <a href="#" class="rts-btn btn-seconday">Contact Us</a>
                             </div>
                         </div>
                     </div>
