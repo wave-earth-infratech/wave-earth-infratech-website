@@ -90,9 +90,9 @@ export default function Home() {
                         <div className="swiper-slide">
                             <div className="rts-section-gap3Top ptb_sm-20 rts-banner-one bg_image bg_image--2">
                                 <div className="banner-shape-area">
-                                    <img src="assets/images/banner/shape/01.png" alt="banner-shape"
+                                    <img src="/images/banner/shape/01.png" alt="banner-shape"
                                          className="shape shape-1"/>
-                                        <img src="assets/images/banner/shape/02.png" alt="banner-shape"
+                                        <img src="/images/banner/shape/02.png" alt="banner-shape"
                                              className="shape shape-2"/>
                                 </div>
                                 <div className="container">
@@ -131,9 +131,9 @@ export default function Home() {
                         <div className="swiper-slide">
                             <div className="rts-section-gap3Top ptb_sm-20 rts-banner-one bg_image bg_image--3">
                                 <div className="banner-shape-area">
-                                    <img src="assets/images/banner/shape/01.png" alt="banner-shape"
+                                    <img src="/images/banner/shape/01.png" alt="banner-shape"
                                          className="shape shape-1"/>
-                                        <img src="assets/images/banner/shape/02.png" alt="banner-shape"
+                                        <img src="/images/banner/shape/02.png" alt="banner-shape"
                                              className="shape shape-2"/>
                                 </div>
                                 <div className="container">
