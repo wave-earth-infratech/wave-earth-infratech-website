@@ -22,7 +22,7 @@ export default function Header() {
                                   <nav>
                                       <ul>
                                           <li className="menu-item">
-                                              <a className="nav-link" href="#">Home</a>
+                                              <a className="nav-link" href="https://www.waveearthinfratech.com/">Home</a>
                                           </li>
                                           <li className="has-droupdown pages">
                                               <a className="nav-link" href="#">Service</a>
