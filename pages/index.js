@@ -340,6 +340,104 @@ export default function Home() {
                 </div>
             </div>
 
+            <div className="rts-case-studies-area rts-section-gap2">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <div className="title-wrapper-2-case">
+                                <div className="title-mid-wrapper-home-two left" data-sal="slide-up"
+                                     data-sal-delay="150" data-sal-duration="800">
+                                    <span className="pre">Our All Products</span>
+                                    <h2 className="title">Checkout Our Latest <br/> Case Studies</h2>
+                                </div>
+                                <div className="button-area" data-sal="slide-up" data-sal-delay="350"
+                                     data-sal-duration="800">
+                                    <a href="#" className="rts-view-more">VIEW ALL PROJECTS<i
+                                        className="fa-regular fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="container-full-screen mt--40">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <div className="swiper-wrapper-case-studies-2">
+
+                                <div className="swiper case-two">
+                                    <div className="swiper-wrapper">
+
+                                        <div className="swiper-slide">
+
+                                            <a href="project-details.html" className="cse-two-wrapper">
+                                                <img className="main" src="/images/project/07.jpg" alt="project"/>
+                                                    <div className="icon">
+                                                        <img src="/images/project/icon/01.png" alt="project"/>
+                                                    </div>
+                                            </a>
+
+                                        </div>
+                                        <div className="swiper-slide">
+
+                                            <a href="project-details.html" className="cse-two-wrapper">
+                                                <img className="main" src="/images/project/08.jpg" alt="project"/>
+                                                    <div className="icon">
+                                                        <img src="/images/project/icon/01.png" alt="project"/>
+                                                    </div>
+                                            </a>
+
+                                        </div>
+                                        <div className="swiper-slide">
+                                            <!-- swiper single start -->
+                                            <a href="project-details.html" className="cse-two-wrapper">
+                                                <img className="main" src="/images/project/09.jpg" alt="project"/>
+                                                    <div className="icon">
+                                                        <img src="/images/project/icon/01.png" alt="project"/>
+                                                    </div>
+                                            </a>
+
+                                        </div>
+
+                                        <div className="swiper-slide">
+
+                                            <a href="project-details.html" className="cse-two-wrapper">
+                                                <img className="main" src="/images/project/07.jpg" alt="project"/>
+                                                    <div className="icon">
+                                                        <img src="/images/project/icon/01.png" alt="project"/>
+                                                    </div>
+                                            </a>
+
+                                        </div>
+                                        <div className="swiper-slide">
+                                            <!-- swiper single start -->
+                                            <a href="project-details.html" className="cse-two-wrapper">
+                                                <img className="main" src="/images/project/08.jpg" alt="project"/>
+                                                    <div className="icon">
+                                                        <img src="/images/project/icon/01.png" alt="project"/>
+                                                    </div>
+                                            </a>
+
+                                        </div>
+                                        <div className="swiper-slide">
+
+                                            <a href="project-details.html" className="cse-two-wrapper">
+                                                <img className="main" src="/images/project/09.jpg" alt="project"/>
+                                                    <div className="icon">
+                                                        <img src="/images/project/icon/01.png" alt="project"/>
+                                                    </div>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <Footer />
 
