@@ -1,1 +1,1 @@
-# Next + Netlify Website for Ruralserver
+# Next + Netlify Website for wave earth infratech
