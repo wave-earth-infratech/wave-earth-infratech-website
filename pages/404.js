@@ -11,7 +11,7 @@ export default function Home() {
         <>
             <Meta />
             <Head>
-            <title>Wave Earth Infratech</title>
+            <title>404 Page not found! | Wave Earth Infratech</title>
             <meta name="description" content="" />
 
             </Head>
