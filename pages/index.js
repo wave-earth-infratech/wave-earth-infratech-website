@@ -20,37 +20,158 @@ export default function Home() {
 
             <Sidebar />
 
-            <div className="rts-banner-three-area rts-section-gap">
+            <div className="rts-banner-main-area-swiper home-seven">
+                <div className="banner-social-area">
+                    <div className="inner">
+                        <ul className="social-wrapper">
+                            <li data-sal="slide-up" data-sal-delay="100" data-sal-duration="800"><a href="#"><i
+                                className="fa-brands fa-facebook-f"></i></a></li>
+                            <li data-sal="slide-up" data-sal-delay="200" data-sal-duration="800"><a href="#"><i
+                                className="fa-brands fa-twitter"></i></a></li>
+                            <li data-sal="slide-up" data-sal-delay="300" data-sal-duration="800"><a href="#"><i
+                                className="fa-brands fa-youtube"></i></a></li>
+                            <li data-sal="slide-up" data-sal-delay="400" data-sal-duration="800"><a href="#"><i
+                                className="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                        <p className="divider"></p>
+                        <p className="content"><span>Follow</span> <span>Us</span></p>
+                    </div>
+                </div>
 
-                <div className="container pt--150 pb--90">
-                    <div className="row">
-                        <div className="banner-three-wrapper">
-                            <span className="pre-title">Hospitality & Leisure</span>
-                            <h1 className="title">
-                                Where fluid <br/>
-                                form describes <br/>
-                        <span className="strock" id="fullText">
-                            Function
-                        </span>
-                            </h1>
-                            <span className="bottom">
-                        Sports Faciites <br/>
-                        Building, University of Cyprus <br/>
-                        <span>/2015</span>
-                    </span>
+                <div className="swiper-container-h2">
 
-                            <div className="rts-to-bottom-start">
-                                <a href="#about"><img src="/images/banner/shape/03.png" alt="shape image"/></a>
+
+                    <div className="swiper-pagination"></div>
+
+                    <div className="swiper-wrapper">
+
+                        <div className="swiper-slide">
+
+                            <div className="rts-section-gap3Top ptb_sm-20 rts-banner-one bg_image bg_image--1">
+                                <div className="banner-shape-area">
+                                    <img src="assets/images/banner/shape/01.png" alt="banner-shape"
+                                         className="shape shape-1"/>
+                                        <img src="assets/images/banner/shape/02.png" alt="banner-shape"
+                                             className="shape shape-2"/>
+                                </div>
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-lg-12">
+                                            <div className="banner-one-wrapper ptb--110">
+                                        <span className="b_one-pre" data-sal="slide-up" data-sal-delay="50"
+                                              data-sal-duration="800">
+                                            Hospitality & Leisure
+                                        </span>
+                                                <h1 className="title-banner" data-sal="slide-up" data-sal-delay="150"
+                                                    data-sal-duration="800">
+                                                    Excellence and <br/>
+                                                    built into every <br/>
+                                                    design.
+                                                </h1>
+                                                <p className="desc" data-sal="slide-up" data-sal-delay="200"
+                                                   data-sal-duration="800">Factory companies employ a large number of
+                                                    people from factory workers & <br/>
+                                                        supervisors to managers and executives.</p>
+                                                <div className="button-group-area mt--40" data-sal="slide-up"
+                                                     data-sal-delay="300" data-sal-duration="800">
+                                                    <a href="#" className="rts-btn btn-seconday p-short">
+                                                        See Projects <i className="fa-regular fa-arrow-up-right"></i>
+                                                    </a>
+                                                    <a href="#" className="rts-btn btn-seconday">
+                                                        Our Service
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
+                        </div>
+                        <div className="swiper-slide">
+                            <div className="rts-section-gap3Top ptb_sm-20 rts-banner-one bg_image bg_image--2">
+                                <div className="banner-shape-area">
+                                    <img src="assets/images/banner/shape/01.png" alt="banner-shape"
+                                         className="shape shape-1"/>
+                                        <img src="assets/images/banner/shape/02.png" alt="banner-shape"
+                                             className="shape shape-2"/>
+                                </div>
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-lg-12">
+                                            <div className="banner-one-wrapper ptb--110">
+                                        <span className="b_one-pre" data-sal="slide-up" data-sal-delay="50"
+                                              data-sal-duration="800">
+                                            Hospitality & Leisure
+                                        </span>
+                                                <h1 className="title-banner" data-sal="slide-up" data-sal-delay="150"
+                                                    data-sal-duration="800">
+                                                    We’re Providing <br/>
+                                                    Industry Roofing <br/>
+                                                    Solution
+                                                </h1>
+                                                <p className="desc" data-sal="slide-up" data-sal-delay="200"
+                                                   data-sal-duration="800">Factory companies employ a large number of
+                                                    people from factory workers & <br/>
+                                                        supervisors to managers and executives.</p>
+                                                <div className="button-group-area mt--40" data-sal="slide-up"
+                                                     data-sal-delay="300" data-sal-duration="800">
+                                                    <a href="#" className="rts-btn btn-seconday p-short">
+                                                        See Projects <i className="fa-regular fa-arrow-up-right"></i>
+                                                    </a>
+                                                    <a href="#" className="rts-btn btn-seconday">
+                                                        Our Service
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="swiper-slide">
+                            <div className="rts-section-gap3Top ptb_sm-20 rts-banner-one bg_image bg_image--3">
+                                <div className="banner-shape-area">
+                                    <img src="assets/images/banner/shape/01.png" alt="banner-shape"
+                                         className="shape shape-1"/>
+                                        <img src="assets/images/banner/shape/02.png" alt="banner-shape"
+                                             className="shape shape-2"/>
+                                </div>
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-lg-12">
+                                            <div className="banner-one-wrapper ptb--110">
+                                        <span className="b_one-pre" data-sal="slide-up" data-sal-delay="50"
+                                              data-sal-duration="800">
+                                            Hospitality & Leisure
+                                        </span>
+                                                <h1 className="title-banner" data-sal="slide-up" data-sal-delay="150"
+                                                    data-sal-duration="800">
+                                                    We’re Providing <br/>
+                                                    Building Leading <br/>
+                                                    Solution
+                                                </h1>
+                                                <p className="desc" data-sal="slide-up" data-sal-delay="200"
+                                                   data-sal-duration="800">Factory companies employ a large number of
+                                                    people from factory workers & <br/>
+                                                        supervisors to managers and executives.</p>
+                                                <div className="button-group-area mt--40" data-sal="slide-up"
+                                                     data-sal-delay="300" data-sal-duration="800">
+                                                    <a href="#" className="rts-btn btn-seconday p-short">
+                                                        See Projects <i className="fa-regular fa-arrow-up-right"></i>
+                                                    </a>
+                                                    <a href="#" className="rts-btn btn-seconday">
+                                                        Our Service
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="banner-image-area">
-                    <img src="/images/banner/01.png" alt="banner-image"/>
-                </div>
             </div>
-
 
             <Footer />
 
