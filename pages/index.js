@@ -20,6 +20,38 @@ export default function Home() {
 
             <Sidebar />
 
+            <div className="rts-banner-three-area rts-section-gap">
+
+                <div className="container pt--150 pb--90">
+                    <div className="row">
+                        <div className="banner-three-wrapper">
+                            <span className="pre-title">Hospitality & Leisure</span>
+                            <h1 className="title">
+                                Where fluid <br>
+                                form describes <br>
+                        <span className="strock" id="fullText">
+                            Function
+                        </span>
+                            </h1>
+                            <span className="bottom">
+                        Sports Faciites <br>
+                        Building, University of Cyprus <br>
+                        <span>/2015</span>
+                    </span>
+
+                            <div className="rts-to-bottom-start">
+                                <a href="#about"><img src="/images/banner/shape/03.png" alt="shape image"/></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="banner-image-area">
+                    <img src="/images/banner/01.png" alt="banner-image"/>
+                </div>
+            </div>
+
+
             <Footer />
 
             <Js />
