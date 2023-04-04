@@ -274,7 +274,7 @@ export default function Home() {
                     </div>
                     <div className="row mt--15 g-24">
                         <div className="col-lg-4 col-md-6">
-                            <!-- single offer area sart -->
+                            
                             <div className="rts-single-offer">
                                 <a href="service-details.html" className="thumbnail">
                                     <img src="/images/service/07.jpg" alt="service"/>
@@ -334,7 +334,7 @@ export default function Home() {
                                         Projects<i className="fa-light fa-arrow-right"></i></a>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
