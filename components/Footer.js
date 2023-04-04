@@ -29,9 +29,10 @@ export default function Footer() {
                                     Address
                                 </h5>
                                 <a href="#" class="address" data-sal="slide-up" data-sal-delay="350" data-sal-duration="800" >
-                                    Kingstone --- <br/>
-                                    258 denial street office <br/>
-                                    Berlin Germany
+                                    Wave earth infratech private limited <br/>
+                                    506, Ashok Chauraha<br/>
+                                    Bargarh, Chitrakoot<br/>
+                                    UP 210208
                                 </a>
                                 <div class="rts-social-wrapper-three">
                                     <ul>
