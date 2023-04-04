@@ -27,15 +27,15 @@ export default function Home() {
                         <div className="banner-three-wrapper">
                             <span className="pre-title">Hospitality & Leisure</span>
                             <h1 className="title">
-                                Where fluid <br>
-                                form describes <br>
+                                Where fluid <br/>
+                                form describes <br/>
                         <span className="strock" id="fullText">
                             Function
                         </span>
                             </h1>
                             <span className="bottom">
-                        Sports Faciites <br>
-                        Building, University of Cyprus <br>
+                        Sports Faciites <br/>
+                        Building, University of Cyprus <br/>
                         <span>/2015</span>
                     </span>
 
