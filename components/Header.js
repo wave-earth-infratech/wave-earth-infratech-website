@@ -46,9 +46,6 @@ export default function Header() {
                                                   <li><a href="#">Contact Us</a></li>
                                               </ul>
                                           </li>
-                                          <li className="menu-item">
-                                              <a className="nav-item" href="contact.html">Contact</a>
-                                          </li>
                                       </ul>
                                   </nav>
                               </div>
