@@ -47,8 +47,8 @@ export default function Footer() {
                                 <h5 class="title" data-sal="slide-up" data-sal-delay="150" data-sal-duration="800">
                                     Say Hello
                                 </h5>
-                                <a href="mailto:name@email.com" class="mail" data-sal="slide-up" data-sal-delay="350" data-sal-duration="800" >
-                                    hello@design.com
+                                <a href="mailto:contact@waveearthinfratech.com" class="mail" data-sal="slide-up" data-sal-delay="350" data-sal-duration="800" >
+                                    cont<span className="d-none"></span>act@waveear<span className="d-none"></span>thinf<span className="d-none"></span>ratech.com
                                 </a>
                                 <a href="tel:+18475555555" class="number" data-sal="slide-up" data-sal-delay="550" data-sal-duration="800">
                                     +258 368 3158
