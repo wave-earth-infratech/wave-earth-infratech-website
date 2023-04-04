@@ -63,19 +63,13 @@ export default function Footer() {
                             <div class="menu-area-copyright">
                                 <ul>
                                     <li>
-                                        <a href="index.html">Home</a>
+                                        <a href="https://www.waveearthinfratech.com/">Home</a>
                                     </li>
                                     <li>
-                                        <a href="project.html">Project</a>
+                                        <a href="#">Project</a>
                                     </li>
                                     <li>
-                                        <a href="blog.html">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="shop.html">Shop</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact</a>
+                                        <a href="#">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -89,124 +83,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </div>
-
-
-
-
-        <div class="cart-bar">
-            <div class="cart-header">
-                <h3 class="cart-heading">MY CART (3 ITEMS)</h3>
-                <div class="close-cart"><i class="fal fa-times"></i></div>
-            </div>
-            <div class="product-area">
-                <div class="product-item">
-                    <div class="product-detail">
-                        <div class="product-thumb"><img src="assets/images/slider/image1.jpg" alt="product-thumb"/></div>
-                        <div class="item-wrapper">
-                            <span class="product-name">Construct Map</span>
-                            <div class="item-wrapper">
-                            <span class="product-variation"><span class="color">Green /</span>
-                            <span class="size">XL</span></span>
-                            </div>
-                            <div class="item-wrapper">
-                                <span class="product-qnty">3 ×</span>
-                                <span class="product-price">$198.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cart-edit">
-                        <div class="quantity-edit">
-                            <button class="button"><i class="fal fa-minus minus"></i></button>
-                            <input type="text" class="input" value="3"/>
-                                <button class="button plus">+<i class="fal fa-plus plus"></i></button>
-                        </div>
-                        <div class="item-wrapper d-flex mr--5 align-items-center">
-                            <a href="#" class="product-edit"><i class="fal fa-edit"></i></a>
-                            <a href="#" class="delete-cart"><i class="fal fa-times"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="product-detail">
-                        <div class="product-thumb"><img src="assets/images/slider/image2.jpg" alt="product-thumb"/></div>
-                        <div class="item-wrapper">
-                            <span class="product-name"> Bridge product</span>
-                            <div class="item-wrapper">
-                            <span class="product-variation"><span class="color">Green /</span>
-                            <span class="size">XL</span></span>
-                            </div>
-                            <div class="item-wrapper">
-                                <span class="product-qnty">2 ×</span>
-                                <span class="product-price">$88.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cart-edit">
-                        <div class="quantity-edit">
-                            <button class="button"><i class="fal fa-minus minus"></i></button>
-                            <input type="text" class="input" value="2"/>
-                                <button class="button plus">+<i class="fal fa-plus plus"></i></button>
-                        </div>
-                        <div class="item-wrapper d-flex mr--5 align-items-center">
-                            <a href="#" class="product-edit"><i class="fal fa-edit"></i></a>
-                            <a href="#" class="delete-cart"><i class="fal fa-times"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item last-child">
-                    <div class="product-detail">
-                        <div class="product-thumb"><img src="assets/images/slider/image5.jpg" alt="product-thumb"/></div>
-                        <div class="item-wrapper">
-                            <span class="product-name">Labour helmet</span>
-                            <div class="item-wrapper">
-                            <span class="product-variation"><span class="color">Green /</span>
-                            <span class="size">XL</span></span>
-                            </div>
-                            <div class="item-wrapper">
-                                <span class="product-qnty">1 ×</span>
-                                <span class="product-price">$289.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cart-edit">
-                        <div class="quantity-edit">
-                            <button class="button"><i class="fal fa-minus minus"></i></button>
-                            <input type="text" class="input" value="2"/>
-                                <button class="button plus">+<i class="fal fa-plus plus"></i></button>
-                        </div>
-                        <div class="item-wrapper d-flex mr--5 align-items-center">
-                            <a href="#" class="product-edit"><i class="fal fa-edit"></i></a>
-                            <a href="#" class="delete-cart"><i class="fal fa-times"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-bottom-area">
-            <span class="spend-shipping"><i class="fal fa-truck"></i> SPENT <span class="amount">$199.00</span> MORE
-            FOR FREE SHIPPING</span>
-                <span class="total-price">TOTAL: <span class="price">$556</span></span>
-                <a href="checkout.html" class="checkout-btn cart-btn">PROCEED TO CHECKOUT</a>
-                <a href="cart.html" class="view-btn cart-btn">VIEW CART</a>
-            </div>
-        </div>
-
-
-
-        <div class="search-input-area">
-            <div class="container">
-                <div class="search-input-inner">
-                    <div class="input-div">
-                        <input id="searchInput1" class="search-input" type="text" placeholder="Search by keyword or #"/>
-                            <button><i class="far fa-search"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div id="close" class="search-close-icon"><i class="far fa-times"></i></div>
-        </div>
-
-
-        <div id="anywhere-home" class="">
         </div>
 
 
