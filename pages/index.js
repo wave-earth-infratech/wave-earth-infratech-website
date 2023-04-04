@@ -173,6 +173,56 @@ export default function Home() {
                 </div>
             </div>
 
+            <div className="rts-service-area rts-section-gap2">
+                <div className="container">
+                    <div className="row g-24">
+                        <div className="col-lg-4 col-md-6" data-sal="slide-up" data-sal-delay="150"
+                             data-sal-duration="800">
+
+                            <div className="rts-single-service-two">
+                                <h2 className="title-main"><span className="counter">400</span></h2>
+                                <a href="#">
+                                    <h4 className="title">Drilling Fields</h4>
+                                </a>
+                                <p className="disc">
+                                    Dui lobortis scelerisque magna curabitur duis purus platea massa accumsan
+                                </p>
+                            </div>
+
+                        </div>
+                        <div className="col-lg-4 col-md-6" data-sal="slide-up" data-sal-delay="350"
+                             data-sal-duration="800">
+
+                            <div className="rts-single-service-two">
+                                <h2 className="title-main"><span className="counter">290</span></h2>
+                                <a href="#">
+                                    <h4 className="title">Expert Workers</h4>
+                                </a>
+                                <p className="disc">
+                                    Dui lobortis scelerisque magna curabitur duis purus platea massa accumsan
+                                </p>
+                            </div>
+
+                        </div>
+                        <div className="col-lg-4 col-md-6" data-sal="slide-up" data-sal-delay="550"
+                             data-sal-duration="800">
+
+                            <div className="rts-single-service-two">
+                                <h2 className="title-main"><span className="counter">40</span></h2>
+                                <a href="#">
+                                    <h4 className="title">Award Winner</h4>
+                                </a>
+                                <p className="disc">
+                                    Dui lobortis scelerisque magna curabitur duis purus platea massa accumsan
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <Footer />
 
             <Js />
