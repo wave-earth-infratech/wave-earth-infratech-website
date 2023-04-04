@@ -231,7 +231,7 @@ export default function Home() {
                             <div className="content-wrapper">
                                 <div className="title-mid-wrapper-home-two left">
                                     <span className="pre" data-sal="slide-up" data-sal-delay="150"
-                                          data-sal-duration="800" style="display: block;">What we Prove for you</span>
+                                          data-sal-duration="800">What we Prove for you</span>
                                     <h2 className="title" data-sal="slide-up" data-sal-delay="350"
                                         data-sal-duration="800">We Building Everything That You <br/> Needed</h2>
                                 </div>
@@ -274,7 +274,7 @@ export default function Home() {
                     </div>
                     <div className="row mt--15 g-24">
                         <div className="col-lg-4 col-md-6">
-                            
+
                             <div className="rts-single-offer">
                                 <a href="service-details.html" className="thumbnail">
                                     <img src="/images/service/07.jpg" alt="service"/>
