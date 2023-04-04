@@ -216,7 +216,125 @@ export default function Home() {
                                     Dui lobortis scelerisque magna curabitur duis purus platea massa accumsan
                                 </p>
                             </div>
-                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="rts-service-two-col rts-section-gap2Bottom">
+                <div className="container-full">
+                    <div className="main-wrapper-sevice-col-2">
+                        <div className="left-image">
+                            <img src="/images/service/11.png" alt="image"/>
+                        </div>
+                        <div className="path-right">
+                            <div className="content-wrapper">
+                                <div className="title-mid-wrapper-home-two left">
+                                    <span className="pre" data-sal="slide-up" data-sal-delay="150"
+                                          data-sal-duration="800" style="display: block;">What we Prove for you</span>
+                                    <h2 className="title" data-sal="slide-up" data-sal-delay="350"
+                                        data-sal-duration="800">We Building Everything That You <br/> Needed</h2>
+                                </div>
+                                <div className="single-wrapper">
+
+                                    <div className="single" data-sal="slide-up" data-sal-delay="450"
+                                         data-sal-duration="800">
+                                        <i className="fa-solid fa-badge-check"></i>
+                                        <div className="info">
+                                            <h6 className="title">Bridge Construction</h6>
+                                            <span>Ubilia varius malesuada felis  dictum</span>
+                                        </div>
+                                    </div>
+
+                                    <div className="single" data-sal="slide-up" data-sal-delay="650"
+                                         data-sal-duration="800">
+                                        <i className="fa-solid fa-badge-check"></i>
+                                        <div className="info">
+                                            <h6 className="title">Building Renovation</h6>
+                                            <span>Ubilia varius malesuada felis  dictum</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="rts-offer-provide-section rts-section-gap2Bottom">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <div className="title-mid-wrapper-home-two" data-sal="slide-up" data-sal-delay="150"
+                                 data-sal-duration="800">
+                                <span className="pre">Our Services</span>
+                                <h2 className="title">What We Offer</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row mt--15 g-24">
+                        <div className="col-lg-4 col-md-6">
+                            <!-- single offer area sart -->
+                            <div className="rts-single-offer">
+                                <a href="service-details.html" className="thumbnail">
+                                    <img src="/images/service/07.jpg" alt="service"/>
+                                </a>
+                                <div className="content-wrapper">
+                                    <a href="service-details.html">
+                                        <h5 className="title">
+                                            Building construction
+                                        </h5>
+                                    </a>
+                                    <p className="disc">
+                                        Dui lobortis scelerisque magna curabitur duis purus platea massa accumsan
+                                    </p>
+                                    <a href="service-details.html" className="rts-btn btn-transparent-service">View All
+                                        Projects<i className="fa-light fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- single offer area end -->
+                        </div>
+                        <div className="col-lg-4 col-md-6">
+                            <!-- single offer area sart -->
+                            <div className="rts-single-offer">
+                                <a href="service-details.html" className="thumbnail">
+                                    <img src="/images/service/08.jpg" alt="service"/>
+                                </a>
+                                <div className="content-wrapper">
+                                    <a href="service-details.html">
+                                        <h5 className="title">
+                                            General construction
+                                        </h5>
+                                    </a>
+                                    <p className="disc">
+                                        Dui lobortis scelerisque magna curabitur duis purus platea massa accumsan
+                                    </p>
+                                    <a href="service-details.html" className="rts-btn btn-transparent-service">View All
+                                        Projects<i className="fa-light fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- single offer area end -->
+                        </div>
+                        <div className="col-lg-4 col-md-6">
+                            <!-- single offer area sart -->
+                            <div className="rts-single-offer">
+                                <a href="service-details.html" className="thumbnail">
+                                    <img src="/images/service/07.jpg" alt="service"/>
+                                </a>
+                                <div className="content-wrapper">
+                                    <a href="service-details.html">
+                                        <h5 className="title">
+                                            Bridge construction
+                                        </h5>
+                                    </a>
+                                    <p className="disc">
+                                        Dui lobortis scelerisque magna curabitur duis purus platea massa accumsan
+                                    </p>
+                                    <a href="service-details.html" className="rts-btn btn-transparent-service">View All
+                                        Projects<i className="fa-light fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- single offer area end -->
                         </div>
                     </div>
                 </div>
