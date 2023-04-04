@@ -10,10 +10,10 @@ export default function Header() {
                       <div className="col-lg-12">
                           <div className="header-three-wrapper">
                               <div className="logo-area">
-                                  <a href="index.html" className="thumbnail">
+                                  <a href="https://www.waveearthinfratech.com/" className="thumbnail">
                                       <img src="/images/logo/02.png" alt="logo-area"/>
                                   </a>
-                                  <a href="index.html" className="thumbnail-2">
+                                  <a href="https://www.waveearthinfratech.com/" className="thumbnail-2">
                                       <img src="/images/logo/01.png" alt="logo-area"/>
                                   </a>
                               </div>
