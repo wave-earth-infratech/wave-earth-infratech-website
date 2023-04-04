@@ -50,7 +50,7 @@ export default function Home() {
                             <div className="rts-section-gap3Top ptb_sm-20 rts-banner-one bg_image bg_image--1">
                                 <div className="banner-shape-area">
                                     <img src="/images/banner/shape/01.png" alt="banner-shape"
-                                         className="shape shape-1">
+                                         className="shape shape-1"/>
                                         <img src="/images/banner/shape/02.png" alt="banner-shape"
                                              className="shape shape-2"/>
                                 </div>
