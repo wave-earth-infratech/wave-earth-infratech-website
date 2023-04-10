@@ -409,7 +409,7 @@ export default function Home() {
 
                                         </div>
                                         <div className="swiper-slide">
-                                            
+
                                             <a href="project-details.html" className="cse-two-wrapper">
                                                 <img className="main" src="/images/project/08.jpg" alt="project"/>
                                                     <div className="icon">
