@@ -50,7 +50,7 @@ export default function Home() {
                             <div className="about-inner-wrapper-inner">
                                 <div className="title-three-left">
                             <span className="pre-title" data-sal="slide-up" data-sal-delay="100" data-sal-duration="800"
-                                  style="display: block;">
+                                  >
                                 Renovation Company
                             </span>
                                     <h3 className="title" data-sal="slide-up" data-sal-delay="100"
@@ -515,7 +515,7 @@ export default function Home() {
                                         className="fa-light fa-arrow-right"></i></a>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div className="col-lg-4">
 
