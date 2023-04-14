@@ -452,7 +452,7 @@ export default function Home() {
                     </div>
                     <div className="row g-24 mt--10">
                         <div className="col-lg-4">
-                            <!-- single blog two -->
+
                             <div className="blog-single-two-wrapper">
                                 <div className="image-area">
                                     <a href="blog-details.html" className="thumbnail">
@@ -515,10 +515,10 @@ export default function Home() {
                                         className="fa-light fa-arrow-right"></i></a>
                                 </div>
                             </div>
-                            <!-- single blog two end -->
+                            
                         </div>
                         <div className="col-lg-4">
-                            <!-- single blog two -->
+
                             <div className="blog-single-two-wrapper">
                                 <div className="image-area">
                                     <a href="blog-details.html" className="thumbnail">
