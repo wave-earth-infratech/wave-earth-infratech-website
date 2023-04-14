@@ -140,7 +140,7 @@ export default function Home() {
                             <div className="service-about-wrapper">
                                 <div className="title-three-left">
                             <span className="pre-title" data-sal="slide-up" data-sal-delay="100" data-sal-duration="800"
-                                  style="display: block;">
+                                  >
                                 Core Features
                             </span>
                                     <h3 className="title" data-sal="slide-up" data-sal-delay="100"
