@@ -11,7 +11,7 @@ export default function Home() {
         <>
             <Meta />
             <Head>
-            <title>Wave Earth Infratech</title>
+            <title>About Wave Earth Infratech</title>
             <meta name="description" content="" />
 
             </Head>
