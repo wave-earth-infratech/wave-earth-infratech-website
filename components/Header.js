@@ -22,7 +22,7 @@ export default function Header() {
                                   <nav>
                                       <ul>
                                           <li className="menu-item">
-                                              <a className="nav-link" href="https://www.waveearthinfratech.com/">Home</a>
+                                              <Link className="nav-link" href="https://www.waveearthinfratech.com/">Home</Link>
                                           </li>
                                           <li className="has-droupdown pages">
                                               <a className="nav-link" href="#">Service</a>
@@ -36,14 +36,14 @@ export default function Header() {
                                           <li className="has-droupdown pages">
                                               <a className="nav-link" href="#">Portfolio</a>
                                               <ul className="submenu inner-page">
-                                                  <li><a href="https://www.waveearthinfratech.com/our-projects/">Our Projects</a></li>
+                                                  <li><Link href="https://www.waveearthinfratech.com/our-projects/">Our Projects</Link></li>
                                               </ul>
                                           </li>
                                           <li className="has-droupdown pages">
                                               <a className="nav-link" href="#">Company</a>
                                               <ul className="submenu inner-page">
-                                                  <li><a href="https://www.waveearthinfratech.com/about-wave-earth/">About Us</a></li>
-                                                  <li><a href="https://www.waveearthinfratech.com/contact-us/">Contact Us</a></li>
+                                                  <li><Link href="https://www.waveearthinfratech.com/about-wave-earth/">About Us</Link></li>
+                                                  <li><Link href="https://www.waveearthinfratech.com/contact-us/">Contact Us</Link></li>
                                               </ul>
                                           </li>
                                       </ul>
