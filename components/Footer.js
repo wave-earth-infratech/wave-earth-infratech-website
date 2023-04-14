@@ -66,10 +66,10 @@ export default function Footer() {
                                         <a href="https://www.waveearthinfratech.com/">Home</a>
                                     </li>
                                     <li>
-                                        <a href="#">Project</a>
+                                        <a href="https://www.waveearthinfratech.com/">Project</a>
                                     </li>
                                     <li>
-                                        <a href="#">Contact</a>
+                                        <a href="https://www.waveearthinfratech.com/contact-us/">Contact</a>
                                     </li>
                                 </ul>
                             </div>

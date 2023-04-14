@@ -43,15 +43,15 @@ export default function Header() {
                                           <li className="has-droupdown pages">
                                               <a className="nav-link" href="#">Company</a>
                                               <ul className="submenu inner-page">
-                                                  <li><a href="#">About Us</a></li>
-                                                  <li><a href="#">Contact Us</a></li>
+                                                  <li><a href="https://www.waveearthinfratech.com/about-wave-earth/">About Us</a></li>
+                                                  <li><a href="https://www.waveearthinfratech.com/contact-us/">Contact Us</a></li>
                                               </ul>
                                           </li>
                                       </ul>
                                   </nav>
                               </div>
                               <div className="rts-button-area">
-                                  <a href="contact.html" className="rts-btn btn-seconday">Get Quotation</a>
+                                  <a href="https://www.waveearthinfratech.com/contact-us/" className="rts-btn btn-seconday">Get Quotation</a>
                                   <div className="menu-area" id="menu-btn">
                                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"
                                            fill="none">
