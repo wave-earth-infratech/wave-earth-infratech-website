@@ -36,8 +36,7 @@ export default function Header() {
                                           <li className="has-droupdown pages">
                                               <a className="nav-link" href="#">Portfolio</a>
                                               <ul className="submenu inner-page">
-                                                  <li><a href="project.html">Project</a></li>
-                                                  <li><a href="project-details.html">Project Details</a></li>
+                                                  <li><a href="https://www.waveearthinfratech.com/our-projects/">Our Projects</a></li>
                                               </ul>
                                           </li>
                                           <li className="has-droupdown pages">
