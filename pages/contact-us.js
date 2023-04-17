@@ -128,6 +128,7 @@ export default function Home() {
             </div>
 
             <Footer />
+            <script src="/js/formspree.js"></script>
             <Js />
         </>
     )
