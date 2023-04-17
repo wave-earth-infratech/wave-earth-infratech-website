@@ -128,7 +128,7 @@ export default function Home() {
             </div>
 
             <Footer />
-            <script src="/js/formspree.js"></script>
+            <script src="https://www.waveearthinfratech.com/js/formspree.js"></script>
             <Js />
         </>
     )
