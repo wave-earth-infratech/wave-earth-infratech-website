@@ -63,20 +63,20 @@ export default function Footer() {
                             <div class="menu-area-copyright">
                                 <ul>
                                     <li>
-                                        <a href="https://www.waveearthinfratech.com/">Home</a>
+                                        <Link href="https://www.waveearthinfratech.com/">Home</Link>
                                     </li>
                                     <li>
-                                        <a href="https://www.waveearthinfratech.com/">Project</a>
+                                        <Link href="https://www.waveearthinfratech.com/">Project</Link>
                                     </li>
                                     <li>
-                                        <a href="https://www.waveearthinfratech.com/contact-us/">Contact</a>
+                                        <Link href="https://www.waveearthinfratech.com/contact-us/">Contact</Link>
                                     </li>
                                 </ul>
                             </div>
                             <div class="condition">
                                 <ul>
-                                    <li><a href="#">Terms and Conditions</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><Link href="https://www.waveearthinfratech.com/terms-and-conditions/">Terms and Conditions</Link></li>
+                                    <li><Link href="https://www.waveearthinfratech.com/privacy-policy/">Privacy Policy</Link></li>
                                 </ul>
                             </div>
                         </div>
