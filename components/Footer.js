@@ -51,7 +51,7 @@ export default function Footer() {
                                     cont<span className="d-none"></span>act@waveear<span className="d-none"></span>thinf<span className="d-none"></span>ratech.com
                                 </a>
                                 <a href="tel:+18475555555" class="number" data-sal="slide-up" data-sal-delay="550" data-sal-duration="800">
-                                    +258 368 3158
+                                    +91 258 368 3158
                                 </a>
                             </div>
                         </div>
