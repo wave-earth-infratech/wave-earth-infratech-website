@@ -29,10 +29,10 @@ export default function Footer() {
                                     Address
                                 </h5>
                                 <a href="#" class="address" data-sal="slide-up" data-sal-delay="350" data-sal-duration="800" >
-                                    Wave earth infratech private limited <br/>
-                                    506, Ashok Chauraha<br/>
-                                    Bargarh, Chitrakoot<br/>
-                                    UP 210208
+                                    Wave Earth Infratech Private Limited <br/>
+                                    M38, Sector-12 Pratap Vihar<br/>
+                                    Ghaziabad<br/>
+                                    UP 201309
                                 </a>
                                 <div class="rts-social-wrapper-three">
                                     <ul>
