@@ -137,7 +137,7 @@ export default function Home({ featuredProjects = [] }) {
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-6">
               <span className="w-10 h-px bg-[#52B788]" />
-              <span className="text-[#52B788] text-xs font-semibold uppercase tracking-[0.25em]">Government &amp; NGO Infrastructure Contractor - UP &amp; MP</span>
+              <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.25em]">Government &amp; NGO Infrastructure Contractor - UP &amp; MP</span>
             </div>
             <h1 className="font-display text-[clamp(3rem,8vw,7rem)] font-bold text-white uppercase leading-[0.95] mb-6 tracking-tight">
               Building<br />Rural India&apos;s<br /><span className="text-[#52B788]">Infrastructure</span>
@@ -169,11 +169,11 @@ export default function Home({ featuredProjects = [] }) {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 divide-x divide-white/[0.07]">
             {stats.map(({ value, suffix, label }, i) => (
               <div key={label} className={`px-6 py-4 text-center ${i === 0 ? 'pl-0' : ''} ${i === stats.length - 1 ? 'pr-0' : ''}`}>
-                <div className="font-display text-5xl sm:text-6xl font-bold text-white mb-2">
+                <div className="font-display text-[60px] sm:text-[72px] font-bold text-white mb-2">
                   <AnimatedCounter value={value} suffix={suffix} />
                 </div>
                 <div className="w-8 h-px bg-[#52B788] mx-auto mb-3" />
-                <p className="text-gray-500 text-[11px] uppercase tracking-[0.18em] font-sans">{label}</p>
+                <p className="text-gray-500 text-[13px] uppercase tracking-[0.18em] font-sans">{label}</p>
               </div>
             ))}
           </div>
@@ -187,12 +187,12 @@ export default function Home({ featuredProjects = [] }) {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-10 h-px bg-[#52B788]" />
-                <span className="text-[#52B788] text-xs font-semibold uppercase tracking-[0.2em]">What We Execute</span>
+                <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.2em]">What We Execute</span>
               </div>
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-white uppercase leading-tight">Our Services</h2>
-              <p className="text-gray-400 mt-3 max-w-lg font-sans font-light text-sm leading-relaxed">Specialised civil works for irrigation departments, rural development bodies, and development organisations.</p>
+              <h2 className="font-display text-[40px] md:text-[54px] font-bold text-white uppercase leading-none">Our Services</h2>
+              <p className="text-gray-400 mt-3 max-w-lg font-sans font-light text-base leading-relaxed">Specialised civil works for irrigation departments, rural development bodies, and development organisations.</p>
             </div>
-            <Link href="/services" className="text-[#52B788] text-xs font-semibold uppercase tracking-widest hover:text-white transition-colors whitespace-nowrap">All Services &rarr;</Link>
+            <Link href="/services" className="text-[#52B788] text-[13px] font-semibold uppercase tracking-widest hover:text-white transition-colors whitespace-nowrap">All Services &rarr;</Link>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5">
@@ -204,7 +204,7 @@ export default function Home({ featuredProjects = [] }) {
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" /></svg>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="font-display text-xl font-semibold text-white uppercase mb-2 leading-tight">{title}</h3>
+                  <h3 className="font-display text-[22px] font-semibold text-white uppercase mb-2 leading-none">{title}</h3>
                   <p className="text-gray-400 text-xs leading-relaxed font-sans max-h-0 overflow-hidden group-hover:max-h-20 transition-all duration-500">{desc}</p>
                 </div>
               </Link>
@@ -220,12 +220,12 @@ export default function Home({ featuredProjects = [] }) {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-10 h-px bg-[#52B788]" />
-                <span className="text-[#52B788] text-xs font-semibold uppercase tracking-[0.2em]">Portfolio</span>
+                <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.2em]">Portfolio</span>
               </div>
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-white uppercase leading-tight">Recent Projects</h2>
-              <p className="text-gray-400 mt-3 max-w-lg font-sans font-light text-sm">Executed across Uttar Pradesh and Madhya Pradesh for state departments and development bodies.</p>
+              <h2 className="font-display text-[40px] md:text-[54px] font-bold text-white uppercase leading-none">Recent Projects</h2>
+              <p className="text-gray-400 mt-3 max-w-lg font-sans font-light text-base">Executed across Uttar Pradesh and Madhya Pradesh for state departments and development bodies.</p>
             </div>
-            <Link href="/projects" className="text-[#52B788] text-xs font-semibold uppercase tracking-widest hover:text-white transition-colors whitespace-nowrap">All Projects &rarr;</Link>
+            <Link href="/projects" className="text-[#52B788] text-[13px] font-semibold uppercase tracking-widest hover:text-white transition-colors whitespace-nowrap">All Projects &rarr;</Link>
           </div>
 
           <div className="flex flex-col gap-px bg-white/5">
@@ -247,8 +247,8 @@ export default function Home({ featuredProjects = [] }) {
                   <div className="flex items-center gap-3 mb-4">
                     <span className={project.status === 'completed' ? 'badge-completed' : 'badge-ongoing'}>{project.status === 'completed' ? 'Completed' : 'Ongoing'}</span>
                   </div>
-                  <h3 className="font-display text-2xl lg:text-3xl font-semibold text-white uppercase leading-tight mb-4">{project.title}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed font-sans mb-6 max-w-lg">{project.excerpt}</p>
+                  <h3 className="font-display text-[26px] lg:text-[32px] font-semibold text-white uppercase leading-none mb-4">{project.title}</h3>
+                  <p className="text-gray-400 text-base leading-relaxed font-sans mb-6 max-w-lg">{project.excerpt}</p>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8 border-t border-white/5 pt-6">
                     {[
                       { label: 'Client',    value: project.client },
@@ -258,7 +258,7 @@ export default function Home({ featuredProjects = [] }) {
                     ].map(({ label, value }) => (
                       <div key={label}>
                         <p className="text-[#52B788] text-[10px] font-semibold uppercase tracking-widest mb-0.5">{label}</p>
-                        <p className="text-white text-xs font-medium font-sans">{value}</p>
+                        <p className="text-white text-[13px] font-medium font-sans">{value}</p>
                       </div>
                     ))}
                   </div>
@@ -285,10 +285,10 @@ export default function Home({ featuredProjects = [] }) {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-10 h-px bg-[#52B788]" />
-                <span className="text-[#52B788] text-xs font-semibold uppercase tracking-[0.2em]">Transformation</span>
+                <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.2em]">Transformation</span>
               </div>
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-white uppercase leading-tight mb-6">Before &amp;<br />After</h2>
-              <p className="text-gray-400 text-sm leading-relaxed font-sans mb-8 max-w-md">Every project begins with a deteriorated or missing structure and ends with a functioning, long-life infrastructure asset. Drag the slider to see the difference on a live canal project.</p>
+              <h2 className="font-display text-[40px] md:text-[54px] font-bold text-white uppercase leading-none mb-6">Before &amp;<br />After</h2>
+              <p className="text-gray-400 text-base leading-relaxed font-sans mb-8 max-w-md">Every project begins with a deteriorated or missing structure and ends with a functioning, long-life infrastructure asset. Drag the slider to see the difference on a live canal project.</p>
               <div className="space-y-4 border-t border-white/5 pt-8">
                 {[
                   ['Project',  'Canal Redevelopment, Chitrakoot UP'],
@@ -297,7 +297,7 @@ export default function Home({ featuredProjects = [] }) {
                 ].map(([label, value]) => (
                   <div key={label} className="flex items-start gap-4">
                     <span className="text-[#52B788] text-[10px] font-bold uppercase tracking-widest w-20 flex-shrink-0 mt-0.5">{label}</span>
-                    <span className="text-gray-300 text-sm font-sans">{value}</span>
+                    <span className="text-gray-300 text-base font-sans">{value}</span>
                   </div>
                 ))}
               </div>
@@ -321,10 +321,10 @@ export default function Home({ featuredProjects = [] }) {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-10 h-px bg-[#52B788]" />
-                <span className="text-[#52B788] text-xs font-semibold uppercase tracking-[0.2em]">Execution Capability</span>
+                <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.2em]">Execution Capability</span>
               </div>
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-white uppercase leading-tight mb-6">Own Fleet.<br />Zero Dependency.</h2>
-              <p className="text-gray-400 text-sm leading-relaxed font-sans mb-8 max-w-md">Our owned equipment fleet eliminates subcontracting delays and rental bottlenecks. Every machine on site is under our direct control - mobilised immediately for any project, anywhere in UP or MP.</p>
+              <h2 className="font-display text-[40px] md:text-[54px] font-bold text-white uppercase leading-none mb-6">Own Fleet.<br />Zero Dependency.</h2>
+              <p className="text-gray-400 text-base leading-relaxed font-sans mb-8 max-w-md">Our owned equipment fleet eliminates subcontracting delays and rental bottlenecks. Every machine on site is under our direct control - mobilised immediately for any project, anywhere in UP or MP.</p>
               <div className="flex items-center gap-8 mt-8">
                 {[{ n: '18+', l: 'Machines Owned' }, { n: '45+', l: 'Operators Trained' }, { n: '0', l: 'Rental Dependency' }].map(({ n, l }, i, arr) => (
                   <div key={l} className="flex items-center gap-8">
@@ -356,7 +356,7 @@ export default function Home({ featuredProjects = [] }) {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-3 mb-4">
               <span className="w-10 h-px bg-[#52B788]" />
-              <span className="text-[#52B788] text-xs font-semibold uppercase tracking-[0.2em]">Our Edge</span>
+              <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.2em]">Our Edge</span>
               <span className="w-10 h-px bg-[#52B788]" />
             </div>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-white uppercase">Why Government Departments<br />Trust Us</h2>
@@ -395,7 +395,7 @@ export default function Home({ featuredProjects = [] }) {
                 ))}
               </div>
             </div>
-            <Link href="/about-wave-earth" className="text-[#52B788] text-xs font-semibold uppercase tracking-widest hover:text-white transition-colors whitespace-nowrap">About the Company &rarr;</Link>
+            <Link href="/about-wave-earth" className="text-[#52B788] text-[13px] font-semibold uppercase tracking-widest hover:text-white transition-colors whitespace-nowrap">About the Company &rarr;</Link>
           </div>
         </div>
       </section>
@@ -407,10 +407,10 @@ export default function Home({ featuredProjects = [] }) {
         <div className="relative max-w-5xl mx-auto px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center gap-3 mb-6">
             <span className="w-10 h-px bg-white/40" />
-            <span className="text-white/70 text-xs font-semibold uppercase tracking-[0.25em]">Let&apos;s Work Together</span>
+            <span className="text-white/70 text-[13px] font-semibold uppercase tracking-[0.25em]">Let&apos;s Work Together</span>
             <span className="w-10 h-px bg-white/40" />
           </div>
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white uppercase leading-tight mb-6">Ready to Execute<br />Your Next Project?</h2>
+          <h2 className="font-display text-[40px] sm:text-[54px] md:text-[68px] font-bold text-white uppercase leading-none mb-6">Ready to Execute<br />Your Next Project?</h2>
           <p className="text-green-100 text-base sm:text-lg mb-4 max-w-2xl mx-auto font-sans font-light leading-relaxed">Canal construction, irrigation infrastructure, earthwork, rural redevelopment - across Uttar Pradesh and Madhya Pradesh.</p>
           <a href="tel:+912583683158" className="inline-block text-white font-display text-2xl sm:text-3xl font-semibold mb-10 hover:text-green-200 transition-colors tracking-wider">+91 258 368 3158</a>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

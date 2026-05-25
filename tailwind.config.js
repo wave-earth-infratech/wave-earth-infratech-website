@@ -25,6 +25,14 @@ module.exports = {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
         display: ['var(--font-oswald)', 'system-ui', 'sans-serif'],
       },
+      fontSize: {
+        'hero':       ['88px',  { lineHeight: '0.95', letterSpacing: '-0.02em' }],
+        'hero-sm':    ['52px',  { lineHeight: '0.95', letterSpacing: '-0.01em' }],
+        'section':    ['54px',  { lineHeight: '1.0' }],
+        'section-sm': ['40px',  { lineHeight: '1.0' }],
+        'stats':      ['72px',  { lineHeight: '1.0' }],
+        'card-title': ['24px',  { lineHeight: '1.2' }],
+      },
       backgroundImage: {
         'hero-gradient': 'linear-gradient(135deg, #0B2545 0%, #1A3A6B 50%, #071830 100%)',
         'cta-gradient': 'linear-gradient(135deg, #2D6A4F 0%, #1B4332 100%)',

@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Design System Variables ─────────────────────────────────────────────── */
+:root {
+  --bg-primary:    #07111F;
+  --bg-secondary:  #0B1D33;
+  --accent:        #52B788;
+  --accent-bright: #39D98A;
+  --text-primary:  #FFFFFF;
+  --text-secondary:#A9B3C1;
+  --border:        rgba(255, 255, 255, 0.08);
+  --section-pad:   120px;
+  --section-pad-sm: 80px;
+}
+
 @layer base {
   html {
     font-family: var(--font-inter), system-ui, sans-serif;
@@ -10,18 +23,24 @@
 
   body {
     @apply text-gray-100 bg-[#050d1a] antialiased;
+    font-size: 16px;
+    line-height: 1.7;
   }
 
   *:focus-visible {
     @apply outline-2 outline-offset-2 outline-[#52B788];
   }
 
-  /* Prevent white flash on dark sections */
   h1, h2, h3 {
     font-family: var(--font-oswald), system-ui, sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.01em;
+    font-weight: 400;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.8;
   }
 }
 
@@ -29,37 +48,39 @@
   /* ── Buttons ── */
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2 bg-[#52B788] text-white
-           font-semibold text-xs uppercase tracking-widest px-7 py-4
+           font-semibold text-[15px] uppercase tracking-[0.06em] px-8 py-4
            hover:bg-[#2D6A4F] transition-colors duration-300;
   }
 
   .btn-outline {
     @apply inline-flex items-center justify-center gap-2 border border-white/30 text-white
-           font-semibold text-xs uppercase tracking-widest px-7 py-4
+           font-semibold text-[15px] uppercase tracking-[0.06em] px-8 py-4
            hover:border-white hover:bg-white/5 transition-colors duration-300;
   }
 
   .btn-outline-dark {
     @apply inline-flex items-center justify-center gap-2 border border-[#0B2545] text-[#0B2545]
-           font-semibold text-xs uppercase tracking-widest px-7 py-4
+           font-semibold text-[15px] uppercase tracking-[0.06em] px-8 py-4
            hover:bg-[#0B2545] hover:text-white transition-colors duration-300;
   }
 
   /* ── Section anatomy ── */
   .section-eyebrow {
-    @apply flex items-center gap-3 mb-4;
+    @apply flex items-center gap-3 mb-5;
   }
   .section-eyebrow-line {
     @apply w-10 h-px bg-[#52B788];
   }
   .section-eyebrow-text {
-    @apply text-[#52B788] text-xs font-semibold uppercase tracking-[0.2em];
+    @apply text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.2em];
   }
   .section-heading-light {
-    @apply text-4xl md:text-5xl font-display font-bold text-white uppercase leading-tight;
+    @apply font-display font-bold text-white uppercase leading-none;
+    font-size: clamp(38px, 4vw, 54px);
   }
   .section-heading-dark {
-    @apply text-4xl md:text-5xl font-display font-bold text-[#0B2545] uppercase leading-tight;
+    @apply font-display font-bold text-[#0B2545] uppercase leading-none;
+    font-size: clamp(38px, 4vw, 54px);
   }
 
   /* ── Containers ── */

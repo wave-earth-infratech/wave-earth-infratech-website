@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { Inter, Oswald } from 'next/font/google'
+import { Inter, Bebas_Neue } from 'next/font/google'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -7,16 +7,16 @@ const inter = Inter({
   display: 'swap',
 })
 
-const oswald = Oswald({
+const bebasNeue = Bebas_Neue({
   subsets: ['latin'],
   variable: '--font-oswald',
   display: 'swap',
-  weight: ['400', '500', '600', '700'],
+  weight: '400',
 })
 
 function Application({ Component, pageProps }) {
   return (
-    <main className={`${inter.variable} ${oswald.variable}`}>
+    <main className={`${inter.variable} ${bebasNeue.variable}`}>
       <Component {...pageProps} />
     </main>
   )
