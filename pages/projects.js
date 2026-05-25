@@ -38,7 +38,7 @@ export default function ProjectsPage({ projects }) {
   return (
     <>
       <Head>
-        <title>Projects | Canal, Irrigation & Infrastructure Works — Wave Earth Infratech</title>
+        <title>Projects | Canal, Irrigation & Infrastructure Works - Wave Earth Infratech</title>
         <meta name="description" content="Completed and ongoing canal construction, nahar lining, irrigation infrastructure, earthwork, and rural redevelopment projects across Uttar Pradesh and Madhya Pradesh." />
       </Head>
 
@@ -62,7 +62,7 @@ export default function ProjectsPage({ projects }) {
               Our Projects
             </h1>
             <p className="text-gray-400 text-lg max-w-2xl leading-relaxed font-sans">
-              Completed &amp; ongoing infrastructure works — canal, irrigation, earthwork &amp; redevelopment across UP &amp; MP.
+              Completed &amp; ongoing infrastructure works - canal, irrigation, earthwork &amp; redevelopment across UP &amp; MP.
             </p>
           </div>
         </section>

@@ -1,6 +1,6 @@
 ---
 # ─────────────────────────────────────────────────────
-# Wave Earth Infratech — Canonical Site Stats
+# Wave Earth Infratech - Canonical Site Stats
 # Edit this file in Decap CMS or directly.
 # All pages and components pull from data/siteConstants.js
 # which mirrors these values. Update both together.
@@ -25,7 +25,7 @@ phone_href: "+912583683158"
 email: "contact@waveearthinfratech.com"
 whatsapp_number: "912583683158"
 
-# Key stats — UPDATE ONLY HERE when numbers change
+# Key stats - UPDATE ONLY HERE when numbers change
 years_experience: 8
 years_label: "Years Since 2017"
 

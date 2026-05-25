@@ -6,7 +6,7 @@ import { COMPANY, STATS, ABOUT_BADGE, KEY_FACTS } from '../data/siteConstants'
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
-// KEY_FACTS imported from data/siteConstants.js — do not hardcode here.
+// KEY_FACTS imported from data/siteConstants.js - do not hardcode here.
 // To update: edit data/siteConstants.js AND content/settings/stats.md
 
 const timeline = [

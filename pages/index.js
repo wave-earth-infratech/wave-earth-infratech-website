@@ -9,7 +9,7 @@ import { HOME_STATS } from '../data/siteConstants'
 
 // ─── Static data ──────────────────────────────────────────────────────────────
 
-// HOME_STATS is imported from data/siteConstants.js — do not hardcode stats here.
+// HOME_STATS is imported from data/siteConstants.js - do not hardcode stats here.
 // To update any number: edit data/siteConstants.js AND content/settings/stats.md
 
 const serviceBlocks = [

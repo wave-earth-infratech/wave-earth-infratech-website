@@ -6,7 +6,7 @@
  * How to update a stat:
  *   1. Change the value here.
  *   2. Change the matching field in content/settings/stats.md (for Decap CMS UI).
- *   That's it — every page and component that imports from here is automatically updated.
+ *   That's it - every page and component that imports from here is automatically updated.
  *
  * DO NOT hardcode these values anywhere else in the codebase.
  */
@@ -52,7 +52,7 @@ export const STATS = {
 
 // ─── Pre-built arrays for each context ───────────────────────────────────────
 
-/** Animated counter row — homepage stats section */
+/** Animated counter row - homepage stats section */
 export const HOME_STATS = [
   STATS.kmCanal,
   STATS.villagesImpacted,
@@ -61,14 +61,14 @@ export const HOME_STATS = [
   STATS.yearsExperience,
 ]
 
-/** Footer brand column — 3-item mini strip */
+/** Footer brand column - 3-item mini strip */
 export const FOOTER_STATS = [
   [`${STATS.kmCanal.value}${STATS.kmCanal.suffix}`,         'KM Canal'],
   [`${STATS.projectsDone.value}${STATS.projectsDone.suffix}`, 'Projects'],
   [`${STATS.yearsExperience.value}${STATS.yearsExperience.suffix}`, 'Yrs Exp'],
 ]
 
-/** Services listing page — horizontal stats bar */
+/** Services listing page - horizontal stats bar */
 export const SERVICES_BAR_STATS = [
   [STATS.serviceCount.value.toString(),                                      STATS.serviceCount.label],
   [`${STATS.yearsExperience.value}${STATS.yearsExperience.suffix}`,          STATS.yearsExperience.label],
@@ -76,13 +76,13 @@ export const SERVICES_BAR_STATS = [
   [`${STATS.projectsDone.value}${STATS.projectsDone.suffix}`,                STATS.projectsDone.label],
 ]
 
-/** About page — headline stat badge (image overlay) */
+/** About page - headline stat badge (image overlay) */
 export const ABOUT_BADGE = {
   value: `${STATS.yearsExperience.value}${STATS.yearsExperience.suffix}`,
   label: STATS.yearsExperience.label,
 }
 
-/** About page — key facts sidebar */
+/** About page - key facts sidebar */
 export const KEY_FACTS = [
   { label: 'Registered Office', value: `${CONTACT.city}, ${CONTACT.state}` },
   { label: 'Work Zones',        value: COMPANY.states },

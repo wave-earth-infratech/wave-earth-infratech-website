@@ -75,7 +75,7 @@ export default function Footer() {
               </div>
 
               <p className="text-gray-500 text-sm leading-relaxed mb-6 max-w-xs">
-                {COMPANY.legalName} — serious infrastructure execution across
+                {COMPANY.legalName} - serious infrastructure execution across
                 Uttar Pradesh &amp; Madhya Pradesh {COMPANY.sinceLabel}.
               </p>
 

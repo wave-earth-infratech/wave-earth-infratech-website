@@ -45,7 +45,7 @@ export default function ProjectDetail({ project, prev, next }) {
   return (
     <>
       <Head>
-        <title>{project.title} | Projects — Wave Earth Infratech</title>
+        <title>{project.title} | Projects - Wave Earth Infratech</title>
         <meta name="description" content={project.excerpt || ''} />
       </Head>
 
@@ -125,7 +125,7 @@ export default function ProjectDetail({ project, prev, next }) {
         <section className="py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-16">
 
-            {/* Left — main content */}
+            {/* Left - main content */}
             <div className="lg:col-span-2 space-y-14">
 
               {/* Excerpt / overview */}
