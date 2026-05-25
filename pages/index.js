@@ -37,6 +37,7 @@ const equipment = [
 ]
 
 const certs = [
+  'Private Limited Company',
   'MSME Registered',
   'GST Compliant',
   'PAN Verified',
@@ -139,12 +140,19 @@ export default function Home({ featuredProjects = [] }) {
               <span className="w-10 h-px bg-[#52B788]" />
               <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.25em]">Government &amp; NGO Infrastructure Contractor - UP &amp; MP</span>
             </div>
-            <h1 className="font-display text-[clamp(3rem,8vw,7rem)] font-bold text-white uppercase leading-[0.95] mb-6 tracking-tight">
+            <h1 className="font-display text-[clamp(3rem,8vw,7rem)] font-bold text-white uppercase leading-[0.95] mb-5 tracking-tight">
               Building<br />Rural India&apos;s<br /><span className="text-[#52B788]">Infrastructure</span>
             </h1>
+            <div className="flex items-center gap-3 mb-8">
+              <span className="text-[#52B788] text-[13px] font-semibold font-sans">Trusted Infrastructure Execution Partner</span>
+              <span className="w-1 h-1 bg-[#52B788]/60 flex-shrink-0" />
+              <span className="text-white/40 text-[13px] font-sans uppercase tracking-widest">Since 2017</span>
+              <span className="w-1 h-1 bg-[#52B788]/60 flex-shrink-0" />
+              <span className="text-white/40 text-[13px] font-sans uppercase tracking-widest">8+ Yrs</span>
+            </div>
             <p className="text-gray-300 text-base sm:text-lg max-w-xl mb-10 leading-relaxed font-sans font-light">
               Canal development &bull; Irrigation works &bull; Earthwork &bull; Rural redevelopment<br />
-              Trusted by state departments across Uttar Pradesh &amp; Madhya Pradesh since 2010.
+              Trusted by state departments across Uttar Pradesh &amp; Madhya Pradesh since 2017.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/projects" className="btn-primary">View Our Projects &rarr;</Link>

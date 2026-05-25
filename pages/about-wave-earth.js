@@ -15,13 +15,13 @@ const keyFacts = [
 ]
 
 const timeline = [
-  { year: '2010', event: 'Wave Earth Infratech founded in Chitrakoot, UP with a focus on rural civil works.' },
-  { year: '2012', event: 'First government irrigation contract awarded by the UP Irrigation Department.' },
-  { year: '2015', event: 'Expanded operations to Madhya Pradesh; first Jal Shakti-scheme project executed.' },
-  { year: '2017', event: 'MSME registration completed; fleet of owned machinery commissioned.' },
-  { year: '2019', event: 'Crossed 80+ km of canal lining and development works across UP & MP.' },
-  { year: '2021', event: 'First NGO rural redevelopment partnership initiated in Chitrakoot district.' },
-  { year: '2024', event: 'Active execution across 15+ concurrent project sites with 200+ workforce.' },
+  { year: '2017', event: 'Wave Earth Infratech Private Limited established; company registration and first civil works contracts initiated.' },
+  { year: '2018', event: 'First UP Irrigation Department government contract awarded - canal lining works, Chitrakoot district.' },
+  { year: '2019', event: 'Expanded operations to Madhya Pradesh; first Jal Shakti Mission project successfully executed in Rewa.' },
+  { year: '2020', event: 'MSME registration completed; own machinery fleet (excavators, JCBs, dumpers) commissioned for field operations.' },
+  { year: '2021', event: 'Crossed 50+ km of canal lining and irrigation development works across UP & MP combined.' },
+  { year: '2022', event: 'First NGO rural redevelopment partnership in Chitrakoot; Jal Jeevan Mission works initiated.' },
+  { year: '2024', event: 'Active execution across 15+ concurrent project sites with 200+ strong dedicated workforce.' },
 ]
 
 const values = [
@@ -73,7 +73,7 @@ const expertise = [
 const differentiators = [
   {
     title: 'Own Machinery Fleet',
-    desc: 'JCBs, Excavators, Concrete Mixers, Dumpers — no rental dependency. Faster mobilisation and full cost control.',
+    desc: 'JCBs, Excavators, Concrete Mixers, Dumpers - no rental dependency. Faster mobilisation and full cost control.',
     icon: 'M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z',
   },
   {
@@ -88,7 +88,7 @@ const differentiators = [
   },
   {
     title: 'Fast Mobilisation',
-    desc: 'Ability to mobilise quickly for urgent contracts — within days, not weeks. Equipment and crew on standby.',
+    desc: 'Ability to mobilise quickly for urgent contracts - within days, not weeks. Equipment and crew on standby.',
     icon: 'M13 10V3L4 14h7v7l9-11h-7z',
   },
   {
@@ -98,16 +98,17 @@ const differentiators = [
   },
   {
     title: 'Transparent Reporting',
-    desc: 'Regular progress reports, photographic documentation, and structured billing — so you always know where your project stands.',
+    desc: 'Regular progress reports, photographic documentation, and structured billing - so you always know where your project stands.',
     icon: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z',
   },
 ]
 
 const certBadges = [
+  'Private Limited Company',
   'MSME Registered',
   'GST Compliant',
   'PAN Registered',
-  'Contractor License',
+  'Contractor Licensed',
   'EPF Registered',
 ]
 
@@ -149,7 +150,7 @@ export default function AboutPage() {
             <span className="text-[#52B788]">Infratech</span>
           </h1>
           <p className="text-gray-400 text-[22px] leading-relaxed max-w-xl mb-8">
-            Canal, Irrigation &amp; Rural Development — Across UP &amp; MP since 2010
+            Canal, Irrigation &amp; Rural Development - Across UP &amp; MP since 2017
           </p>
           <nav className="flex items-center gap-2 text-xs text-gray-600 uppercase tracking-widest">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
@@ -172,8 +173,8 @@ export default function AboutPage() {
               />
               {/* overlay stat badge */}
               <div className="absolute -bottom-px -right-px bg-[#52B788] text-white px-6 py-5 text-center">
-                <p className="font-display text-4xl font-bold leading-none">15+</p>
-                <p className="text-[10px] font-semibold uppercase tracking-widest mt-1 text-white/80">Years in Field</p>
+                <p className="font-display text-4xl font-bold leading-none">8+</p>
+                <p className="text-[10px] font-semibold uppercase tracking-widest mt-1 text-white/80">Years Since 2017</p>
               </div>
             </div>
             <div>
@@ -183,12 +184,12 @@ export default function AboutPage() {
               </div>
               <h2 className="font-display text-[40px] lg:text-[54px] font-bold text-white uppercase leading-none mb-6">
                 Civil Infrastructure Built on<br />
-                <span className="text-gray-400">Ground-Level Experience</span>
+                <span className="text-gray-400">8 Years of Ground-Level Experience</span>
               </h2>
               <p className="text-gray-400 leading-relaxed mb-5 text-lg">
-                Wave Earth Infratech is a civil infrastructure execution company specialising in canal
-                construction, nahar lining, irrigation works, and rural redevelopment projects across
-                Uttar Pradesh and Madhya Pradesh.
+                Wave Earth Infratech Private Limited is a rural infrastructure and civil works company
+                specialising in canal construction, nahar lining, irrigation works, and rural redevelopment
+                projects across Uttar Pradesh and Madhya Pradesh.
               </p>
               <p className="text-gray-400 leading-relaxed mb-5 text-lg">
                 Founded with a mission to bring professional infrastructure execution to India&apos;s
@@ -198,7 +199,7 @@ export default function AboutPage() {
               </p>
               <p className="text-gray-400 leading-relaxed mb-10 text-lg">
                 Our team has direct field experience across 15+ years in earthwork, concrete structures,
-                water channel development, and large-scale civil maintenance contracts — with a 200+
+                water channel development, and large-scale civil maintenance contracts - with a 200+
                 strong workforce deployed across UP and MP.
               </p>
               <div className="flex gap-4 flex-wrap">
@@ -249,7 +250,7 @@ export default function AboutPage() {
               <p className="text-gray-400 leading-relaxed text-sm">
                 To deliver high-quality, timely, and cost-effective civil infrastructure solutions that
                 improve water access, agricultural productivity, and rural livelihoods across Central
-                India — executed with integrity and measurable impact.
+                India - executed with integrity and measurable impact.
               </p>
             </div>
             <div className="bg-[#071830] border border-[#52B788]/20 p-10 flex flex-col gap-5">
@@ -370,7 +371,7 @@ export default function AboutPage() {
               <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.25em]">Why Choose Us</span>
             </div>
             <h2 className="font-display text-[40px] lg:text-[54px] font-bold text-white uppercase">
-              Infrastructure Execution —<br />
+              Infrastructure Execution -<br />
               <span className="text-gray-400">The Way It Should Be Done</span>
             </h2>
           </div>

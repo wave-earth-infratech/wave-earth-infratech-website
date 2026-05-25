@@ -66,14 +66,20 @@ export default function Footer() {
                 />
               </Link>
 
+              {/* Est. badge */}
+              <div className="inline-flex items-center gap-2 border border-white/10 px-3 py-1.5 mb-4">
+                <span className="w-1.5 h-1.5 bg-[#52B788]" />
+                <span className="text-[11px] text-gray-400 uppercase tracking-widest font-sans">Est. 2017</span>
+              </div>
+
               <p className="text-gray-500 text-sm leading-relaxed mb-6 max-w-xs">
-                Serious infrastructure execution - canal development, irrigation works, and rural redevelopment
-                across Uttar Pradesh &amp; Madhya Pradesh since 2010.
+                Wave Earth Infratech Private Limited - serious infrastructure execution across
+                Uttar Pradesh &amp; Madhya Pradesh since 2017.
               </p>
 
               {/* Stats mini strip */}
               <div className="flex gap-6 mb-6 border-t border-white/5 pt-5">
-                {[['120+', 'KM Canal'], ['45+', 'Projects'], ['15+', 'Years']].map(([v, l]) => (
+                {[['120+', 'KM Canal'], ['45+', 'Projects'], ['8+', 'Yrs Exp']].map(([v, l]) => (
                   <div key={l}>
                     <div className="font-display text-xl font-bold text-white">{v}</div>
                     <div className="text-[10px] text-gray-600 uppercase tracking-widest">{l}</div>
@@ -200,7 +206,9 @@ export default function Footer() {
         <div className="border-t border-white/[0.05] bg-[#020710]">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-gray-600 text-[11px] font-sans uppercase tracking-wider">
-              &copy; {year} Wave Earth Infratech. All rights reserved.
+              &copy; {year} Wave Earth Infratech Private Limited. All rights reserved.
+              <span className="mx-2 text-gray-700">|</span>
+              Pvt. Ltd. · Est. 2017
               <span className="mx-2 text-gray-700">|</span>
               MSME Registered
               <span className="mx-2 text-gray-700">|</span>
