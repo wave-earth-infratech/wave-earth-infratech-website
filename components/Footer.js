@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { FOOTER_STATS, COMPANY } from '../data/siteConstants'
 
 const footerLinks = {
   company: [
@@ -12,13 +13,14 @@ const footerLinks = {
     { label: 'Tenders',           href: '/tenders' },
   ],
   services: [
-    { label: 'Canal Construction',        href: '/services#canal-construction' },
-    { label: 'Nahar Lining Works',        href: '/services#nahar-lining' },
-    { label: 'Irrigation Infrastructure', href: '/services#irrigation' },
-    { label: 'Earthwork & Excavation',    href: '/services#earthwork' },
-    { label: 'Rural Redevelopment',       href: '/services#rural' },
-    { label: 'Road & Drainage Works',     href: '/services#road-drainage' },
-    { label: 'NGO Development Projects',  href: '/services#ngo' },
+    { label: 'Canal Construction',        href: '/services/canal-construction' },
+    { label: 'Nahar Lining Works',        href: '/services/nahar-lining' },
+    { label: 'Irrigation Infrastructure', href: '/services/irrigation-infrastructure' },
+    { label: 'Earthwork & Excavation',    href: '/services/earthwork-excavation' },
+    { label: 'Rural Redevelopment',       href: '/services/rural-redevelopment' },
+    { label: 'Water Resource Projects',   href: '/services/water-resource-projects' },
+    { label: 'Road & Drainage Works',     href: '/services/road-drainage' },
+    { label: 'NGO Development Projects',  href: '/services/ngo-development' },
   ],
 }
 
@@ -69,17 +71,17 @@ export default function Footer() {
               {/* Est. badge */}
               <div className="inline-flex items-center gap-2 border border-white/10 px-3 py-1.5 mb-4">
                 <span className="w-1.5 h-1.5 bg-[#52B788]" />
-                <span className="text-[11px] text-gray-400 uppercase tracking-widest font-sans">Est. 2017</span>
+                <span className="text-[11px] text-gray-400 uppercase tracking-widest font-sans">{COMPANY.estLabel}</span>
               </div>
 
               <p className="text-gray-500 text-sm leading-relaxed mb-6 max-w-xs">
-                Wave Earth Infratech Private Limited - serious infrastructure execution across
-                Uttar Pradesh &amp; Madhya Pradesh since 2017.
+                {COMPANY.legalName} — serious infrastructure execution across
+                Uttar Pradesh &amp; Madhya Pradesh {COMPANY.sinceLabel}.
               </p>
 
               {/* Stats mini strip */}
               <div className="flex gap-6 mb-6 border-t border-white/5 pt-5">
-                {[['120+', 'KM Canal'], ['45+', 'Projects'], ['8+', 'Yrs Exp']].map(([v, l]) => (
+                {FOOTER_STATS.map(([v, l]) => (
                   <div key={l}>
                     <div className="font-display text-xl font-bold text-white">{v}</div>
                     <div className="text-[10px] text-gray-600 uppercase tracking-widest">{l}</div>
@@ -206,9 +208,9 @@ export default function Footer() {
         <div className="border-t border-white/[0.05] bg-[#020710]">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-gray-600 text-[11px] font-sans uppercase tracking-wider">
-              &copy; {year} Wave Earth Infratech Private Limited. All rights reserved.
+              &copy; {year} {COMPANY.legalName}. All rights reserved.
               <span className="mx-2 text-gray-700">|</span>
-              Pvt. Ltd. · Est. 2017
+              Pvt. Ltd. · {COMPANY.estLabel}
               <span className="mx-2 text-gray-700">|</span>
               MSME Registered
               <span className="mx-2 text-gray-700">|</span>

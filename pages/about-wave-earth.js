@@ -2,17 +2,12 @@ import Link from 'next/link'
 import Meta from '@components/Meta'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import { COMPANY, STATS, ABOUT_BADGE, KEY_FACTS } from '../data/siteConstants'
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
-const keyFacts = [
-  { label: 'Registered Office',  value: 'Ghaziabad, Uttar Pradesh' },
-  { label: 'Work Zones',         value: 'Uttar Pradesh & Madhya Pradesh' },
-  { label: 'Primary Sector',     value: 'Irrigation, Canal & Rural Infrastructure' },
-  { label: 'MSME Registered',    value: 'Yes' },
-  { label: 'GST Registered',     value: 'Yes' },
-  { label: 'Contractor Class',   value: 'Government Approved' },
-]
+// KEY_FACTS imported from data/siteConstants.js — do not hardcode here.
+// To update: edit data/siteConstants.js AND content/settings/stats.md
 
 const timeline = [
   { year: '2017', event: 'Wave Earth Infratech Private Limited established; company registration and first civil works contracts initiated.' },
@@ -173,8 +168,8 @@ export default function AboutPage() {
               />
               {/* overlay stat badge */}
               <div className="absolute -bottom-px -right-px bg-[#52B788] text-white px-6 py-5 text-center">
-                <p className="font-display text-4xl font-bold leading-none">8+</p>
-                <p className="text-[10px] font-semibold uppercase tracking-widest mt-1 text-white/80">Years Since 2017</p>
+                <p className="font-display text-4xl font-bold leading-none">{ABOUT_BADGE.value}</p>
+                <p className="text-[10px] font-semibold uppercase tracking-widest mt-1 text-white/80">{ABOUT_BADGE.label}</p>
               </div>
             </div>
             <div>
@@ -184,7 +179,7 @@ export default function AboutPage() {
               </div>
               <h2 className="font-display text-[40px] lg:text-[54px] font-bold text-white uppercase leading-none mb-6">
                 Civil Infrastructure Built on<br />
-                <span className="text-gray-400">8 Years of Ground-Level Experience</span>
+                <span className="text-gray-400">{STATS.yearsExperience.value} Years of Ground-Level Experience</span>
               </h2>
               <p className="text-gray-400 leading-relaxed mb-5 text-lg">
                 Wave Earth Infratech Private Limited is a rural infrastructure and civil works company
@@ -198,9 +193,9 @@ export default function AboutPage() {
                 impactful civil works.
               </p>
               <p className="text-gray-400 leading-relaxed mb-10 text-lg">
-                Our team has direct field experience across 15+ years in earthwork, concrete structures,
-                water channel development, and large-scale civil maintenance contracts - with a 200+
-                strong workforce deployed across UP and MP.
+                Our team has direct field experience since {COMPANY.foundedYear} in earthwork, concrete structures,
+                water channel development, and large-scale civil maintenance contracts - with a {STATS.workforce.value}{STATS.workforce.suffix}
+                strong workforce deployed across {COMPANY.statesShort}.
               </p>
               <div className="flex gap-4 flex-wrap">
                 <Link href="/contact-us" className="bg-[#52B788] text-white text-[15px] font-semibold uppercase tracking-[0.06em] px-8 py-4 hover:bg-[#2D6A4F] transition-colors">
@@ -219,7 +214,7 @@ export default function AboutPage() {
       <section className="bg-[#0f1b2d] py-12 border-y border-white/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-            {keyFacts.map((f) => (
+            {KEY_FACTS.map((f) => (
               <div key={f.label} className="text-center border-r border-white/5 last:border-0 px-2">
                 <p className="text-[11px] text-gray-500 uppercase tracking-widest font-semibold mb-1.5">{f.label}</p>
                 <p className="text-[#52B788] font-display text-base font-semibold uppercase">{f.value}</p>

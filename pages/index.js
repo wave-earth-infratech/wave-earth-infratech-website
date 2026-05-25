@@ -5,16 +5,12 @@ import Meta from '@components/Meta'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import { getFeaturedProjects } from '@lib/content'
+import { HOME_STATS } from '../data/siteConstants'
 
 // ─── Static data ──────────────────────────────────────────────────────────────
 
-const stats = [
-  { value: 120, suffix: '+', label: 'KM Canal Developed' },
-  { value: 80,  suffix: '+', label: 'Villages Impacted' },
-  { value: 45,  suffix: '+', label: 'Projects Completed' },
-  { value: 200, suffix: '+', label: 'Workforce Strength' },
-  { value: 15,  suffix: '+', label: 'Years Experience' },
-]
+// HOME_STATS is imported from data/siteConstants.js — do not hardcode stats here.
+// To update any number: edit data/siteConstants.js AND content/settings/stats.md
 
 const serviceBlocks = [
   { title: 'Canal Construction & Lining',    desc: 'New canal construction, desilting, PCC/RCC lining, and embankment repair for state irrigation departments.',                          img: 'https://picsum.photos/900/600?random=21', href: '/services' },
@@ -175,8 +171,8 @@ export default function Home({ featuredProjects = [] }) {
       <section className="bg-[#0a0a0a] py-16 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 divide-x divide-white/[0.07]">
-            {stats.map(({ value, suffix, label }, i) => (
-              <div key={label} className={`px-6 py-4 text-center ${i === 0 ? 'pl-0' : ''} ${i === stats.length - 1 ? 'pr-0' : ''}`}>
+            {HOME_STATS.map(({ value, suffix, label }, i) => (
+              <div key={label} className={`px-6 py-4 text-center ${i === 0 ? 'pl-0' : ''} ${i === HOME_STATS.length - 1 ? 'pr-0' : ''}`}>
                 <div className="font-display text-[60px] sm:text-[72px] font-bold text-white mb-2">
                   <AnimatedCounter value={value} suffix={suffix} />
                 </div>
