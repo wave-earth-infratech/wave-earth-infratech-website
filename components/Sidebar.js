@@ -1,5 +1,7 @@
-import Link from 'next/link'
-import Image from 'next/image'
+// Mobile menu is now part of Header.js
+export default function Sidebar() {
+  return null
+}
 
 export default function Sidebar() {
     return (

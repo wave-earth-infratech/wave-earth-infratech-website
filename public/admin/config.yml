@@ -1,0 +1,185 @@
+backend:
+  name: git-gateway
+  branch: main   # change to your production branch if different
+
+# Netlify Identity — set registration to "Invite only" in your Netlify dashboard
+# and enable Git Gateway under Settings → Identity → Services
+
+media_folder: public/images/uploads     # where uploaded files are stored in the repo
+public_folder: /images/uploads          # the public URL prefix for uploaded files
+
+# Uncomment to enable draft/review workflow (requires paid Netlify plan)
+# publish_mode: editorial_workflow
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: '-'
+
+collections:
+
+  # ─── PROJECTS / PORTFOLIO ──────────────────────────────────────────────────
+  - name: projects
+    label: Projects
+    label_singular: Project
+    folder: content/projects
+    create: true
+    slug: '{{year}}-{{month}}-{{slug}}'
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Publish Date, name: date, widget: datetime, format: 'YYYY-MM-DD', date_format: 'DD MMM YYYY', time_format: false }
+      - label: Status
+        name: status
+        widget: select
+        options:
+          - { label: Completed, value: completed }
+          - { label: Ongoing, value: ongoing }
+          - { label: Tendered, value: tendered }
+        default: completed
+      - label: Category
+        name: category
+        widget: select
+        options:
+          - { label: Canal Construction, value: canal-construction }
+          - { label: Nahar Lining Works, value: nahar-lining }
+          - { label: Irrigation Infrastructure, value: irrigation }
+          - { label: Earthwork & Excavation, value: earthwork }
+          - { label: Rural Redevelopment, value: rural-redevelopment }
+          - { label: Road & Drainage, value: road-drainage }
+          - { label: Water Resource, value: water-resource }
+          - { label: NGO Development, value: ngo-development }
+          - { label: Civil Maintenance, value: civil-maintenance }
+      - { label: Client / Department, name: client, widget: string }
+      - { label: Location, name: location, widget: string, hint: 'e.g. Chitrakoot, Uttar Pradesh' }
+      - { label: Project Value (optional), name: project_value, widget: string, required: false, hint: 'e.g. ₹ 45 Lakhs' }
+      - { label: Completion Date, name: completion_date, widget: string, required: false, hint: 'e.g. March 2024' }
+      - { label: Featured Image, name: featured_image, widget: image, required: false }
+      - label: Gallery
+        name: gallery
+        widget: list
+        required: false
+        field: { label: Image, name: image, widget: image }
+      - { label: Short Description, name: excerpt, widget: text, hint: 'One or two sentences shown on cards (max 200 chars)' }
+      - { label: Full Description, name: body, widget: markdown, required: false }
+      - { label: Featured on Homepage?, name: featured, widget: boolean, default: false }
+
+  # ─── CLIENTS / DEPARTMENTS ─────────────────────────────────────────────────
+  - name: clients
+    label: Clients
+    label_singular: Client
+    folder: content/clients
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: Name, name: name, widget: string, hint: 'Organisation or Department name' }
+      - label: Type
+        name: type
+        widget: select
+        options:
+          - { label: Government Department, value: government }
+          - { label: PSU / Public Authority, value: psu }
+          - { label: NGO / Development Org, value: ngo }
+          - { label: Private, value: private }
+      - { label: State, name: state, widget: string, required: false, hint: 'e.g. Uttar Pradesh' }
+      - { label: Logo, name: logo, widget: image, required: false }
+      - { label: Projects Done, name: projects_done, widget: number, required: false, value_type: int }
+
+  # ─── TESTIMONIALS ──────────────────────────────────────────────────────────
+  - name: testimonials
+    label: Testimonials
+    label_singular: Testimonial
+    folder: content/testimonials
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: Name, name: name, widget: string }
+      - { label: Designation, name: designation, widget: string }
+      - { label: Organisation, name: organisation, widget: string }
+      - { label: Testimonial, name: body, widget: text }
+      - { label: Photo, name: photo, widget: image, required: false }
+      - { label: Rating (1–5), name: rating, widget: number, value_type: int, min: 1, max: 5, default: 5 }
+
+  # ─── SERVICES ──────────────────────────────────────────────────────────────
+  - name: services
+    label: Services
+    label_singular: Service
+    folder: content/services
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Icon (emoji), name: icon, widget: string, hint: 'Paste an emoji e.g. 🌊' }
+      - { label: Short Description, name: excerpt, widget: text, hint: 'Shown on cards (max 160 chars)' }
+      - { label: Full Content, name: body, widget: markdown, required: false }
+      - { label: Featured Image, name: featured_image, widget: image, required: false }
+      - { label: Sort Order, name: order, widget: number, value_type: int, default: 10 }
+      - label: Anchor ID (for URL hash links)
+        name: anchor
+        widget: string
+        hint: 'e.g. canal-construction — must match your service nav links'
+
+  # ─── BLOG ──────────────────────────────────────────────────────────────────
+  - name: blog
+    label: Blog
+    label_singular: Post
+    folder: content/blog
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    preview_path: 'blog/{{slug}}'
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Publish Date, name: date, widget: datetime, format: 'YYYY-MM-DD', date_format: 'DD MMM YYYY', time_format: false }
+      - { label: Author, name: author, widget: string, default: 'Wave Earth Infratech' }
+      - label: Category
+        name: category
+        widget: select
+        options:
+          - Infrastructure
+          - Irrigation
+          - Rural Development
+          - Government Contracts
+          - Equipment
+          - Company News
+      - { label: Featured Image, name: featured_image, widget: image, required: false }
+      - { label: Excerpt, name: excerpt, widget: text, hint: 'Shown in listing (max 200 chars)' }
+      - { label: Body, name: body, widget: markdown }
+      - { label: Draft?, name: draft, widget: boolean, default: false }
+
+  # ─── SITE SETTINGS ─────────────────────────────────────────────────────────
+  - name: settings
+    label: Site Settings
+    files:
+      - name: general
+        label: General
+        file: content/settings/general.json
+        fields:
+          - { label: Site Title, name: site_title, widget: string }
+          - { label: Tagline, name: tagline, widget: string }
+          - { label: Phone (display), name: phone_display, widget: string }
+          - { label: Phone (tel: href), name: phone_href, widget: string, hint: 'e.g. +912583683158' }
+          - { label: WhatsApp Number, name: whatsapp, widget: string, hint: 'Country code + number, no spaces' }
+          - { label: Email, name: email, widget: string }
+          - { label: Address Line 1, name: address_line1, widget: string }
+          - { label: Address Line 2, name: address_line2, widget: string }
+          - { label: City, name: city, widget: string }
+          - { label: State, name: state, widget: string }
+          - { label: PIN Code, name: pincode, widget: string }
+          - { label: LinkedIn URL, name: linkedin, widget: string, required: false }
+          - { label: YouTube URL, name: youtube, widget: string, required: false }
+
+      - name: homepage
+        label: Homepage Content
+        file: content/settings/homepage.json
+        fields:
+          - { label: Hero Headline, name: hero_headline, widget: string }
+          - { label: Hero Subtext, name: hero_subtext, widget: text }
+          - { label: Stats Label 1, name: stat1_label, widget: string }
+          - { label: Stats Value 1, name: stat1_value, widget: number }
+          - { label: Stats Label 2, name: stat2_label, widget: string }
+          - { label: Stats Value 2, name: stat2_value, widget: number }
+          - { label: Stats Label 3, name: stat3_label, widget: string }
+          - { label: Stats Value 3, name: stat3_value, widget: number }
+          - { label: Stats Label 4, name: stat4_label, widget: string }
+          - { label: Stats Value 4, name: stat4_value, widget: number }
+          - { label: Stats Label 5, name: stat5_label, widget: string }
+          - { label: Stats Value 5, name: stat5_value, widget: number }
