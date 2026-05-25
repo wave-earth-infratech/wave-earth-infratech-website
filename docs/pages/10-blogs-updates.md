@@ -8,7 +8,7 @@ The Blog/Updates page serves two functions:
 
 2. **Credibility signalling** - Companies that publish technical content signal expertise. Government evaluators who find 10 relevant articles on your site will trust you more than one with an empty or generic site.
 
-Publishing even 1–2 articles per month consistently will compound over time.
+Publishing even 1-2 articles per month consistently will compound over time.
 
 ---
 
@@ -127,7 +127,7 @@ These are SEO-targeted topics relevant to Wave Earth Infratech's services and ta
 
 - Write in simple, clear English (and optionally Hindi)
 - Include real photos from projects where possible
-- Minimum 600 words per article (800–1200 is ideal for SEO)
+- Minimum 600 words per article (800-1200 is ideal for SEO)
 - Use numbered headings, bullet points - easy to scan
 - Include one CTA at the end of every article
 - Avoid copied content - all articles must be original
@@ -158,7 +158,7 @@ The blog must be managed through the Filament admin panel:
 ## SEO Metadata (Blog Index)
 
 ```
-Title:    Blog & Updates | Canal Construction, Irrigation & Infrastructure – Wave Earth Infratech
+Title:    Blog & Updates | Canal Construction, Irrigation & Infrastructure - Wave Earth Infratech
 Description: Technical articles, project case studies, and infrastructure industry updates
              from Wave Earth Infratech - specialists in canal construction, nahar lining,
              and rural infrastructure across UP and MP.

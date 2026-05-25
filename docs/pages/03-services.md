@@ -84,7 +84,7 @@ Each service block/sub-page must contain the following structure:
 **Photo:** Workers laying concrete canal lining. Close-up of lining work in progress.
 
 **Description:**
-> Nahar lining prevents water seepage losses and extends canal lifespan by 3–5 times. We execute cement concrete and HDPE lining works for minor and major irrigation channels as per BIS/IS standards and departmental specifications.
+> Nahar lining prevents water seepage losses and extends canal lifespan by 3-5 times. We execute cement concrete and HDPE lining works for minor and major irrigation channels as per BIS/IS standards and departmental specifications.
 
 **Work Scope:**
 - Cement concrete canal lining (M20/M25)
@@ -189,7 +189,7 @@ Each service block/sub-page must contain the following structure:
 - Excavators (multiple sizes)
 - JCB
 - Bulldozer / Dozer (if applicable)
-- Tipper trucks (10–20 tonne)
+- Tipper trucks (10-20 tonne)
 - Motor Grader
 - Vibratory roller
 
@@ -269,7 +269,7 @@ Each service block/sub-page must contain the following structure:
 ## SEO Metadata
 
 ```
-Title:    Services | Canal Construction, Nahar Lining & Irrigation Works – Wave Earth Infratech
+Title:    Services | Canal Construction, Nahar Lining & Irrigation Works - Wave Earth Infratech
 Description: Wave Earth Infratech offers canal construction, nahar lining, irrigation
              infrastructure, earthwork, concrete structures, road works, and NGO project
              execution across UP and MP for government and development sector clients.

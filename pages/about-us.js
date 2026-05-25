@@ -27,7 +27,7 @@ const timeline = [
 const values = [
   { icon: '🏛️', title: 'Integrity', desc: 'Honest reporting, transparent billing, and reliable communication with every client.' },
   { icon: '✅', title: 'Quality', desc: 'No compromise on material specification or workmanship standards on any site.' },
-  { icon: '⏱️', title: 'Timeliness', desc: 'We take deadline commitments seriously — project schedules are non-negotiable.' },
+  { icon: '⏱️', title: 'Timeliness', desc: 'We take deadline commitments seriously - project schedules are non-negotiable.' },
   { icon: '🦺', title: 'Safety', desc: 'Enforced site safety protocols across all worksites, protecting every worker.' },
   { icon: '🌾', title: 'Rural Focus', desc: 'Dedicated to improving water access, agriculture, and livelihoods in rural India.' },
   { icon: '🌿', title: 'Sustainability', desc: 'Water-sensitive, eco-conscious execution practices on every project.' },
@@ -85,7 +85,7 @@ export default function AboutUs() {
           </span>
           <h1 className="text-4xl sm:text-5xl font-black text-white mb-4">About Wave Earth Infratech</h1>
           <p className="text-gray-300 text-lg max-w-xl mx-auto mb-6">
-            Canal, Irrigation &amp; Rural Development — Across UP &amp; MP
+            Canal, Irrigation &amp; Rural Development - Across UP &amp; MP
           </p>
           <nav className="flex items-center justify-center gap-2 text-sm text-gray-400">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
@@ -126,7 +126,7 @@ export default function AboutUs() {
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
                 Our team has direct field experience across 15+ years in earthwork, concrete structures,
-                water channel development, and large-scale civil maintenance contracts — with a 200+
+                water channel development, and large-scale civil maintenance contracts - with a 200+
                 strong workforce deployed across UP and MP.
               </p>
               <div className="flex gap-4 flex-wrap">
@@ -166,7 +166,7 @@ export default function AboutUs() {
               <p className="text-gray-200 leading-relaxed">
                 To deliver high-quality, timely, and cost-effective civil infrastructure solutions that
                 improve water access, agricultural productivity, and rural livelihoods across Central
-                India — executed with integrity and measurable impact.
+                India - executed with integrity and measurable impact.
               </p>
             </div>
             <div className="bg-accent rounded-2xl p-10 text-white flex flex-col gap-4">
@@ -300,17 +300,17 @@ export default function AboutUs() {
           <div className="text-center mb-14">
             <span className="text-accent-light font-semibold uppercase tracking-widest text-sm">Why Choose Us</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
-              Infrastructure Execution — the Way It Should Be Done
+              Infrastructure Execution - the Way It Should Be Done
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { icon: '🚜', title: 'Own Machinery Fleet', desc: 'JCBs, Excavators, Concrete Mixers, Dumpers — no dependency on rental equipment for critical works. Faster mobilisation and cost control.' },
+              { icon: '🚜', title: 'Own Machinery Fleet', desc: 'JCBs, Excavators, Concrete Mixers, Dumpers - no dependency on rental equipment for critical works. Faster mobilisation and cost control.' },
               { icon: '🗺️', title: 'Locally Embedded Team', desc: 'Deep field knowledge of UP/MP geography, seasonal constraints, and rural terrain. Our team knows the ground before breaking it.' },
               { icon: '📋', title: 'Government Compliance Ready', desc: 'Experienced in proper billing, measurement books, and inspection readiness for state PWD and irrigation department works.' },
-              { icon: '⚡', title: 'Fast Mobilisation', desc: 'Ability to mobilise quickly for urgent government or NGO contracts — within days, not weeks. Equipment and crew on standby.' },
+              { icon: '⚡', title: 'Fast Mobilisation', desc: 'Ability to mobilise quickly for urgent government or NGO contracts - within days, not weeks. Equipment and crew on standby.' },
               { icon: '🏗️', title: 'Challenging Terrain Experience', desc: 'Proven track record on flood-prone, seasonal, and remote sites where standard contractors struggle to perform.' },
-              { icon: '📊', title: 'Transparent Reporting', desc: 'Regular progress reports, photographic documentation, and structured billing — so you always know where your project stands.' },
+              { icon: '📊', title: 'Transparent Reporting', desc: 'Regular progress reports, photographic documentation, and structured billing - so you always know where your project stands.' },
             ].map((item) => (
               <div key={item.title} className="bg-white/5 border border-white/10 rounded-2xl p-7 hover:bg-white/10 transition-colors">
                 <div className="text-3xl mb-3">{item.icon}</div>

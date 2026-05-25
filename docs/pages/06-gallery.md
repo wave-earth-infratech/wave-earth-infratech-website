@@ -88,7 +88,7 @@ Include a dedicated subsection or standalone section:
 
 **Heading:** `Before & After`
 
-Show 3–5 key project transformations using a side-by-side comparison slider (e.g., `react-compare-slider`).
+Show 3-5 key project transformations using a side-by-side comparison slider (e.g., `react-compare-slider`).
 
 Examples:
 - Silted canal vs. cleaned and lined canal
@@ -136,7 +136,7 @@ jcb-canal-cleaning-up-2024-03.jpg
 ## SEO Metadata
 
 ```
-Title:    Gallery | Canal Construction & Irrigation Works Photos – Wave Earth Infratech
+Title:    Gallery | Canal Construction & Irrigation Works Photos - Wave Earth Infratech
 Description: Browse real project photos and videos from Wave Earth Infratech's canal
              construction, irrigation works, earthwork, and rural infrastructure projects
              across Uttar Pradesh and Madhya Pradesh.

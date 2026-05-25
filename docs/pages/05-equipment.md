@@ -62,7 +62,7 @@ High-level count strip at the top:
 
 | Equipment | Specification | Primary Use |
 |---|---|---|
-| Hydraulic Excavator | Bucket size: 0.8–1.5 m³, [make/model] | Canal excavation, earthwork, desilting |
+| Hydraulic Excavator | Bucket size: 0.8-1.5 m³, [make/model] | Canal excavation, earthwork, desilting |
 | Mini Excavator (if any) | [spec] | Restricted access sites, small drains |
 
 **What to show:**
@@ -170,7 +170,7 @@ Example:
 ## SEO Metadata
 
 ```
-Title:    Machinery & Equipment | Excavators, JCBs, Concrete Mixers – Wave Earth Infratech
+Title:    Machinery & Equipment | Excavators, JCBs, Concrete Mixers - Wave Earth Infratech
 Description: Wave Earth Infratech owns and operates a fleet of excavators, JCBs, concrete
              mixers, tipper trucks, and compaction equipment for canal, irrigation, and
              civil infrastructure works in UP and MP.

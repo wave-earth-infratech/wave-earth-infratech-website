@@ -184,7 +184,7 @@
 1. Hero - full-screen, video/image bg, headline, 3 CTAs
 2. Stats counter strip - `react-countup`
 3. Services overview grid - 10 cards
-4. Featured projects - 3–4 project cards
+4. Featured projects - 3-4 project cards
 5. Why Choose Us - 6 cards
 6. Certifications strip
 7. Location map - `react-leaflet`

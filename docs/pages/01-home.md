@@ -99,7 +99,7 @@ Background: Dark (`#111827`) or deep blue.
 **Heading:** `Recent Projects`
 **Subheading:** `Executed across Chitrakoot, UP, and MP`
 
-**Layout:** Horizontal scroll cards or a 3-column grid showing 3–4 featured projects.
+**Layout:** Horizontal scroll cards or a 3-column grid showing 3-4 featured projects.
 
 **Each project card shows:**
 - Cover photo (before/after or drone shot)
@@ -205,7 +205,7 @@ See [11-contact.md](11-contact.md) for footer spec. The footer appears on all pa
 ## SEO Metadata (for `<Head>`)
 
 ```
-Title:    Wave Earth Infratech | Canal & Irrigation Infrastructure Contractor – UP, MP
+Title:    Wave Earth Infratech | Canal & Irrigation Infrastructure Contractor - UP, MP
 Description: Wave Earth Infratech executes canal construction, nahar lining, irrigation works,
              and rural redevelopment projects for government departments and NGOs across
              Uttar Pradesh and Madhya Pradesh.
@@ -231,7 +231,7 @@ Keywords: canal construction contractor UP, irrigation contractor MP, nahar lini
 
 - [ ] Hero drone video / site photo
 - [ ] Real counter/statistic values confirmed
-- [ ] 3–4 featured project photos
+- [ ] 3-4 featured project photos
 - [ ] Services icons sourced
 - [ ] Certification badge images
 - [ ] Map embed with real office + project pins

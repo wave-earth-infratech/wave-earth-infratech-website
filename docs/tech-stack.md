@@ -216,7 +216,7 @@ Ongoing:   bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-mediu
 
 - Register on Google Business Profile: "Wave Earth Infratech" - Category: Civil Engineering Contractor
 - Add office address, phone, website, service areas
-- Encourage clients to leave Google reviews (even 5–10 reviews massively helps local ranking)
+- Encourage clients to leave Google reviews (even 5-10 reviews massively helps local ranking)
 - Ensure NAP (Name, Address, Phone) is identical on website and Google Business
 
 ---

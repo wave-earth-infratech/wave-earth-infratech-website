@@ -46,9 +46,9 @@ This page also helps with organic search ranking for terms like "canal contracto
 
 | Tender Name | Authority | Location | Status |
 |---|---|---|---|
-| Canal Lining Work – Package [X] | Irrigation Dept., UP | Chitrakoot, UP | Awarded – Under Execution |
-| Rural Road Construction – [GP Name] | PMGSY / State PWD | [District], UP | Bidding |
-| Checkdam Construction – [Scheme] | Agriculture Dept., MP | [District], MP | Completed |
+| Canal Lining Work - Package [X] | Irrigation Dept., UP | Chitrakoot, UP | Awarded - Under Execution |
+| Rural Road Construction - [GP Name] | PMGSY / State PWD | [District], UP | Bidding |
+| Checkdam Construction - [Scheme] | Agriculture Dept., MP | [District], MP | Completed |
 
 ---
 
@@ -144,7 +144,7 @@ Provide downloadable documents useful for tender file preparation:
 ## SEO Metadata
 
 ```
-Title:    Tenders | Canal & Civil Infrastructure Contractor – Wave Earth Infratech
+Title:    Tenders | Canal & Civil Infrastructure Contractor - Wave Earth Infratech
 Description: Invite Wave Earth Infratech to tender for canal, irrigation, road, or rural
              infrastructure projects. Download company documents for tender submission.
              Register as a vendor or sub-contractor.

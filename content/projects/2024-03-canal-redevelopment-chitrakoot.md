@@ -1,22 +1,92 @@
 ---
-title: Canal Redevelopment & Lining - Chitrakoot
+title: "Canal Redevelopment & Concrete Lining - Chitrakoot"
 date: 2024-03-15
 status: completed
 category: canal-construction
-client: Irrigation Department, Uttar Pradesh
-location: Chitrakoot, Uttar Pradesh
-project_value: ₹ 62 Lakhs
-completion_date: March 2024
-featured_image: /images/uploads/project-chitrakoot-canal.jpg
-gallery: []
-excerpt: Redevelopment and concrete lining of 4.8 km irrigation canal in Chitrakoot district, preventing water seepage and improving flow efficiency by 40%.
+client: "Irrigation Department, Uttar Pradesh"
+location: "Chitrakoot, Uttar Pradesh"
+duration: "5 Months"
+project_value: "₹ 62 Lakhs"
+completion_date: "March 2024"
+featured_image: "https://picsum.photos/1200/600?random=101"
+before_image: "https://picsum.photos/700/450?random=102"
+after_image: "https://picsum.photos/700/450?random=103"
+gallery:
+  - image: "https://picsum.photos/800/530?random=104"
+  - image: "https://picsum.photos/800/530?random=105"
+  - image: "https://picsum.photos/800/530?random=106"
+  - image: "https://picsum.photos/800/530?random=107"
+  - image: "https://picsum.photos/800/530?random=108"
+  - image: "https://picsum.photos/800/530?random=109"
+video_url: ""
+excerpt: "Redevelopment and PCC lining of 4.8 km irrigation canal in Chitrakoot district, improving flow efficiency by 40% and benefiting 6 downstream villages."
+overview: "This project involved full redevelopment of a deteriorating irrigation canal in Chitrakoot district under the Command Area Development Programme of the UP Irrigation Department. Years of sedimentation, side wall damage, and seepage had reduced the canal efficiency to less than 50%. Wave Earth Infratech executed complete desilting, embankment strengthening, and M-15 PCC lining across the full 4.8 km stretch, restoring the canal to near-original capacity and significantly improving water delivery to agricultural zones downstream."
+quantity_highlights:
+  - label: "Canal Length Restored"
+    value: "4.8 KM"
+  - label: "Earthwork Excavation"
+    value: "18,500 CUM"
+  - label: "PCC Lining (M-15)"
+    value: "4.8 KM"
+  - label: "Cross-Drainage Structures"
+    value: "6 Nos"
+  - label: "Inspection Road"
+    value: "2.1 KM"
+  - label: "Villages Benefited"
+    value: "6 Nos"
+scope_of_work:
+  - item: "Canal desilting and debris removal - full 4.8 km stretch"
+  - item: "Earth excavation and disposal: 18,500 cum"
+  - item: "Canal bank reshaping and compaction"
+  - item: "PCC M-15 grade concrete lining of bed and side walls"
+  - item: "Construction of 6 cross-drainage structures"
+  - item: "Inspection road formation: 2.1 km"
+  - item: "Water flow management and temporary diversion during active repair"
+  - item: "Final commissioning, flow testing and handover documentation"
+timeline:
+  - period: "Week 1-2"
+    activity: "Site survey, bench marking, and mobilisation of machinery and workforce"
+  - period: "Week 3-6"
+    activity: "Desilting, debris clearance, and earthwork excavation across full canal length"
+  - period: "Week 7-10"
+    activity: "Bank compaction, formwork erection, and PCC lining Phase 1 (2.4 km)"
+  - period: "Week 11-14"
+    activity: "PCC lining Phase 2 (remaining 2.4 km) and cross-drainage structures"
+  - period: "Week 15-17"
+    activity: "Inspection road formation, finishing works, and water flow testing"
+  - period: "Week 18-20"
+    activity: "Final inspection, defect rectification, measurement recording, and handover"
+equipment_used:
+  - equipment: "JCB Excavator - 2 nos"
+  - equipment: "Tractor-Mounted Blade - 1 no"
+  - equipment: "Dumper Trucks (10T) - 4 nos"
+  - equipment: "Concrete Mixer (0.5 cum) - 3 nos"
+  - equipment: "Plate Compactor - 2 nos"
+  - equipment: "Water Tanker - 1 no"
+  - equipment: "Vibrator for concrete - 2 nos"
+challenges:
+  - challenge: "Active water diversion required during repair of in-use canal"
+    solution: "Temporary bypass earthen channels constructed at key diversion points to maintain minimum irrigation flow during the repair phase"
+  - challenge: "Soft and unstable soil in the downstream 1.5 km stretch"
+    solution: "Additional sub-base compaction layers added with geo-textile mat placement before PCC lining to prevent future settlement"
+  - challenge: "Remote site with limited vehicle access for heavy machinery"
+    solution: "Temporary site access track built using compacted murrum to enable daily movement of dumpers and concrete mixers"
+impact_points:
+  - impact: "4.8 KM of irrigation canal fully restored and lined"
+  - impact: "6 downstream villages now receive reliable irrigation water"
+  - impact: "Water flow efficiency improved by approximately 40%"
+  - impact: "Seepage losses reduced by an estimated 35%"
+  - impact: "Inspection roads provide all-season maintenance access for department"
+  - impact: "Agricultural productivity in the command area expected to increase significantly"
+department_partners:
+  - partner: "Irrigation Department, Uttar Pradesh"
+  - partner: "District Administration, Chitrakoot"
+  - partner: "Command Area Development Authority, UP"
+safety_measures:
+  - measure: "Full site barricading with safety signage at all active work zones"
+  - measure: "Mandatory PPE (helmets, boots, gloves) enforced for all workers"
+  - measure: "Daily safety briefing conducted before work commencement"
+  - measure: "Temporary wooden barriers installed at canal edges during lining work"
+  - measure: "No debris or spoil deposited in or near active water flow areas"
 featured: true
 ---
-
-Canal redevelopment and concrete lining works carried out under the command area development programme of the Irrigation Department, UP. The project involved desilting, bank strengthening, and full PCC lining of a 4.8 km stretch serving agricultural zones in Chitrakoot district.
-
-**Scope of Work:**
-- Desilting and earthwork: 18,500 cum
-- PCC lining (M-15): 4.8 km
-- Cross-drainage structures: 6 nos
-- Inspection roads: 2.1 km

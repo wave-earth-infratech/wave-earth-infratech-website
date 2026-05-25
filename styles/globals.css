@@ -2,80 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Google Font - Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-
 @layer base {
   html {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: var(--font-inter), system-ui, sans-serif;
     scroll-behavior: smooth;
   }
 
   body {
-    @apply text-gray-800 bg-white antialiased;
+    @apply text-gray-100 bg-[#050d1a] antialiased;
   }
 
-  /* Remove browser default focus outlines, replace with custom */
   *:focus-visible {
-    @apply outline-2 outline-offset-2 outline-accent;
+    @apply outline-2 outline-offset-2 outline-[#52B788];
+  }
+
+  /* Prevent white flash on dark sections */
+  h1, h2, h3 {
+    font-family: var(--font-oswald), system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
   }
 }
 
 @layer components {
-  /* Primary CTA button */
+  /* ── Buttons ── */
   .btn-primary {
-    @apply inline-flex items-center gap-2 bg-accent text-white font-semibold px-6 py-3 rounded-lg
-           hover:bg-accent-light transition-colors duration-300 focus-visible:outline-accent;
+    @apply inline-flex items-center justify-center gap-2 bg-[#52B788] text-white
+           font-semibold text-xs uppercase tracking-widest px-7 py-4
+           hover:bg-[#2D6A4F] transition-colors duration-300;
   }
 
-  /* Outline button */
   .btn-outline {
-    @apply inline-flex items-center gap-2 border-2 border-white text-white font-semibold px-6 py-3 rounded-lg
-           hover:bg-white hover:text-primary transition-colors duration-300;
+    @apply inline-flex items-center justify-center gap-2 border border-white/30 text-white
+           font-semibold text-xs uppercase tracking-widest px-7 py-4
+           hover:border-white hover:bg-white/5 transition-colors duration-300;
   }
 
-  /* Dark outline button */
   .btn-outline-dark {
-    @apply inline-flex items-center gap-2 border-2 border-primary text-primary font-semibold px-6 py-3 rounded-lg
-           hover:bg-primary hover:text-white transition-colors duration-300;
+    @apply inline-flex items-center justify-center gap-2 border border-[#0B2545] text-[#0B2545]
+           font-semibold text-xs uppercase tracking-widest px-7 py-4
+           hover:bg-[#0B2545] hover:text-white transition-colors duration-300;
   }
 
-  /* Section heading pattern */
-  .section-label {
-    @apply text-accent font-semibold uppercase tracking-widest text-sm;
+  /* ── Section anatomy ── */
+  .section-eyebrow {
+    @apply flex items-center gap-3 mb-4;
+  }
+  .section-eyebrow-line {
+    @apply w-10 h-px bg-[#52B788];
+  }
+  .section-eyebrow-text {
+    @apply text-[#52B788] text-xs font-semibold uppercase tracking-[0.2em];
+  }
+  .section-heading-light {
+    @apply text-4xl md:text-5xl font-display font-bold text-white uppercase leading-tight;
+  }
+  .section-heading-dark {
+    @apply text-4xl md:text-5xl font-display font-bold text-[#0B2545] uppercase leading-tight;
   }
 
-  .section-heading {
-    @apply text-3xl md:text-4xl font-bold text-primary mt-2 leading-tight;
-  }
-
-  .section-subtext {
-    @apply text-gray-500 mt-4 max-w-2xl mx-auto text-base leading-relaxed;
-  }
-
-  /* Card base */
-  .card {
-    @apply bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300;
-  }
-
-  /* Container */
+  /* ── Containers ── */
   .container-xl {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  /* Status badges */
+  /* ── Badges ── */
   .badge-completed {
-    @apply bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full;
+    @apply bg-[#52B788]/20 text-[#52B788] text-[10px] font-bold px-3 py-1 uppercase tracking-widest;
   }
-
   .badge-ongoing {
-    @apply bg-amber-100 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full;
+    @apply bg-amber-400/20 text-amber-400 text-[10px] font-bold px-3 py-1 uppercase tracking-widest;
   }
 }
 
-/* Swiper custom overrides */
+/* Swiper overrides */
 .swiper-pagination-bullet-active {
-  background: #2D6A4F !important;
+  background: #52B788 !important;
+}
+
+/* Before-after slider drag cursor */
+.ba-slider {
+  cursor: col-resize;
+}
+
+/* Prevent image drag in slider */
+.ba-slider img {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 /* Smooth scroll for hash navigation */

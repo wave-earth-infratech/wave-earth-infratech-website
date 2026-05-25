@@ -2,7 +2,7 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Meta from '@components/Meta'
 
-export default function Csr Ngo WorksPage() {
+export default function CsrNgoWorksPage() {
   return (
     <>
       <Meta title="Csr Ngo Works | Wave Earth Infratech" description="Csr Ngo Works page for Wave Earth Infratech." />

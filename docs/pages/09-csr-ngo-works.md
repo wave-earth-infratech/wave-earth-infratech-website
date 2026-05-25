@@ -155,7 +155,7 @@ Simple enquiry form:
 ## SEO Metadata
 
 ```
-Title:    CSR & NGO Works | Rural Infrastructure Execution Partner – Wave Earth Infratech
+Title:    CSR & NGO Works | Rural Infrastructure Execution Partner - Wave Earth Infratech
 Description: Wave Earth Infratech executes civil infrastructure works for NGOs, CSR
              departments, and development organisations including water structures, community
              buildings, and rural infrastructure across UP and MP.

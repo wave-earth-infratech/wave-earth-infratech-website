@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 export default function Meta({
-  title = 'Wave Earth Infratech | Canal & Irrigation Infrastructure Contractor – UP, MP',
+  title = 'Wave Earth Infratech | Canal & Irrigation Infrastructure Contractor - UP, MP',
   description = 'Wave Earth Infratech executes canal construction, nahar lining, irrigation works, and rural redevelopment projects for government departments and NGOs across Uttar Pradesh and Madhya Pradesh.',
   ogImage = '/images/logo.png',
 }) {

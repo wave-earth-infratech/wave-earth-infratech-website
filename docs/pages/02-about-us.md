@@ -112,7 +112,7 @@ development across UP and MP.
 - Professional photograph (not casual, not stock)
 - Name
 - Designation
-- Brief bio (3–4 lines):
+- Brief bio (3-4 lines):
   - Years of experience
   - Sector expertise
   - Key past achievements
@@ -131,7 +131,7 @@ development across UP and MP.
 
 **Heading:** `What Drives Us`
 
-**Layout:** 4–6 cards with icon.
+**Layout:** 4-6 cards with icon.
 
 | Value | Description |
 |---|---|
@@ -167,7 +167,7 @@ development across UP and MP.
 
 **Heading:** `Infrastructure Execution - the Way It Should Be Done`
 
-**Content (2–3 paragraphs or bullet points):**
+**Content (2-3 paragraphs or bullet points):**
 
 Key differentiators to highlight:
 - Own machinery fleet (no dependency on rentals for critical equipment)

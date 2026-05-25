@@ -119,7 +119,7 @@ If any empanelments or approved vendor list memberships exist, list them here:
 ## SEO Metadata
 
 ```
-Title:    Certifications | MSME, GST, Contractor Registration – Wave Earth Infratech
+Title:    Certifications | MSME, GST, Contractor Registration - Wave Earth Infratech
 Description: View Wave Earth Infratech's certifications including MSME, GST registration,
              contractor license, and compliance documents. All documents available for
              download for tender and pre-qualification purposes.

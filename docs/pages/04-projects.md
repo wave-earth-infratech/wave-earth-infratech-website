@@ -85,7 +85,7 @@ Each project gets a dedicated detail page with the following structure:
 | Client / Department | [e.g., Irrigation Department, UP] |
 | Contract Value | ₹ [amount] (optional - include if public info) |
 | Work Type | [e.g., Canal Lining, Earthwork] |
-| Duration | [Start Month/Year – End Month/Year] |
+| Duration | [Start Month/Year - End Month/Year] |
 | Current Status | Completed / Ongoing |
 | Scheme / Programme | [e.g., PMKSY, Jal Shakti, own funds] |
 
@@ -108,10 +108,10 @@ If before and after photos are available, use a comparison slider (e.g., `react-
 List equipment used on this specific project.
 
 **Challenges & Solutions (optional but powerful):**
-1–2 sentences about any notable challenge overcome - floods, remote access, tight timeline - and how it was handled. This section builds enormous credibility with experienced evaluators.
+1-2 sentences about any notable challenge overcome - floods, remote access, tight timeline - and how it was handled. This section builds enormous credibility with experienced evaluators.
 
 **Related Projects:**
-Show 2–3 similar projects at the bottom.
+Show 2-3 similar projects at the bottom.
 
 ---
 
@@ -125,12 +125,12 @@ Use this as a template. Replace with real project data.
 
 | Field | Value |
 |---|---|
-| Project Name | Canal Redevelopment & Lining – Chitrakoot Section |
+| Project Name | Canal Redevelopment & Lining - Chitrakoot Section |
 | Location | Chitrakoot, Uttar Pradesh |
 | Client | Irrigation Department, UP |
 | Work Type | Canal Lining (CC M20) |
 | Scope | 4.2 km canal lining, bank reinforcement, silt removal |
-| Duration | [Month Year] – [Month Year] |
+| Duration | [Month Year] - [Month Year] |
 | Status | Completed |
 
 ---
@@ -139,12 +139,12 @@ Use this as a template. Replace with real project data.
 
 | Field | Value |
 |---|---|
-| Project Name | Farm Pond Construction – [Village Name] |
+| Project Name | Farm Pond Construction - [Village Name] |
 | Location | [District], MP |
 | Client | MNREGS / Agriculture Department |
 | Work Type | Water Resource / Earthwork |
 | Scope | Construction of 12 farm ponds, total capacity [X] lakh litres |
-| Duration | [Month Year] – [Month Year] |
+| Duration | [Month Year] - [Month Year] |
 | Status | Completed |
 
 ---
@@ -153,12 +153,12 @@ Use this as a template. Replace with real project data.
 
 | Field | Value |
 |---|---|
-| Project Name | Village Internal Road – [Gram Panchayat] |
+| Project Name | Village Internal Road - [Gram Panchayat] |
 | Location | [District], UP |
 | Client | Gram Panchayat / PMGSY |
 | Work Type | Rural Road (CC Road) |
 | Scope | 1.8 km CC road, storm water drains |
-| Duration | [Month Year] – [Month Year] |
+| Duration | [Month Year] - [Month Year] |
 | Status | Completed |
 
 ---
@@ -189,7 +189,7 @@ Show aggregate statistics from listed projects:
 ## SEO Metadata
 
 ```
-Title:    Projects | Canal & Irrigation Infrastructure Works – Wave Earth Infratech
+Title:    Projects | Canal & Irrigation Infrastructure Works - Wave Earth Infratech
 Description: Explore completed and ongoing infrastructure projects by Wave Earth Infratech
              including canal construction, nahar lining, irrigation works, earthwork, and
              rural development projects across Uttar Pradesh and Madhya Pradesh.
@@ -201,7 +201,7 @@ Keywords: canal construction projects UP, irrigation projects MP, nahar lining p
 
 ## Content Checklist
 
-- [ ] All real projects listed (even 5–6 is a strong start)
+- [ ] All real projects listed (even 5-6 is a strong start)
 - [ ] Each project has at least 2 real photos
 - [ ] Project name, location, client, scope confirmed
 - [ ] Before/after images collected where available

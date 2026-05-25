@@ -64,7 +64,7 @@ The page must also include the footer used across all pages.
 - Message: minimum 20 characters
 
 **Success state:**
-> Thank you for reaching out. We will respond within 1–2 business days. For urgent matters, please call or WhatsApp us directly.
+> Thank you for reaching out. We will respond within 1-2 business days. For urgent matters, please call or WhatsApp us directly.
 
 **Backend:** Connect to server-side handler (Laravel API endpoint or Next.js API route). Do NOT use mailto: links. Send email notification to admin on submission.
 
@@ -85,7 +85,7 @@ The page must also include the footer used across all pages.
 Registered Office:
 Wave Earth Infratech
 [Full Address]
-Chitrakoot, Uttar Pradesh – [PIN]
+Chitrakoot, Uttar Pradesh - [PIN]
 ```
 
 ---
@@ -155,7 +155,7 @@ The footer appears on all pages. It must be professional and information-dense.
 ## SEO Metadata
 
 ```
-Title:    Contact Us | Wave Earth Infratech – Canal & Civil Contractor UP MP
+Title:    Contact Us | Wave Earth Infratech - Canal & Civil Contractor UP MP
 Description: Contact Wave Earth Infratech for canal construction, irrigation, and civil
              infrastructure project enquiries, quotations, and tender invitations across
              Uttar Pradesh and Madhya Pradesh.
