@@ -1,4 +1,4 @@
-# Wave Earth Infratech — Website Redesign Documentation
+# Wave Earth Infratech - Website Redesign Documentation
 
 This folder contains per-page design and content specifications for the complete redesign of the Wave Earth Infratech website.
 
@@ -54,8 +54,8 @@ It should NOT look like a real estate or luxury home builder site.
 
 ## Additional Reference Docs
 
-- [tech-stack.md](tech-stack.md) — Full tech stack, SEO strategy, and organic lead generation
-- [design-system.md](design-system.md) — Typography, spacing, component guidelines
+- [tech-stack.md](tech-stack.md) - Full tech stack, SEO strategy, and organic lead generation
+- [design-system.md](design-system.md) - Typography, spacing, component guidelines
 
 ## Competitors to Study
 
@@ -64,8 +64,8 @@ It should NOT look like a real estate or luxury home builder site.
 
 ## Critical Reminders
 
-- Use **real project photos/videos only** — never random stock images
-- All pages must be **mobile-first** — government field officers use mobile on slow internet
+- Use **real project photos/videos only** - never random stock images
+- All pages must be **mobile-first** - government field officers use mobile on slow internet
 - Add **WhatsApp click button** and **direct call button** on every page
 - Support **Hindi + English** (multi-language)
 - Every project page must be indexable for SEO tender-related keywords

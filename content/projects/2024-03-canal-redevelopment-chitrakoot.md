@@ -1,5 +1,5 @@
 ---
-title: Canal Redevelopment & Lining — Chitrakoot
+title: Canal Redevelopment & Lining - Chitrakoot
 date: 2024-03-15
 status: completed
 category: canal-construction

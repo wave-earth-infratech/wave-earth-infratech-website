@@ -1,4 +1,4 @@
-# Page 04 — Projects (`pages/projects.js`)
+# Page 04 - Projects (`pages/projects.js`)
 
 ## Purpose
 
@@ -14,15 +14,15 @@ Even small projects documented professionally are more valuable than an empty or
 
 ## Section Breakdown
 
-### Section 1 — Page Hero
+### Section 1 - Page Hero
 
 **Headline:** `Our Projects`
-**Subheadline:** `Completed & Ongoing Infrastructure Works — Canal, Irrigation, Earthwork & Redevelopment`
+**Subheadline:** `Completed & Ongoing Infrastructure Works - Canal, Irrigation, Earthwork & Redevelopment`
 **Breadcrumb:** `Home / Projects`
 
 ---
 
-### Section 2 — Project Filters Bar
+### Section 2 - Project Filters Bar
 
 Allow visitors to filter projects by category. Filters:
 
@@ -45,12 +45,12 @@ Allow visitors to filter projects by category. Filters:
 
 ---
 
-### Section 3 — Projects Grid
+### Section 3 - Projects Grid
 
 **Layout:** 3-column grid (desktop), 2-column (tablet), 1-column (mobile).
 
 **Each project card must show:**
-- Cover photo (drone or site photo — real, not stock)
+- Cover photo (drone or site photo - real, not stock)
 - Status badge: `Completed` (green) / `Ongoing` (amber)
 - Project name (bold)
 - Location (icon + text)
@@ -61,7 +61,7 @@ Allow visitors to filter projects by category. Filters:
 
 ---
 
-### Section 4 — Individual Project Detail Page
+### Section 4 - Individual Project Detail Page
 
 **Route:** `/projects/[project-slug]`
 
@@ -83,7 +83,7 @@ Each project gets a dedicated detail page with the following structure:
 | Project Name | [Name] |
 | Location | [District, State] |
 | Client / Department | [e.g., Irrigation Department, UP] |
-| Contract Value | ₹ [amount] (optional — include if public info) |
+| Contract Value | ₹ [amount] (optional - include if public info) |
 | Work Type | [e.g., Canal Lining, Earthwork] |
 | Duration | [Start Month/Year – End Month/Year] |
 | Current Status | Completed / Ongoing |
@@ -108,7 +108,7 @@ If before and after photos are available, use a comparison slider (e.g., `react-
 List equipment used on this specific project.
 
 **Challenges & Solutions (optional but powerful):**
-1–2 sentences about any notable challenge overcome — floods, remote access, tight timeline — and how it was handled. This section builds enormous credibility with experienced evaluators.
+1–2 sentences about any notable challenge overcome - floods, remote access, tight timeline - and how it was handled. This section builds enormous credibility with experienced evaluators.
 
 **Related Projects:**
 Show 2–3 similar projects at the bottom.
@@ -165,7 +165,7 @@ Use this as a template. Replace with real project data.
 
 ## Media Guidelines
 
-- Only use real project photos — this is critical for government credibility
+- Only use real project photos - this is critical for government credibility
 - Photos should show: site activity, machinery, material, progress, handover
 - Drone videos of completed works are highly recommended
 - Add date metadata to photos where possible

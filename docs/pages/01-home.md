@@ -1,4 +1,4 @@
-# Page 01 — Home (`pages/index.js`)
+# Page 01 - Home (`pages/index.js`)
 
 ## Purpose
 
@@ -15,7 +15,7 @@ Within the first 5 seconds a visitor must know: **"This is a serious infrastruct
 
 ## Section Breakdown
 
-### Section 1 — Hero (Full Screen)
+### Section 1 - Hero (Full Screen)
 
 **Layout:** Full-viewport, video or image background with dark overlay.
 
@@ -49,7 +49,7 @@ Canal Development • Irrigation Works • Redevelopment Projects • Government
 
 ---
 
-### Section 2 — Live Impact Statistics (Counter Section)
+### Section 2 - Live Impact Statistics (Counter Section)
 
 Background: Dark (`#111827`) or deep blue.
 
@@ -63,13 +63,13 @@ Background: Dark (`#111827`) or deep blue.
 | Water Capacity Improved | 30% | Average |
 | Workforce Strength | 200+ | Skilled Workers |
 
-**Note:** Replace example values with real figures. Even conservative real numbers are better than inflated ones — government evaluators verify these.
+**Note:** Replace example values with real figures. Even conservative real numbers are better than inflated ones - government evaluators verify these.
 
 **Implementation:** Use `CountUp.js` or equivalent. Numbers animate when section enters viewport.
 
 ---
 
-### Section 3 — Services Overview
+### Section 3 - Services Overview
 
 **Heading:** `What We Build`
 
@@ -94,7 +94,7 @@ Background: Dark (`#111827`) or deep blue.
 
 ---
 
-### Section 4 — Featured Projects
+### Section 4 - Featured Projects
 
 **Heading:** `Recent Projects`
 **Subheading:** `Executed across Chitrakoot, UP, and MP`
@@ -112,7 +112,7 @@ Background: Dark (`#111827`) or deep blue.
 
 ---
 
-### Section 5 — Why Choose Us
+### Section 5 - Why Choose Us
 
 **Heading:** `Why Government Departments Trust Us`
 
@@ -129,7 +129,7 @@ Background: Dark (`#111827`) or deep blue.
 
 ---
 
-### Section 6 — Certifications Strip
+### Section 6 - Certifications Strip
 
 **Heading:** `Registered & Compliant`
 
@@ -147,7 +147,7 @@ Show:
 
 ---
 
-### Section 7 — Testimonials / Client References
+### Section 7 - Testimonials / Client References
 
 **Heading:** `What Our Clients Say`
 
@@ -162,7 +162,7 @@ If actual testimonials are not yet available, this section can be replaced tempo
 
 ---
 
-### Section 8 — Location Presence
+### Section 8 - Location Presence
 
 **Heading:** `Our Work Across India`
 
@@ -180,7 +180,7 @@ Actively executing projects in Uttar Pradesh and Madhya Pradesh with the capacit
 
 ---
 
-### Section 9 — CTA Band
+### Section 9 - CTA Band
 
 **Background:** Deep blue or earth green full-width band.
 
@@ -196,7 +196,7 @@ Let's discuss your project requirements.
 
 ---
 
-### Section 10 — Footer
+### Section 10 - Footer
 
 See [11-contact.md](11-contact.md) for footer spec. The footer appears on all pages.
 

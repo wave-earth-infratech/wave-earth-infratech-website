@@ -6,7 +6,7 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import { getFeaturedProjects, getHomepageSettings } from '@lib/content'
 
-// ─── Data (fallbacks — overridden by CMS settings at build time) ──────────────
+// ─── Data (fallbacks - overridden by CMS settings at build time) ──────────────
 
 const stats = [
   { value: 120, suffix: '+', label: 'KM Canal Developed' },
@@ -33,7 +33,7 @@ const whyUs = [
   { icon: '🏛️', title: 'Government Project Expertise', desc: 'Years of executing department-funded works across UP and MP.' },
   { icon: '👷', title: 'Experienced Rural Team', desc: 'Trained workforce with deep field knowledge of rural terrain.' },
   { icon: '⏱️', title: 'On-Time Execution', desc: 'Consistent track record of meeting government project deadlines.' },
-  { icon: '🚜', title: 'Own Equipment Fleet', desc: 'JCBs, Excavators, Mixers, Trucks — no dependency on rentals.' },
+  { icon: '🚜', title: 'Own Equipment Fleet', desc: 'JCBs, Excavators, Mixers, Trucks - no dependency on rentals.' },
   { icon: '📋', title: 'Transparent Reporting', desc: 'Progress reports, billing, and documentation on schedule.' },
   { icon: '🌱', title: 'Sustainable Approach', desc: 'Focus on water conservation and long-term rural impact.' },
 ]
@@ -109,7 +109,7 @@ export default function Home({ featuredProjects = [] }) {
             Canal Development &bull; Irrigation Works &bull; Redevelopment Projects &bull; Government &amp; NGO Contracts
           </p>
           <p className="text-gray-400 text-base max-w-2xl mx-auto mb-10">
-            Executing civil infrastructure works across Uttar Pradesh and Madhya Pradesh — trusted by irrigation departments, Jal Shakti, and development organisations.
+            Executing civil infrastructure works across Uttar Pradesh and Madhya Pradesh - trusted by irrigation departments, Jal Shakti, and development organisations.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/projects" className="bg-accent hover:bg-accent-dark text-white font-semibold px-8 py-4 rounded-xl transition-colors duration-200 text-sm sm:text-base">
@@ -195,7 +195,7 @@ export default function Home({ featuredProjects = [] }) {
             </Link>
           </div>
 
-          {/* Projects from CMS — add entries via /admin/ */}
+          {/* Projects from CMS - add entries via /admin/ */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {(featuredProjects.length > 0 ? featuredProjects : [
               { title: 'Canal Redevelopment & Lining', location: 'Chitrakoot, UP', category: 'Canal Lining', status: 'completed', client: 'Irrigation Department, UP', slug: null },
@@ -203,7 +203,7 @@ export default function Home({ featuredProjects = [] }) {
               { title: 'Village Internal Road', location: 'Gram Panchayat, UP', category: 'Rural Road', status: 'ongoing', client: 'PMGSY / Gram Panchayat', slug: null },
             ]).map((project) => (
               <div key={project.title} className="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300 group">
-                {/* Image placeholder — replace with <Image> when real photos are available */}
+                {/* Image placeholder - replace with <Image> when real photos are available */}
                 <div className="h-52 bg-gradient-to-br from-primary to-primary-light flex items-center justify-center">
                   <div className="text-center text-white/60">
                     <svg className="w-12 h-12 mx-auto mb-2 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -1,12 +1,12 @@
-# Page 10 — Blog & Updates (`pages/blog.js`)
+# Page 10 - Blog & Updates (`pages/blog.js`)
 
 ## Purpose
 
 The Blog/Updates page serves two functions:
 
-1. **SEO organic lead generation** — Blog articles on topics like "canal construction process," "nahar lining cost India," "Jal Shakti scheme contractor" can rank on Google and bring in government officers, NGO procurement teams, and contractors actively searching for those terms.
+1. **SEO organic lead generation** - Blog articles on topics like "canal construction process," "nahar lining cost India," "Jal Shakti scheme contractor" can rank on Google and bring in government officers, NGO procurement teams, and contractors actively searching for those terms.
 
-2. **Credibility signalling** — Companies that publish technical content signal expertise. Government evaluators who find 10 relevant articles on your site will trust you more than one with an empty or generic site.
+2. **Credibility signalling** - Companies that publish technical content signal expertise. Government evaluators who find 10 relevant articles on your site will trust you more than one with an empty or generic site.
 
 Publishing even 1–2 articles per month consistently will compound over time.
 
@@ -14,7 +14,7 @@ Publishing even 1–2 articles per month consistently will compound over time.
 
 ## Section Breakdown
 
-### Section 1 — Page Hero
+### Section 1 - Page Hero
 
 **Headline:** `Insights & Updates`
 **Subheadline:** `Technical Articles, Project Updates & Infrastructure News`
@@ -22,7 +22,7 @@ Publishing even 1–2 articles per month consistently will compound over time.
 
 ---
 
-### Section 2 — Category Filter Bar
+### Section 2 - Category Filter Bar
 
 | Category | Description |
 |---|---|
@@ -35,7 +35,7 @@ Publishing even 1–2 articles per month consistently will compound over time.
 
 ---
 
-### Section 3 — Featured Post (Latest)
+### Section 3 - Featured Post (Latest)
 
 Highlight the most recent post as a large card at top:
 - Full-width cover image
@@ -47,7 +47,7 @@ Highlight the most recent post as a large card at top:
 
 ---
 
-### Section 4 — Blog Grid
+### Section 4 - Blog Grid
 
 **Layout:** 3-column grid (desktop), 2 (tablet), 1 (mobile).
 
@@ -128,9 +128,9 @@ These are SEO-targeted topics relevant to Wave Earth Infratech's services and ta
 - Write in simple, clear English (and optionally Hindi)
 - Include real photos from projects where possible
 - Minimum 600 words per article (800–1200 is ideal for SEO)
-- Use numbered headings, bullet points — easy to scan
+- Use numbered headings, bullet points - easy to scan
 - Include one CTA at the end of every article
-- Avoid copied content — all articles must be original
+- Avoid copied content - all articles must be original
 - Use exact technical terms used in government BOQs and specifications
 
 ---
@@ -160,7 +160,7 @@ The blog must be managed through the Filament admin panel:
 ```
 Title:    Blog & Updates | Canal Construction, Irrigation & Infrastructure – Wave Earth Infratech
 Description: Technical articles, project case studies, and infrastructure industry updates
-             from Wave Earth Infratech — specialists in canal construction, nahar lining,
+             from Wave Earth Infratech - specialists in canal construction, nahar lining,
              and rural infrastructure across UP and MP.
 Keywords: canal construction blog India, irrigation works articles, infrastructure contractor
           insights, government civil works guide, nahar lining technical articles

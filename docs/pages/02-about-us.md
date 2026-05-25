@@ -1,8 +1,8 @@
-# Page 02 — About Us (`pages/about-us.js`)
+# Page 02 - About Us (`pages/about-us.js`)
 
 ## Purpose
 
-The About Us page must tell a compelling, credible story — not generic template text. Government tender committees, NGO procurement officers, and contractors actively read About pages to assess:
+The About Us page must tell a compelling, credible story - not generic template text. Government tender committees, NGO procurement officers, and contractors actively read About pages to assess:
 
 - Company background and legitimacy
 - Leadership and expertise
@@ -14,7 +14,7 @@ The About Us page must tell a compelling, credible story — not generic templat
 
 ## Section Breakdown
 
-### Section 1 — Page Hero
+### Section 1 - Page Hero
 
 **Layout:** Full-width banner with site/project photo background and dark overlay.
 
@@ -25,14 +25,14 @@ About Wave Earth Infratech
 
 **Subheadline:**
 ```
-Infrastructure Execution Specialists — Canal, Irrigation & Rural Development
+Infrastructure Execution Specialists - Canal, Irrigation & Rural Development
 ```
 
 **Breadcrumb:** `Home / About Us`
 
 ---
 
-### Section 2 — Company Introduction
+### Section 2 - Company Introduction
 
 **Heading:** `Who We Are`
 
@@ -44,7 +44,7 @@ Infrastructure Execution Specialists — Canal, Irrigation & Rural Development
 >
 > Our team has direct field experience across [X] years in earthwork, concrete structures, water channel development, and large-scale civil maintenance contracts.
 
-**Layout:** 2-column — text left, strong site photo right.
+**Layout:** 2-column - text left, strong site photo right.
 
 **Key facts strip below introduction:**
 
@@ -59,7 +59,7 @@ Infrastructure Execution Specialists — Canal, Irrigation & Rural Development
 
 ---
 
-### Section 3 — Mission & Vision
+### Section 3 - Mission & Vision
 
 **Layout:** Side-by-side cards or full-width alternating blocks.
 
@@ -81,7 +81,7 @@ development across UP and MP.
 
 ---
 
-### Section 4 — Our Story
+### Section 4 - Our Story
 
 **Heading:** `Our Journey`
 
@@ -101,7 +101,7 @@ development across UP and MP.
 
 ---
 
-### Section 5 — Founder / Director Section
+### Section 5 - Founder / Director Section
 
 **Heading:** `Leadership`
 
@@ -127,7 +127,7 @@ development across UP and MP.
 
 ---
 
-### Section 6 — Core Values
+### Section 6 - Core Values
 
 **Heading:** `What Drives Us`
 
@@ -137,14 +137,14 @@ development across UP and MP.
 |---|---|
 | Integrity | Honest reporting, transparent billing, and reliable communication with clients |
 | Quality | No compromise on material specification or workmanship standards |
-| Timeliness | We take deadline commitments seriously — no exception |
+| Timeliness | We take deadline commitments seriously - no exception |
 | Safety | Site safety protocols enforced on all worksites |
 | Rural Focus | Dedicated to improving the quality of life in rural and semi-urban India |
 | Sustainability | Water conservation and eco-sensitive execution practices |
 
 ---
 
-### Section 7 — Sector Expertise
+### Section 7 - Sector Expertise
 
 **Heading:** `Our Areas of Expertise`
 
@@ -163,22 +163,22 @@ development across UP and MP.
 
 ---
 
-### Section 8 — Why We Are Different
+### Section 8 - Why We Are Different
 
-**Heading:** `Infrastructure Execution — the Way It Should Be Done`
+**Heading:** `Infrastructure Execution - the Way It Should Be Done`
 
 **Content (2–3 paragraphs or bullet points):**
 
 Key differentiators to highlight:
 - Own machinery fleet (no dependency on rentals for critical equipment)
 - Locally embedded team with knowledge of UP/MP geography and conditions
-- Government compliance experience — proper billing, measurement books, inspection readiness
+- Government compliance experience - proper billing, measurement books, inspection readiness
 - Ability to mobilise quickly for urgent government or NGO contracts
 - Experience working in challenging terrain (flood-prone, seasonal, remote sites)
 
 ---
 
-### Section 9 — Certifications Summary
+### Section 9 - Certifications Summary
 
 Show badges: MSME, GST, PAN, Contractor License, ISO (if applicable).
 
@@ -186,7 +186,7 @@ Show badges: MSME, GST, PAN, Contractor License, ISO (if applicable).
 
 ---
 
-### Section 10 — CTA Band
+### Section 10 - CTA Band
 
 ```
 Ready to partner with us on your next infrastructure project?
@@ -202,7 +202,7 @@ Buttons:
 
 ```
 Title:    About Wave Earth Infratech | Canal & Irrigation Contractor Chitrakoot UP
-Description: Learn about Wave Earth Infratech — a civil infrastructure execution company
+Description: Learn about Wave Earth Infratech - a civil infrastructure execution company
              specialising in canal construction, nahar lining, irrigation works, and rural
              redevelopment projects for government departments and NGOs across UP and MP.
 Keywords: about Wave Earth Infratech, canal contractor UP, infrastructure company Chitrakoot,

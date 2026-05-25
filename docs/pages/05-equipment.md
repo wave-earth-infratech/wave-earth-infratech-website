@@ -1,4 +1,4 @@
-# Page 05 — Equipment (`pages/equipment.js`)
+# Page 05 - Equipment (`pages/equipment.js`)
 
 ## Purpose
 
@@ -15,15 +15,15 @@ This page directly influences tender qualification scoring.
 
 ## Section Breakdown
 
-### Section 1 — Page Hero
+### Section 1 - Page Hero
 
 **Headline:** `Machinery & Equipment`
-**Subheadline:** `Our Own Fleet — Ready to Mobilise Across UP and MP`
+**Subheadline:** `Our Own Fleet - Ready to Mobilise Across UP and MP`
 **Breadcrumb:** `Home / Equipment`
 
 ---
 
-### Section 2 — Equipment Summary Strip
+### Section 2 - Equipment Summary Strip
 
 High-level count strip at the top:
 
@@ -42,7 +42,7 @@ High-level count strip at the top:
 
 ---
 
-### Section 3 — Equipment Cards Grid
+### Section 3 - Equipment Cards Grid
 
 **Layout:** 3-column grid (desktop), 2-column (tablet), 1-column (mobile).
 
@@ -123,7 +123,7 @@ High-level count strip at the top:
 
 ---
 
-### Section 4 — Workforce Capability
+### Section 4 - Workforce Capability
 
 **Heading:** `Technical & Skilled Workforce`
 
@@ -142,7 +142,7 @@ High-level count strip at the top:
 
 ---
 
-### Section 5 — Mobilisation Capability
+### Section 5 - Mobilisation Capability
 
 **Heading:** `Rapid Mobilisation`
 
@@ -157,7 +157,7 @@ Example:
 
 ---
 
-### Section 6 — Equipment Hire Enquiry
+### Section 6 - Equipment Hire Enquiry
 
 **Note at bottom of page:**
 

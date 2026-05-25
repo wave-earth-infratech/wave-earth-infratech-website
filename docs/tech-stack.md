@@ -6,8 +6,8 @@
 
 | Technology | Purpose |
 |---|---|
-| **Next.js 14+** (App Router) | Framework — SSR/SSG for fast load and SEO |
-| **TailwindCSS** | Utility-first styling — rapid UI, consistent design system |
+| **Next.js 14+** (App Router) | Framework - SSR/SSG for fast load and SEO |
+| **TailwindCSS** | Utility-first styling - rapid UI, consistent design system |
 | **GSAP** | Advanced animations (hero text reveal, counter animations, page transitions) |
 | **AOS / Framer Motion** | Scroll-triggered section animations |
 | **Swiper.js** | Project sliders, testimonial carousels |
@@ -20,7 +20,7 @@
 
 | Technology | Purpose |
 |---|---|
-| **Laravel 13** | REST API backend — contact forms, tender submissions, blog CMS |
+| **Laravel 13** | REST API backend - contact forms, tender submissions, blog CMS |
 | **MySQL / PostgreSQL** | Database for CMS, projects, tenders, enquiries |
 | **Laravel Sanctum** | API authentication for CMS |
 
@@ -163,7 +163,7 @@ Ongoing:   bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-mediu
 - Image `alt` text on every image (descriptive, include keyword naturally)
 - Canonical URL set
 - Open Graph tags for social sharing
-- Structured data (Schema.org) — see below
+- Structured data (Schema.org) - see below
 
 ### Schema.org Structured Data
 
@@ -214,7 +214,7 @@ Ongoing:   bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-mediu
 
 ### Local SEO
 
-- Register on Google Business Profile: "Wave Earth Infratech" — Category: Civil Engineering Contractor
+- Register on Google Business Profile: "Wave Earth Infratech" - Category: Civil Engineering Contractor
 - Add office address, phone, website, service areas
 - Encourage clients to leave Google reviews (even 5–10 reviews massively helps local ranking)
 - Ensure NAP (Name, Address, Phone) is identical on website and Google Business

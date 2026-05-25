@@ -1,11 +1,11 @@
-# Page 07 — Tenders (`pages/tenders.js`)
+# Page 07 - Tenders (`pages/tenders.js`)
 
 ## Purpose
 
-The Tenders page makes the website useful as a business tool — not just a brochure. It serves two audiences:
+The Tenders page makes the website useful as a business tool - not just a brochure. It serves two audiences:
 
-1. **Government & client officers** who want to invite Wave Earth Infratech for tendering — they can register their requirement here.
-2. **Internal and vendor use** — Wave Earth Infratech can list current tenders they are bidding on, or invite sub-vendors and labour contractors through this page.
+1. **Government & client officers** who want to invite Wave Earth Infratech for tendering - they can register their requirement here.
+2. **Internal and vendor use** - Wave Earth Infratech can list current tenders they are bidding on, or invite sub-vendors and labour contractors through this page.
 
 This page also helps with organic search ranking for terms like "canal contractor tender UP."
 
@@ -13,7 +13,7 @@ This page also helps with organic search ranking for terms like "canal contracto
 
 ## Section Breakdown
 
-### Section 1 — Page Hero
+### Section 1 - Page Hero
 
 **Headline:** `Tenders & Procurement`
 **Subheadline:** `Current Tender Participation • Vendor Registration • Partnership Enquiries`
@@ -21,7 +21,7 @@ This page also helps with organic search ranking for terms like "canal contracto
 
 ---
 
-### Section 2 — Current Tender Participation
+### Section 2 - Current Tender Participation
 
 **Heading:** `Tenders We Are Currently Bidding / Active On`
 
@@ -36,7 +36,7 @@ This page also helps with organic search ranking for terms like "canal contracto
 | Tender Name | Short descriptive name of the work |
 | Issuing Authority | Department/body issuing the tender |
 | Location | District and state |
-| Tender Value (approx.) | Optional — include if public |
+| Tender Value (approx.) | Optional - include if public |
 | Submission Date | Tender submission deadline |
 | Status | Bidding / Awarded / Under Execution |
 
@@ -52,7 +52,7 @@ This page also helps with organic search ranking for terms like "canal contracto
 
 ---
 
-### Section 3 — Invite Us to Tender
+### Section 3 - Invite Us to Tender
 
 **Heading:** `Invite Wave Earth Infratech for Your Project`
 
@@ -75,7 +75,7 @@ This page also helps with organic search ranking for terms like "canal contracto
 | Attach NIT / Tender Document | File upload (PDF, max 10MB) | No |
 | Expected Start Date | Date | No |
 | Message | Textarea | No |
-| Submit | Button | — |
+| Submit | Button | - |
 
 **Confirmation message after submit:**
 > Thank you. We will review your tender invitation and respond within 2 working days.
@@ -84,7 +84,7 @@ This page also helps with organic search ranking for terms like "canal contracto
 
 ---
 
-### Section 4 — Vendor / Sub-contractor Registration
+### Section 4 - Vendor / Sub-contractor Registration
 
 **Heading:** `Register as a Vendor or Sub-contractor`
 
@@ -107,7 +107,7 @@ This page also helps with organic search ranking for terms like "canal contracto
 
 ---
 
-### Section 5 — CSR & NGO Partnership
+### Section 5 - CSR & NGO Partnership
 
 **Heading:** `NGO & CSR Project Partnership`
 
@@ -120,7 +120,7 @@ This page also helps with organic search ranking for terms like "canal contracto
 
 ---
 
-### Section 6 — Download Tender Documents
+### Section 6 - Download Tender Documents
 
 **Heading:** `Company Documents for Tender Submission`
 

@@ -1,24 +1,24 @@
-# Page 06 — Gallery (`pages/gallery.js`)
+# Page 06 - Gallery (`pages/gallery.js`)
 
 ## Purpose
 
 The Gallery page serves as a visual portfolio of field work. It reinforces the credibility established on the Projects page with raw, real imagery of work in progress. Government evaluators, NGO officers, and contractors want to see actual site conditions and execution quality.
 
-This page also functions as a social proof engine — good site photography communicates professionalism even without words.
+This page also functions as a social proof engine - good site photography communicates professionalism even without words.
 
 ---
 
 ## Section Breakdown
 
-### Section 1 — Page Hero
+### Section 1 - Page Hero
 
 **Headline:** `Gallery`
-**Subheadline:** `Real Work — Real Sites — Real Impact`
+**Subheadline:** `Real Work - Real Sites - Real Impact`
 **Breadcrumb:** `Home / Gallery`
 
 ---
 
-### Section 2 — Category Filter Bar
+### Section 2 - Category Filter Bar
 
 Allow visitors to browse by content type:
 
@@ -37,7 +37,7 @@ Allow visitors to browse by content type:
 
 ---
 
-### Section 3 — Media Grid
+### Section 3 - Media Grid
 
 **Layout:** Masonry grid or uniform grid with lightbox.
 

@@ -1,8 +1,8 @@
-# Page 11 — Contact (`pages/contact-us.js`)
+# Page 11 - Contact (`pages/contact-us.js`)
 
 ## Purpose
 
-The Contact page must make it as easy as possible for potential clients to reach Wave Earth Infratech — especially from mobile devices in areas with slower connectivity. Government officers and field-level NGO staff frequently contact contractors via WhatsApp and phone before email.
+The Contact page must make it as easy as possible for potential clients to reach Wave Earth Infratech - especially from mobile devices in areas with slower connectivity. Government officers and field-level NGO staff frequently contact contractors via WhatsApp and phone before email.
 
 The page must also include the footer used across all pages.
 
@@ -10,7 +10,7 @@ The page must also include the footer used across all pages.
 
 ## Section Breakdown
 
-### Section 1 — Page Hero
+### Section 1 - Page Hero
 
 **Headline:** `Contact Us`
 **Subheadline:** `Get in Touch for Project Enquiries, Quotations, or Tender Invitations`
@@ -18,7 +18,7 @@ The page must also include the footer used across all pages.
 
 ---
 
-### Section 2 — Contact Information Cards
+### Section 2 - Contact Information Cards
 
 **Layout:** 3 cards in a row (or 2 rows on mobile).
 
@@ -34,7 +34,7 @@ The page must also include the footer used across all pages.
 
 ---
 
-### Section 3 — Contact Form
+### Section 3 - Contact Form
 
 **Heading:** `Send Us a Message`
 
@@ -48,7 +48,7 @@ The page must also include the footer used across all pages.
 | Email Address | Email | No |
 | Subject | Dropdown | Yes |
 | Message | Textarea (min 4 rows) | Yes |
-| Submit | Button | — |
+| Submit | Button | - |
 
 **Subject dropdown options:**
 - Project Enquiry
@@ -70,13 +70,13 @@ The page must also include the footer used across all pages.
 
 ---
 
-### Section 4 — Office Location Map
+### Section 4 - Office Location Map
 
 **Layout:** Full-width embedded map below the form.
 
 **Show:**
 - Registered office / primary work location pin
-- Project site pins (optional — can use the same map from homepage)
+- Project site pins (optional - can use the same map from homepage)
 
 **Implementation:** Google Maps iframe embed or Leaflet.js with custom pin.
 
@@ -90,7 +90,7 @@ Chitrakoot, Uttar Pradesh – [PIN]
 
 ---
 
-### Section 5 — Quick Connect (Sticky / Floating)
+### Section 5 - Quick Connect (Sticky / Floating)
 
 These elements appear on **every page**, not just the contact page.
 
@@ -112,14 +112,14 @@ The footer appears on all pages. It must be professional and information-dense.
 
 ### Footer Layout (4-column desktop, 2-column tablet, 1-column mobile)
 
-#### Column 1 — About / Brand
+#### Column 1 - About / Brand
 
 - Company logo (white version)
 - Short tagline: `Building Sustainable Infrastructure for Rural India`
 - MSME badge / certified logo strip
 - Social media icons: LinkedIn | YouTube | WhatsApp
 
-#### Column 2 — Quick Links
+#### Column 2 - Quick Links
 
 - Home
 - About Us
@@ -128,7 +128,7 @@ The footer appears on all pages. It must be professional and information-dense.
 - Equipment
 - Gallery
 
-#### Column 3 — More Links
+#### Column 3 - More Links
 
 - Tenders
 - Certifications
@@ -137,7 +137,7 @@ The footer appears on all pages. It must be professional and information-dense.
 - Contact Us
 - Download Company Profile
 
-#### Column 4 — Contact Details
+#### Column 4 - Contact Details
 
 - Phone: `+91 XXXXXXXXXX`
 - Email: `info@waveearthinfratech.com`

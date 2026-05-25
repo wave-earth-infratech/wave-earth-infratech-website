@@ -1,4 +1,4 @@
-# Page 08 — Certifications (`pages/certifications.js`)
+# Page 08 - Certifications (`pages/certifications.js`)
 
 ## Purpose
 
@@ -13,7 +13,7 @@ The Certifications page is a trust-builder used heavily during tender pre-qualif
 
 ## Section Breakdown
 
-### Section 1 — Page Hero
+### Section 1 - Page Hero
 
 **Headline:** `Certifications & Compliance`
 **Subheadline:** `Registered, Compliant, and Ready for Government & NGO Contracts`
@@ -21,7 +21,7 @@ The Certifications page is a trust-builder used heavily during tender pre-qualif
 
 ---
 
-### Section 2 — Introduction
+### Section 2 - Introduction
 
 Short paragraph:
 
@@ -29,9 +29,9 @@ Short paragraph:
 
 ---
 
-### Section 3 — Certificate Cards Grid
+### Section 3 - Certificate Cards Grid
 
-**Layout:** Grid of certificate cards — 3 per row (desktop), 2 (tablet), 1 (mobile).
+**Layout:** Grid of certificate cards - 3 per row (desktop), 2 (tablet), 1 (mobile).
 
 **Each card shows:**
 - Certificate name / type
@@ -69,8 +69,8 @@ Short paragraph:
 
 | Certificate | Notes |
 |---|---|
-| ISO 9001:2015 | Quality Management — add if certified |
-| ISO 45001 (Safety) | Occupational Safety — add if certified |
+| ISO 9001:2015 | Quality Management - add if certified |
+| ISO 45001 (Safety) | Occupational Safety - add if certified |
 | Site Safety Compliance Statement | Self-declaration or third-party audit |
 
 #### Financial / Technical Standing
@@ -83,7 +83,7 @@ Short paragraph:
 
 ---
 
-### Section 4 — Download All Documents
+### Section 4 - Download All Documents
 
 **CTA section:**
 
@@ -95,7 +95,7 @@ Short paragraph:
 
 ---
 
-### Section 5 — Validity Monitoring Note
+### Section 5 - Validity Monitoring Note
 
 **Heading:** `Our Commitment to Compliance`
 
@@ -105,7 +105,7 @@ Short text:
 
 ---
 
-### Section 6 — Third-Party Verifications
+### Section 6 - Third-Party Verifications
 
 If any empanelments or approved vendor list memberships exist, list them here:
 

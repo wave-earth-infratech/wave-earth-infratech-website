@@ -1,4 +1,4 @@
-# Page 03 — Services (`pages/services.js`)
+# Page 03 - Services (`pages/services.js`)
 
 ## Purpose
 
@@ -10,7 +10,7 @@ Government evaluators use this page to assess whether the company can handle a s
 
 ## Section Breakdown
 
-### Section 1 — Page Hero
+### Section 1 - Page Hero
 
 **Headline:** `Our Services`
 **Subheadline:** `Specialised Civil Infrastructure Services for Government Departments, Irrigation Bodies & NGOs`
@@ -18,7 +18,7 @@ Government evaluators use this page to assess whether the company can handle a s
 
 ---
 
-### Section 2 — Services Grid Overview
+### Section 2 - Services Grid Overview
 
 **Layout:** Top-of-page grid showing all services as cards with icon. Each card links down to its detailed section or to a dedicated sub-page.
 
@@ -45,7 +45,7 @@ Each service block/sub-page must contain the following structure:
 
 ---
 
-### Service 1 — Canal Construction & Repair
+### Service 1 - Canal Construction & Repair
 
 **Photo:** Active canal construction site. JCB or excavator working at canal edge.
 
@@ -79,7 +79,7 @@ Each service block/sub-page must contain the following structure:
 
 ---
 
-### Service 2 — Nahar Lining Works
+### Service 2 - Nahar Lining Works
 
 **Photo:** Workers laying concrete canal lining. Close-up of lining work in progress.
 
@@ -113,7 +113,7 @@ Each service block/sub-page must contain the following structure:
 
 ---
 
-### Service 3 — Irrigation Infrastructure
+### Service 3 - Irrigation Infrastructure
 
 **Photo:** Overhead or drone view of irrigation network with farmland visible.
 
@@ -132,7 +132,7 @@ Each service block/sub-page must contain the following structure:
 
 ---
 
-### Service 4 — Rural Redevelopment
+### Service 4 - Rural Redevelopment
 
 **Photo:** Village road or community infrastructure construction.
 
@@ -151,7 +151,7 @@ Each service block/sub-page must contain the following structure:
 
 ---
 
-### Service 5 — Water Resource Projects
+### Service 5 - Water Resource Projects
 
 **Photo:** Checkdam, pond recharge structure, or water storage tank.
 
@@ -170,7 +170,7 @@ Each service block/sub-page must contain the following structure:
 
 ---
 
-### Service 6 — Earthwork & Excavation
+### Service 6 - Earthwork & Excavation
 
 **Photo:** Large-scale earthmoving site. Excavator dumping soil.
 
@@ -195,7 +195,7 @@ Each service block/sub-page must contain the following structure:
 
 ---
 
-### Service 7 — Concrete Structures
+### Service 7 - Concrete Structures
 
 **Photo:** RCC retaining wall or concrete slab being poured.
 
@@ -212,7 +212,7 @@ Each service block/sub-page must contain the following structure:
 
 ---
 
-### Service 8 — Road & Drainage Works
+### Service 8 - Road & Drainage Works
 
 **Photo:** Village road construction or drain excavation.
 
@@ -231,7 +231,7 @@ Each service block/sub-page must contain the following structure:
 
 ---
 
-### Service 9 — NGO Development Projects
+### Service 9 - NGO Development Projects
 
 **Photo:** Field workers with NGO/community members at a project site.
 
@@ -249,7 +249,7 @@ Each service block/sub-page must contain the following structure:
 
 ---
 
-### Service 10 — Civil Maintenance Contracts
+### Service 10 - Civil Maintenance Contracts
 
 **Photo:** Maintenance crew working on canal or road.
 

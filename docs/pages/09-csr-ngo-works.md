@@ -1,39 +1,39 @@
-# Page 09 — CSR & NGO Works (`pages/csr-ngo-works.js`)
+# Page 09 - CSR & NGO Works (`pages/csr-ngo-works.js`)
 
 ## Purpose
 
-This page positions Wave Earth Infratech as a development sector execution partner — not just a government contractor. It targets:
+This page positions Wave Earth Infratech as a development sector execution partner - not just a government contractor. It targets:
 
 - Corporate CSR departments looking for reliable field execution partners
 - National and international NGOs seeking civil works contractors
 - Bilateral aid and foundation-funded projects needing accountable contractors
 - State government departments running MGNREGS and social infrastructure schemes
 
-This page should feel slightly different in tone — more community-oriented, less purely commercial.
+This page should feel slightly different in tone - more community-oriented, less purely commercial.
 
 ---
 
 ## Section Breakdown
 
-### Section 1 — Page Hero
+### Section 1 - Page Hero
 
 **Headline:** `CSR & NGO Works`
-**Subheadline:** `Field Execution for Development Sector Infrastructure — Water, Rural, Community`
+**Subheadline:** `Field Execution for Development Sector Infrastructure - Water, Rural, Community`
 **Breadcrumb:** `Home / CSR & NGO Works`
 
 ---
 
-### Section 2 — Introduction
+### Section 2 - Introduction
 
 **Heading:** `Infrastructure at the Grassroots`
 
 > Wave Earth Infratech has been a trusted field execution partner for development sector organisations working in rural Uttar Pradesh and Madhya Pradesh. We understand that NGO and CSR projects require not just technical execution, but also community sensitivity, transparent reporting, and strict documentation discipline.
 >
-> Our team has experience working alongside social organisations on water, sanitation, rural livelihood, and community infrastructure projects — delivering works that create lasting impact in underserved communities.
+> Our team has experience working alongside social organisations on water, sanitation, rural livelihood, and community infrastructure projects - delivering works that create lasting impact in underserved communities.
 
 ---
 
-### Section 3 — Development Sector Services
+### Section 3 - Development Sector Services
 
 **Heading:** `What We Deliver for Development Organisations`
 
@@ -52,7 +52,7 @@ This page should feel slightly different in tone — more community-oriented, le
 
 ---
 
-### Section 4 — Our Approach for Development Sector Projects
+### Section 4 - Our Approach for Development Sector Projects
 
 **Heading:** `How We Work with NGOs & CSR Partners`
 
@@ -69,7 +69,7 @@ This page should feel slightly different in tone — more community-oriented, le
 
 ---
 
-### Section 5 — Why Development Organisations Choose Us
+### Section 5 - Why Development Organisations Choose Us
 
 **Heading:** `What Sets Us Apart for Development Sector Work`
 
@@ -78,13 +78,13 @@ This page should feel slightly different in tone — more community-oriented, le
 | Accountability | Transparent billing and measurement book maintenance |
 | Documentation | GPS photos, progress reports, and financial records on request |
 | Community Sensitivity | Field team trained to work respectfully with communities |
-| Local Knowledge | Deep familiarity with rural UP/MP — geography, seasonality, logistics |
-| Compliance | MSME, GST, EPF compliant — required by most international NGO finance policies |
+| Local Knowledge | Deep familiarity with rural UP/MP - geography, seasonality, logistics |
+| Compliance | MSME, GST, EPF compliant - required by most international NGO finance policies |
 | Speed | Ability to mobilise quickly for time-bound project cycles |
 
 ---
 
-### Section 6 — CSR / NGO Projects Gallery
+### Section 6 - CSR / NGO Projects Gallery
 
 **Heading:** `Our Development Sector Work`
 
@@ -96,7 +96,7 @@ Photo gallery (filter from main gallery: "NGO Works" category) showing:
 
 ---
 
-### Section 7 — Partner Organisations
+### Section 7 - Partner Organisations
 
 **Heading:** `Organisations We Have Worked With`
 
@@ -107,7 +107,7 @@ If names cannot be disclosed publicly, use a generic description:
 
 ---
 
-### Section 8 — Impact Statistics
+### Section 8 - Impact Statistics
 
 **Heading:** `Development Impact`
 
@@ -122,7 +122,7 @@ If names cannot be disclosed publicly, use a generic description:
 
 ---
 
-### Section 9 — Partnership Enquiry Form
+### Section 9 - Partnership Enquiry Form
 
 **Heading:** `Partner with Us on Your Next Project`
 
@@ -144,7 +144,7 @@ Simple enquiry form:
 
 ---
 
-### Section 10 — CSR Compliance Note
+### Section 10 - CSR Compliance Note
 
 **Short box:**
 
