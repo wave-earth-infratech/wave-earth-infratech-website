@@ -122,7 +122,7 @@ export default function Home({ featuredProjects = [] }) {
             <source src="/videos/hero-drone.mp4" type="video/mp4" />
           </video>
         */}
-        <img src="/images/placeholder.svg" alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-40" />
+        <img src="/images/home_hero.jpg" alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-40 ken-burns" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#050d1a] via-[#050d1a]/70 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#050d1a] via-transparent to-[#050d1a]/30" />
         {/* Angular bottom cut */}
@@ -150,7 +150,7 @@ export default function Home({ featuredProjects = [] }) {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/projects" className="btn-primary">View Our Projects &rarr;</Link>
-              <Link href="/contact-us" className="btn-outline">Request Quotation</Link>
+              <Link href="/contact-us" className="btn-outline-white">Request Quotation</Link>
               <a href="/company-profile.pdf" download className="inline-flex items-center justify-center gap-2 text-gray-400 hover:text-white text-xs font-semibold uppercase tracking-widest px-4 py-4 transition-colors border border-transparent hover:border-white/10">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
                 Company Profile

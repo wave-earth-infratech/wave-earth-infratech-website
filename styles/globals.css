@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Ken Burns effect ────────────────────────────────────────────────────── */
+@keyframes kenBurns {
+  0%   { transform: scale(1)    translate(0%, 0%); }
+  25%  { transform: scale(1.08) translate(-1.5%, -1%); }
+  50%  { transform: scale(1.12) translate(1%,   -2%); }
+  75%  { transform: scale(1.07) translate(-1%,   1.5%); }
+  100% { transform: scale(1)    translate(0%, 0%); }
+}
+.ken-burns {
+  animation: kenBurns 24s ease-in-out infinite;
+  will-change: transform;
+  transform-origin: center center;
+}
+
 /* ── Design System Variables ─────────────────────────────────────────────── */
 
 /* Light mode (default) */
@@ -75,6 +89,13 @@ html.dark {
     @apply inline-flex items-center justify-center gap-2 border border-theme-border/30 text-theme-fg
            font-semibold text-[15px] uppercase tracking-[0.06em] px-8 py-4
            hover:border-theme-border hover:bg-theme-border/5 transition-colors duration-300;
+  }
+
+  /* Use on dark/image hero sections where bg is always dark regardless of theme */
+  .btn-outline-white {
+    @apply inline-flex items-center justify-center gap-2 border border-white/40 text-white
+           font-semibold text-[15px] uppercase tracking-[0.06em] px-8 py-4
+           hover:border-white hover:bg-white/10 transition-colors duration-300;
   }
 
   .btn-outline-dark {
