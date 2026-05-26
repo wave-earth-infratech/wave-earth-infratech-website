@@ -77,7 +77,7 @@ export default function RedevelopmentProjectsPage({ projects, total }) {
                   <div key={project.slug} className="group bg-theme-base hover:bg-theme-card transition-colors duration-300 flex flex-col">
                     <div className="relative overflow-hidden aspect-[16/9]">
                       <img
-                        src={project.featured_image || 'https://picsum.photos/800/450?random=50'}
+                        src={project.featured_image || '/images/placeholder.svg'}
                         alt={project.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         loading="lazy"

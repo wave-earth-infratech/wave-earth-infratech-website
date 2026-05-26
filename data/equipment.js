@@ -24,7 +24,7 @@ export const equipment = [
     spec: '0.8–1.2 m³ bucket capacity',
     ownership: 'Owned',
     primaryUse: 'Canal excavation, earthwork, desilting',
-    image: 'https://picsum.photos/600/400?random=301',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'exc-02',
@@ -34,7 +34,7 @@ export const equipment = [
     spec: '1.0–1.5 m³ bucket capacity',
     ownership: 'Owned',
     primaryUse: 'Heavy earthwork, bulk excavation, embankment',
-    image: 'https://picsum.photos/600/400?random=302',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'exc-03',
@@ -44,7 +44,7 @@ export const equipment = [
     spec: '0.05 m³ bucket, 1.8T operating weight',
     ownership: 'Owned',
     primaryUse: 'Restricted access sites, small drains, utility trenches',
-    image: 'https://picsum.photos/600/400?random=303',
+    image: '/images/placeholder.svg',
   },
 
   // ── JCBs ───────────────────────────────────────────────────────────────────
@@ -56,7 +56,7 @@ export const equipment = [
     spec: '0.28 m³ backhoe bucket, 74 HP engine',
     ownership: 'Owned',
     primaryUse: 'Canal bank work, trench digging, loading operations',
-    image: 'https://picsum.photos/600/400?random=304',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'jcb-02',
@@ -66,7 +66,7 @@ export const equipment = [
     spec: '0.28 m³ backhoe bucket, 82 HP engine',
     ownership: 'Owned',
     primaryUse: 'Earthwork, levelling, material loading',
-    image: 'https://picsum.photos/600/400?random=305',
+    image: '/images/placeholder.svg',
   },
 
   // ── Concrete Equipment ─────────────────────────────────────────────────────
@@ -78,7 +78,7 @@ export const equipment = [
     spec: '10/7 drum, 500L capacity',
     ownership: 'Owned',
     primaryUse: 'Canal lining, RCC works, flooring',
-    image: 'https://picsum.photos/600/400?random=306',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'mix-02',
@@ -88,7 +88,7 @@ export const equipment = [
     spec: '10/7 drum, 500L capacity',
     ownership: 'Owned',
     primaryUse: 'Canal lining, culverts, structural concrete',
-    image: 'https://picsum.photos/600/400?random=307',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'mix-03',
@@ -98,7 +98,7 @@ export const equipment = [
     spec: '1000L drum capacity',
     ownership: 'Owned',
     primaryUse: 'Large volume RCC pours, retaining walls',
-    image: 'https://picsum.photos/600/400?random=308',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'vib-01',
@@ -108,7 +108,7 @@ export const equipment = [
     spec: '40mm needle, 12000 VPM',
     ownership: 'Owned',
     primaryUse: 'RCC compaction, canal lining consolidation',
-    image: 'https://picsum.photos/600/400?random=309',
+    image: '/images/placeholder.svg',
   },
 
   // ── Compaction Equipment ───────────────────────────────────────────────────
@@ -120,7 +120,7 @@ export const equipment = [
     spec: '2.3T operating weight, 950mm drum width',
     ownership: 'Owned',
     primaryUse: 'Embankment compaction, road sub-grade, canal bank',
-    image: 'https://picsum.photos/600/400?random=310',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'com-01',
@@ -130,7 +130,7 @@ export const equipment = [
     spec: '600mm plate, 15kN compaction force',
     ownership: 'Owned',
     primaryUse: 'Confined areas, trench backfill, narrow embankments',
-    image: 'https://picsum.photos/600/400?random=311',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'com-02',
@@ -140,7 +140,7 @@ export const equipment = [
     spec: '65mm stroke, 680 blows/min',
     ownership: 'Owned',
     primaryUse: 'Cohesive soil compaction in trenches and footings',
-    image: 'https://picsum.photos/600/400?random=312',
+    image: '/images/placeholder.svg',
   },
 
   // ── Transport ──────────────────────────────────────────────────────────────
@@ -152,7 +152,7 @@ export const equipment = [
     spec: '10T payload, 5.5m³ body',
     ownership: 'Owned',
     primaryUse: 'Spoil removal, material supply, earthwork transport',
-    image: 'https://picsum.photos/600/400?random=313',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'tip-02',
@@ -162,7 +162,7 @@ export const equipment = [
     spec: '10T payload, 5.5m³ body',
     ownership: 'Owned',
     primaryUse: 'Spoil removal, material supply',
-    image: 'https://picsum.photos/600/400?random=314',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'tip-03',
@@ -172,7 +172,7 @@ export const equipment = [
     spec: '9T payload',
     ownership: 'Owned',
     primaryUse: 'Aggregate, sand, and spoil transport',
-    image: 'https://picsum.photos/600/400?random=315',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'tip-04',
@@ -182,7 +182,7 @@ export const equipment = [
     spec: '9T payload',
     ownership: 'Owned',
     primaryUse: 'Material supply to remote sites',
-    image: 'https://picsum.photos/600/400?random=316',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'tip-05',
@@ -192,7 +192,7 @@ export const equipment = [
     spec: '3T trolley capacity',
     ownership: 'Owned',
     primaryUse: 'Field-level material movement, canal lining material',
-    image: 'https://picsum.photos/600/400?random=317',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'wat-01',
@@ -202,7 +202,7 @@ export const equipment = [
     spec: '9000L tank capacity',
     ownership: 'Owned',
     primaryUse: 'Compaction water, concrete curing, dust suppression',
-    image: 'https://picsum.photos/600/400?random=318',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'wat-02',
@@ -212,7 +212,7 @@ export const equipment = [
     spec: '5000L tank capacity',
     ownership: 'Owned',
     primaryUse: 'Site water supply, concrete curing',
-    image: 'https://picsum.photos/600/400?random=319',
+    image: '/images/placeholder.svg',
   },
 
   // ── Survey & QC Equipment ──────────────────────────────────────────────────
@@ -224,7 +224,7 @@ export const equipment = [
     spec: '32x magnification, 1.5mm/km accuracy',
     ownership: 'Owned',
     primaryUse: 'Canal profile, road levels, benchmark setting',
-    image: 'https://picsum.photos/600/400?random=320',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'sur-02',
@@ -234,7 +234,7 @@ export const equipment = [
     spec: '20x magnification, 2.0mm/km accuracy',
     ownership: 'Owned',
     primaryUse: 'Day-to-day level checks and setting-out',
-    image: 'https://picsum.photos/600/400?random=321',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'qc-01',
@@ -244,7 +244,7 @@ export const equipment = [
     spec: '150mm standard cubes, IS 516',
     ownership: 'Owned',
     primaryUse: 'Concrete quality control, cube testing',
-    image: 'https://picsum.photos/600/400?random=322',
+    image: '/images/placeholder.svg',
   },
   {
     id: 'qc-02',
@@ -254,7 +254,7 @@ export const equipment = [
     spec: 'Abrams cone, base plate, tamping rod',
     ownership: 'Owned',
     primaryUse: 'Concrete workability testing on site',
-    image: 'https://picsum.photos/600/400?random=323',
+    image: '/images/placeholder.svg',
   },
 ]
 

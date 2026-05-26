@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#1a2d45"/>
+  <rect x="1" y="1" width="798" height="498" fill="none" stroke="#2a4060" stroke-width="2"/>
+  <!-- Grid lines -->
+  <line x1="0" y1="166" x2="800" y2="166" stroke="#1f3555" stroke-width="1"/>
+  <line x1="0" y1="333" x2="800" y2="333" stroke="#1f3555" stroke-width="1"/>
+  <line x1="266" y1="0" x2="266" y2="500" stroke="#1f3555" stroke-width="1"/>
+  <line x1="533" y1="0" x2="533" y2="500" stroke="#1f3555" stroke-width="1"/>
+  <!-- Camera icon -->
+  <g transform="translate(340, 185)">
+    <rect x="0" y="12" width="120" height="90" rx="8" fill="none" stroke="#52B788" stroke-width="3"/>
+    <circle cx="60" cy="57" r="24" fill="none" stroke="#52B788" stroke-width="3"/>
+    <circle cx="60" cy="57" r="10" fill="#52B788" opacity="0.4"/>
+    <rect x="20" y="4" width="40" height="12" rx="4" fill="none" stroke="#52B788" stroke-width="2.5"/>
+    <circle cx="96" cy="22" r="5" fill="#52B788" opacity="0.6"/>
+  </g>
+  <!-- Text -->
+  <text x="400" y="330" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#52B788" text-anchor="middle" letter-spacing="3">IMAGE COMING SOON</text>
+  <text x="400" y="358" font-family="Arial, sans-serif" font-size="12" fill="#4a6080" text-anchor="middle" letter-spacing="1">Wave Earth Infratech</text>
+</svg>

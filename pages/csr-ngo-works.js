@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Turnstile from '@components/Turnstile'
 import { getAllProjects } from '@lib/content'
 
 export async function getStaticProps() {
@@ -87,21 +88,32 @@ export default function CsrNgoWorksPage({ csrProjects }) {
     location: '', projectType: '', budget: '', timeline: '', description: '',
   })
   const [status, setStatus] = useState(null)
+  const [csrToken, setCsrToken] = useState('')
+  const csrRef = useRef(null)
 
   const handleChange = (e) => setForm((f) => ({ ...f, [e.target.name]: e.target.value }))
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    if (!csrToken) return
     setStatus('sending')
     try {
-      const res = await fetch('https://formspree.io/f/mayzlgke', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ ...form, _subject: 'CSR/NGO Partnership Enquiry - Wave Earth Infratech' }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'csr', token: csrToken, ...form }),
       })
-      setStatus(res.ok ? 'sent' : 'error')
+      if (res.ok) {
+        setStatus('sent')
+      } else {
+        setStatus('error')
+        csrRef.current?.reset()
+        setCsrToken('')
+      }
     } catch {
       setStatus('error')
+      csrRef.current?.reset()
+      setCsrToken('')
     }
   }
 
@@ -119,7 +131,7 @@ export default function CsrNgoWorksPage({ csrProjects }) {
         {/* ── Hero ── */}
         <section className="relative pt-36 pb-24 overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <img src="https://picsum.photos/1600/700?random=901" alt="Community infrastructure" className="w-full h-full object-cover" />
+            <img src="/images/placeholder.svg" alt="Community infrastructure" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-r from-[#050d1a]/95 via-[#050d1a]/80 to-[#050d1a]/40" />
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -175,7 +187,7 @@ export default function CsrNgoWorksPage({ csrProjects }) {
                 </p>
               </div>
               <div className="relative">
-                <img src="https://picsum.photos/700/500?random=902" alt="Community work" className="w-full aspect-[4/3] object-cover" />
+                <img src="/images/placeholder.svg" alt="Community work" className="w-full aspect-[4/3] object-cover" />
                 <div className="absolute -bottom-6 -left-6 bg-[#52B788] px-8 py-6 hidden lg:block">
                   <p className="text-white font-display text-[32px] leading-none">EST. 2017</p>
                   <p className="text-white/80 text-[11px] uppercase tracking-widest font-sans mt-1">Field Experience</p>
@@ -278,7 +290,7 @@ export default function CsrNgoWorksPage({ csrProjects }) {
                     ))}
                   </div>
                 </div>
-                <img src="https://picsum.photos/600/400?random=903" alt="NGO field work" className="w-full aspect-video object-cover" />
+                <img src="/images/placeholder.svg" alt="NGO field work" className="w-full aspect-video object-cover" />
               </div>
             </div>
           </div>
@@ -298,7 +310,7 @@ export default function CsrNgoWorksPage({ csrProjects }) {
                 {csrProjects.slice(0, 3).map((p) => (
                   <div key={p.slug} className="group bg-theme-surface hover:bg-theme-card transition-colors flex flex-col border border-theme-border/[0.06]">
                     <div className="relative overflow-hidden aspect-[16/9]">
-                      <img src={p.featured_image || 'https://picsum.photos/800/450?random=90'} alt={p.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                      <img src={p.featured_image || '/images/placeholder.svg'} alt={p.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#050d1a] via-transparent to-transparent opacity-60" />
                     </div>
                     <div className="p-6 flex flex-col flex-1">
@@ -388,10 +400,11 @@ export default function CsrNgoWorksPage({ csrProjects }) {
                   <label className="block text-[10px] uppercase tracking-widest font-sans text-theme-fg-3 mb-2">Project Description *</label>
                   <textarea required rows={5} name="description" value={form.description} onChange={handleChange} className="w-full bg-theme-surface border border-theme-border/10 focus:border-[#52B788] text-theme-fg px-4 py-3 text-sm font-sans outline-none transition-colors resize-none" />
                 </div>
+                <Turnstile ref={csrRef} onVerify={setCsrToken} />
                 {status === 'error' && (
                   <p className="text-red-400 text-sm font-sans">Something went wrong. Please try again or email us directly.</p>
                 )}
-                <button type="submit" disabled={status === 'sending'} className="btn-primary w-full disabled:opacity-50">
+                <button type="submit" disabled={status === 'sending' || !csrToken} className="btn-primary w-full disabled:opacity-50">
                   {status === 'sending' ? 'Sending...' : 'Submit Partnership Enquiry'}
                 </button>
               </form>

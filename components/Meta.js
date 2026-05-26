@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { CONTACT, COMPANY } from '../data/siteConstants'
 
 export default function Meta({
   title = 'Wave Earth Infratech | Canal & Irrigation Infrastructure Contractor - UP, MP',
@@ -44,22 +45,23 @@ export default function Meta({
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Organization',
-            name: 'Wave Earth Infratech',
+            name: COMPANY.legalName,
             url: siteUrl,
             logo: `${siteUrl}/images/logo.png`,
             description,
             address: {
               '@type': 'PostalAddress',
-              streetAddress: 'M38, Sector-12 Pratap Vihar',
-              addressLocality: 'Ghaziabad',
-              addressRegion: 'Uttar Pradesh',
-              postalCode: '201309',
+              streetAddress: CONTACT.address1,
+              addressLocality: CONTACT.city,
+              addressRegion: CONTACT.state,
+              postalCode: CONTACT.pincode,
               addressCountry: 'IN',
             },
             contactPoint: {
               '@type': 'ContactPoint',
+              telephone: CONTACT.phoneTel,
               contactType: 'customer service',
-              email: 'contact@waveearthinfratech.com',
+              email: CONTACT.email,
             },
           }),
         }}

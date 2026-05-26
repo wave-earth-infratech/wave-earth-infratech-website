@@ -8,9 +8,9 @@ import { getAllProjects } from '@lib/content'
 const CATEGORY_LABELS = {
   'canal-construction':       'Canal & Irrigation',
   'nahar-lining':             'Nahar Lining',
-  'irrigation-infrastructure':'Irrigation Infrastructure',
+  'irrigation':              'Irrigation Infrastructure',
   'rural-redevelopment':      'Rural Redevelopment',
-  'earthwork-excavation':     'Earthwork & Excavation',
+  'earthwork':               'Earthwork & Excavation',
   'water-resource-projects':  'Water Resource',
   'concrete-structures':      'Concrete Structures',
   'road-drainage':            'Road & Drainage',
@@ -137,7 +137,7 @@ export default function ProjectsPage({ projects }) {
                     {/* Image */}
                     <div className="relative overflow-hidden aspect-[16/9]">
                       <img
-                        src={project.featured_image || 'https://picsum.photos/800/450?random=50'}
+                        src={project.featured_image || '/images/placeholder.svg'}
                         alt={project.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         loading="lazy"

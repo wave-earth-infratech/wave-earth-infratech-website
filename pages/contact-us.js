@@ -1,28 +1,30 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Link from 'next/link'
 import Meta from '@components/Meta'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Turnstile from '@components/Turnstile'
+import { CONTACT } from '../data/siteConstants'
 
 const contactCards = [
   {
     label: 'Call Us',
-    value: '+91 945 311 1377',
+    value: CONTACT.phone,
     sub: 'Mon–Sat, 9 AM – 6 PM',
-    href: 'tel:+919453111377',
+    href: CONTACT.phoneTel,
     icon: 'M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z',
   },
   {
     label: 'Email Us',
-    value: 'contact@waveearthinfratech.com',
+    value: CONTACT.email,
     sub: 'We respond within 24 hours',
-    href: 'mailto:contact@waveearthinfratech.com',
+    href: `mailto:${CONTACT.email}`,
     icon: 'M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z',
   },
   {
     label: 'Registered Office',
-    value: 'M38, Sector-12 Pratap Vihar',
-    sub: 'Ghaziabad, Uttar Pradesh 201309',
+    value: CONTACT.address1,
+    sub: `${CONTACT.city}, ${CONTACT.state} ${CONTACT.pincode}`,
     href: 'https://maps.google.com/?q=Pratap+Vihar+Ghaziabad+UP',
     icon: 'M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z',
   },
@@ -30,16 +32,16 @@ const contactCards = [
     label: 'WhatsApp',
     value: 'Chat on WhatsApp',
     sub: 'Quick enquiries & project updates',
-    href: 'https://wa.me/919453111377?text=Hello%2C%20I%20am%20enquiring%20about%20your%20infrastructure%20services.',
+    href: CONTACT.whatsapp,
     icon: 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z',
   },
 ]
 
-const FORMSPREE = 'https://formspree.io/f/mayzlgke'
-
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', subject: '', message: '' })
   const [status, setStatus] = useState('idle')
+  const [turnstileToken, setTurnstileToken] = useState('')
+  const turnstileRef = useRef(null)
 
   function handleChange(e) {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }))
@@ -47,16 +49,25 @@ export default function ContactPage() {
 
   async function handleSubmit(e) {
     e.preventDefault()
+    if (!turnstileToken) return
     setStatus('sending')
     try {
-      const res = await fetch(FORMSPREE, {
+      const res = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(form),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'contact', token: turnstileToken, ...form }),
       })
-      setStatus(res.ok ? 'success' : 'error')
+      if (res.ok) {
+        setStatus('success')
+      } else {
+        setStatus('error')
+        turnstileRef.current?.reset()
+        setTurnstileToken('')
+      }
     } catch {
       setStatus('error')
+      turnstileRef.current?.reset()
+      setTurnstileToken('')
     }
   }
 
@@ -73,7 +84,7 @@ export default function ContactPage() {
       {/* HERO */}
       <section className="relative min-h-[45vh] flex items-end overflow-hidden bg-theme-surface">
         <img
-          src="https://picsum.photos/1600/600?random=55"
+          src="/images/placeholder.svg"
           alt=""
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover opacity-20"
@@ -164,12 +175,13 @@ export default function ContactPage() {
                     <input name="subject" value={form.subject} onChange={handleChange} type="text" placeholder="Subject" className={inputCls} />
                   </div>
                   <textarea name="message" value={form.message} onChange={handleChange} placeholder="Your Message *" required rows={6} className={inputCls + ' resize-none'} />
+                  <Turnstile ref={turnstileRef} onVerify={setTurnstileToken} />
                   {status === 'error' && (
                     <p className="text-red-400 text-sm">Something went wrong. Please try again or email us directly.</p>
                   )}
                   <button
                     type="submit"
-                    disabled={status === 'sending'}
+                    disabled={status === 'sending' || !turnstileToken}
                     className="bg-[#52B788] hover:bg-[#2D6A4F] disabled:opacity-60 text-white text-[13px] font-semibold uppercase tracking-[0.1em] px-10 py-4 transition-colors duration-200"
                   >
                     {status === 'sending' ? 'Sending...' : 'Send Message'}

@@ -381,7 +381,7 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
                   <Link key={project.slug} href={`/projects/${project.slug}`} className="group bg-theme-base hover:bg-theme-card transition-colors flex flex-col">
                     <div className="relative aspect-[16/9] overflow-hidden">
                       <img
-                        src={project.featured_image || 'https://picsum.photos/800/450?random=99'}
+                        src={project.featured_image || '/images/placeholder.svg'}
                         alt={project.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         loading="lazy"

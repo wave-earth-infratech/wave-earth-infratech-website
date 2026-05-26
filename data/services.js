@@ -9,7 +9,7 @@ export const services = [
     slug: 'canal-construction',
     name: 'Canal Construction & Repair',
     tagline: 'New canal construction and rejuvenation for state irrigation departments',
-    hero_image: 'https://picsum.photos/1600/700?random=201',
+    hero_image: '/images/placeholder.svg',
     description:
       'We execute new canal construction and canal repair works for state irrigation departments, including clearing, desilting, bank reinforcement, and structural repair of deteriorated canal sections. Our work is aligned with PMKSY and state Jal Shakti scheme requirements.',
     importance_points: [
@@ -52,14 +52,14 @@ export const services = [
     ],
     related_project_slugs: ['2024-03-canal-redevelopment-chitrakoot'],
     before_after: {
-      before: 'https://picsum.photos/700/450?random=101',
-      after:  'https://picsum.photos/700/450?random=102',
+      before: '/images/placeholder.svg',
+      after:  '/images/placeholder.svg',
     },
     gallery: [
-      'https://picsum.photos/600/400?random=211',
-      'https://picsum.photos/600/400?random=212',
-      'https://picsum.photos/600/400?random=213',
-      'https://picsum.photos/600/400?random=214',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
     ],
     faqs: [
       {
@@ -92,7 +92,7 @@ export const services = [
     slug: 'nahar-lining',
     name: 'Nahar Lining Works',
     tagline: 'Cement concrete and HDPE lining for irrigation channels per BIS/IS standards',
-    hero_image: 'https://picsum.photos/1600/700?random=202',
+    hero_image: '/images/placeholder.svg',
     description:
       'Nahar lining prevents water seepage losses and extends canal lifespan by 3–5 times. We execute cement concrete and HDPE lining works for minor and major irrigation channels as per BIS/IS standards and departmental specifications.',
     importance_points: [
@@ -138,14 +138,14 @@ export const services = [
       '2024-03-canal-redevelopment-chitrakoot',
     ],
     before_after: {
-      before: 'https://picsum.photos/700/450?random=301',
-      after:  'https://picsum.photos/700/450?random=302',
+      before: '/images/placeholder.svg',
+      after:  '/images/placeholder.svg',
     },
     gallery: [
-      'https://picsum.photos/600/400?random=311',
-      'https://picsum.photos/600/400?random=312',
-      'https://picsum.photos/600/400?random=313',
-      'https://picsum.photos/600/400?random=314',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
     ],
     faqs: [
       {
@@ -178,7 +178,7 @@ export const services = [
     slug: 'irrigation-infrastructure',
     name: 'Irrigation Infrastructure',
     tagline: 'Distribution channels, field channels, and last-mile irrigation connectivity',
-    hero_image: 'https://picsum.photos/1600/700?random=203',
+    hero_image: '/images/placeholder.svg',
     description:
       'Complete irrigation infrastructure development including distribution channels, field channels, water control structures, and last-mile connectivity works ensuring water reaches agricultural fields efficiently.',
     importance_points: [
@@ -220,13 +220,13 @@ export const services = [
     ],
     related_project_slugs: ['2023-06-irrigation-infrastructure-rewa'],
     before_after: {
-      before: 'https://picsum.photos/700/450?random=401',
-      after:  'https://picsum.photos/700/450?random=402',
+      before: '/images/placeholder.svg',
+      after:  '/images/placeholder.svg',
     },
     gallery: [
-      'https://picsum.photos/600/400?random=411',
-      'https://picsum.photos/600/400?random=412',
-      'https://picsum.photos/600/400?random=413',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
     ],
     faqs: [
       {
@@ -255,7 +255,7 @@ export const services = [
     slug: 'rural-redevelopment',
     name: 'Rural Redevelopment',
     tagline: 'Internal roads, drainage, community structures under government and NGO schemes',
-    hero_image: 'https://picsum.photos/1600/700?random=204',
+    hero_image: '/images/placeholder.svg',
     description:
       'Comprehensive rural infrastructure improvement works including internal roads, drainage systems, community structures, and basic civic amenity construction under government and NGO-funded schemes.',
     importance_points: [
@@ -297,13 +297,13 @@ export const services = [
     ],
     related_project_slugs: ['2024-01-rural-redevelopment-satna'],
     before_after: {
-      before: 'https://picsum.photos/700/450?random=501',
-      after:  'https://picsum.photos/700/450?random=502',
+      before: '/images/placeholder.svg',
+      after:  '/images/placeholder.svg',
     },
     gallery: [
-      'https://picsum.photos/600/400?random=511',
-      'https://picsum.photos/600/400?random=512',
-      'https://picsum.photos/600/400?random=513',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
     ],
     faqs: [
       {
@@ -332,7 +332,7 @@ export const services = [
     slug: 'water-resource-projects',
     name: 'Water Resource Projects',
     tagline: 'Checkdams, ponds, percolation tanks, and overhead storage in water-stressed areas',
-    hero_image: 'https://picsum.photos/1600/700?random=205',
+    hero_image: '/images/placeholder.svg',
     description:
       'Construction of water harvesting and storage structures including checkdams, ponds, percolation tanks, and overhead water tanks to improve water availability in water-stressed rural areas.',
     importance_points: [
@@ -374,13 +374,13 @@ export const services = [
     ],
     related_project_slugs: [],
     before_after: {
-      before: 'https://picsum.photos/700/450?random=601',
-      after:  'https://picsum.photos/700/450?random=602',
+      before: '/images/placeholder.svg',
+      after:  '/images/placeholder.svg',
     },
     gallery: [
-      'https://picsum.photos/600/400?random=611',
-      'https://picsum.photos/600/400?random=612',
-      'https://picsum.photos/600/400?random=613',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
     ],
     faqs: [
       {
@@ -409,7 +409,7 @@ export const services = [
     slug: 'earthwork-excavation',
     name: 'Earthwork & Excavation',
     tagline: 'Heavy bulk earthwork, embankment formation, and site preparation at scale',
-    hero_image: 'https://picsum.photos/1600/700?random=206',
+    hero_image: '/images/placeholder.svg',
     description:
       'Heavy earthwork and bulk excavation services for civil and infrastructure projects including site clearing, embankment formation, cut-and-fill operations, and subgrade preparation.',
     importance_points: [
@@ -453,13 +453,13 @@ export const services = [
     ],
     related_project_slugs: ['2022-09-earthwork-excavation-panna'],
     before_after: {
-      before: 'https://picsum.photos/700/450?random=701',
-      after:  'https://picsum.photos/700/450?random=702',
+      before: '/images/placeholder.svg',
+      after:  '/images/placeholder.svg',
     },
     gallery: [
-      'https://picsum.photos/600/400?random=711',
-      'https://picsum.photos/600/400?random=712',
-      'https://picsum.photos/600/400?random=713',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
     ],
     faqs: [
       {
@@ -488,7 +488,7 @@ export const services = [
     slug: 'concrete-structures',
     name: 'Concrete Structures',
     tagline: 'RCC retaining walls, slabs, foundations, and water-retaining structures',
-    hero_image: 'https://picsum.photos/1600/700?random=207',
+    hero_image: '/images/placeholder.svg',
     description:
       'Design-and-build or drawing-based RCC structure construction for civil and infrastructure projects including retaining walls, slabs, columns, beams, foundations, and water-retaining structures.',
     importance_points: [
@@ -531,13 +531,13 @@ export const services = [
     ],
     related_project_slugs: [],
     before_after: {
-      before: 'https://picsum.photos/700/450?random=801',
-      after:  'https://picsum.photos/700/450?random=802',
+      before: '/images/placeholder.svg',
+      after:  '/images/placeholder.svg',
     },
     gallery: [
-      'https://picsum.photos/600/400?random=811',
-      'https://picsum.photos/600/400?random=812',
-      'https://picsum.photos/600/400?random=813',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
     ],
     faqs: [
       {
@@ -566,7 +566,7 @@ export const services = [
     slug: 'road-drainage',
     name: 'Road & Drainage Works',
     tagline: 'Rural access roads, link roads, and stormwater drainage systems',
-    hero_image: 'https://picsum.photos/1600/700?random=208',
+    hero_image: '/images/placeholder.svg',
     description:
       'Construction of rural access roads, link roads, and drainage systems connecting villages to main roads and ensuring stormwater management for rural and peri-urban communities.',
     importance_points: [
@@ -609,13 +609,13 @@ export const services = [
     ],
     related_project_slugs: [],
     before_after: {
-      before: 'https://picsum.photos/700/450?random=901',
-      after:  'https://picsum.photos/700/450?random=902',
+      before: '/images/placeholder.svg',
+      after:  '/images/placeholder.svg',
     },
     gallery: [
-      'https://picsum.photos/600/400?random=911',
-      'https://picsum.photos/600/400?random=912',
-      'https://picsum.photos/600/400?random=913',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
     ],
     faqs: [
       {
@@ -644,7 +644,7 @@ export const services = [
     slug: 'ngo-development',
     name: 'NGO Development Projects',
     tagline: 'Civil execution for development-sector projects - NGO, foundation, and CSR funded',
-    hero_image: 'https://picsum.photos/1600/700?random=209',
+    hero_image: '/images/placeholder.svg',
     description:
       'Dedicated civil execution capability for development-sector projects funded by NGOs, foundations, CSR bodies, and bilateral aid programmes. We understand the reporting, documentation, and community engagement expectations of the development sector.',
     importance_points: [
@@ -684,13 +684,13 @@ export const services = [
     ],
     related_project_slugs: ['2024-01-rural-redevelopment-satna'],
     before_after: {
-      before: 'https://picsum.photos/700/450?random=1001',
-      after:  'https://picsum.photos/700/450?random=1002',
+      before: '/images/placeholder.svg',
+      after:  '/images/placeholder.svg',
     },
     gallery: [
-      'https://picsum.photos/600/400?random=1011',
-      'https://picsum.photos/600/400?random=1012',
-      'https://picsum.photos/600/400?random=1013',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
     ],
     faqs: [
       {
@@ -719,7 +719,7 @@ export const services = [
     slug: 'civil-maintenance',
     name: 'Civil Maintenance Contracts',
     tagline: 'AMC and O&M services for canals, roads, and government-owned infrastructure',
-    hero_image: 'https://picsum.photos/1600/700?random=210',
+    hero_image: '/images/placeholder.svg',
     description:
       'Annual Maintenance Contracts (AMC) and Operation & Maintenance (O&M) services for government-owned infrastructure assets including canals, roads, and water structures. Regular inspection, repair, and reporting as per department standards.',
     importance_points: [
@@ -761,12 +761,12 @@ export const services = [
     ],
     related_project_slugs: [],
     before_after: {
-      before: 'https://picsum.photos/700/450?random=1101',
-      after:  'https://picsum.photos/700/450?random=1102',
+      before: '/images/placeholder.svg',
+      after:  '/images/placeholder.svg',
     },
     gallery: [
-      'https://picsum.photos/600/400?random=1111',
-      'https://picsum.photos/600/400?random=1112',
+      '/images/placeholder.svg',
+      '/images/placeholder.svg',
     ],
     faqs: [
       {

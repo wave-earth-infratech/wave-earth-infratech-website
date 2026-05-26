@@ -63,10 +63,18 @@ export default function Header() {
   const [theme,        setTheme]        = useState('light')
   const router = useRouter()
 
-  // Initialise theme from localStorage on mount
+  // Initialise theme from localStorage on mount (mirrors the anti-flash script in _document.js)
   useEffect(() => {
     const saved = localStorage.getItem('theme')
-    const preferred = saved || 'light'
+    let preferred
+    if (saved) {
+      preferred = saved
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      preferred = 'dark'
+      localStorage.setItem('theme', 'dark')
+    } else {
+      preferred = 'light'
+    }
     setTheme(preferred)
     if (preferred === 'dark') {
       document.documentElement.classList.add('dark')
@@ -382,6 +390,25 @@ export default function Header() {
 
               {/* Mobile CTAs */}
               <div className="pt-4 pb-2 border-t border-theme-border/[0.08] flex gap-3 mt-4">
+                {/* Theme toggle */}
+                <button
+                  onClick={toggleTheme}
+                  className="flex items-center justify-center p-3 border border-theme-border/10 text-theme-fg-3 hover:text-[#52B788] hover:border-[#52B788]/50 transition-colors"
+                  aria-label="Toggle theme"
+                  title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+                >
+                  {theme === 'dark' ? (
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                        d="M12 3v1m0 16v1m8.66-9H21M3 12H2m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10A5 5 0 0012 7z" />
+                    </svg>
+                  ) : (
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                        d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                    </svg>
+                  )}
+                </button>
                 <a
                   href="tel:+919453111377"
                   className="flex-1 flex items-center justify-center gap-2 border border-theme-border/10 text-theme-fg-2 text-[11px] font-semibold py-3 hover:border-[#52B788]/50 hover:text-theme-fg transition-colors uppercase tracking-widest"

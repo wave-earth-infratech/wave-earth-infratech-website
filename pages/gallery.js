@@ -6,45 +6,45 @@ import Footer from '@components/Footer'
 
 const GALLERY_ITEMS = [
   // Canal Construction
-  { id: 1, category: 'Canal', title: 'Canal Excavation - Bundelkhand', location: 'UP', image: 'https://picsum.photos/800/600?random=601', aspect: 'landscape' },
-  { id: 2, category: 'Canal', title: 'Canal Lining Work in Progress', location: 'UP', image: 'https://picsum.photos/600/800?random=602', aspect: 'portrait' },
-  { id: 3, category: 'Canal', title: 'Completed Canal Section', location: 'MP', image: 'https://picsum.photos/800/600?random=603', aspect: 'landscape' },
-  { id: 4, category: 'Canal', title: 'Canal Bank Earthwork', location: 'UP', image: 'https://picsum.photos/800/600?random=604', aspect: 'landscape' },
+  { id: 1, category: 'Canal', title: 'Canal Excavation - Bundelkhand', location: 'UP', image: '/images/placeholder.svg', aspect: 'landscape' },
+  { id: 2, category: 'Canal', title: 'Canal Lining Work in Progress', location: 'UP', image: '/images/placeholder.svg', aspect: 'portrait' },
+  { id: 3, category: 'Canal', title: 'Completed Canal Section', location: 'MP', image: '/images/placeholder.svg', aspect: 'landscape' },
+  { id: 4, category: 'Canal', title: 'Canal Bank Earthwork', location: 'UP', image: '/images/placeholder.svg', aspect: 'landscape' },
   // Earthwork & Excavation
-  { id: 5, category: 'Earthwork', title: 'Bulk Earthwork - Reservoir Site', location: 'MP', image: 'https://picsum.photos/800/600?random=605', aspect: 'landscape' },
-  { id: 6, category: 'Earthwork', title: 'Embankment Compaction', location: 'UP', image: 'https://picsum.photos/800/800?random=606', aspect: 'square' },
-  { id: 7, category: 'Earthwork', title: 'Excavator at Work', location: 'UP', image: 'https://picsum.photos/800/600?random=607', aspect: 'landscape' },
-  { id: 8, category: 'Earthwork', title: 'Graded Embankment Section', location: 'MP', image: 'https://picsum.photos/800/600?random=608', aspect: 'landscape' },
+  { id: 5, category: 'Earthwork', title: 'Bulk Earthwork - Reservoir Site', location: 'MP', image: '/images/placeholder.svg', aspect: 'landscape' },
+  { id: 6, category: 'Earthwork', title: 'Embankment Compaction', location: 'UP', image: '/images/placeholder.svg', aspect: 'square' },
+  { id: 7, category: 'Earthwork', title: 'Excavator at Work', location: 'UP', image: '/images/placeholder.svg', aspect: 'landscape' },
+  { id: 8, category: 'Earthwork', title: 'Graded Embankment Section', location: 'MP', image: '/images/placeholder.svg', aspect: 'landscape' },
   // Concrete & RCC
-  { id: 9, category: 'Concrete', title: 'RCC Canal Lining', location: 'UP', image: 'https://picsum.photos/600/800?random=609', aspect: 'portrait' },
-  { id: 10, category: 'Concrete', title: 'Concrete Mixing on Site', location: 'MP', image: 'https://picsum.photos/800/600?random=610', aspect: 'landscape' },
-  { id: 11, category: 'Concrete', title: 'Culvert Construction', location: 'UP', image: 'https://picsum.photos/800/600?random=611', aspect: 'landscape' },
-  { id: 12, category: 'Concrete', title: 'Checking Concrete Quality', location: 'UP', image: 'https://picsum.photos/800/800?random=612', aspect: 'square' },
+  { id: 9, category: 'Concrete', title: 'RCC Canal Lining', location: 'UP', image: '/images/placeholder.svg', aspect: 'portrait' },
+  { id: 10, category: 'Concrete', title: 'Concrete Mixing on Site', location: 'MP', image: '/images/placeholder.svg', aspect: 'landscape' },
+  { id: 11, category: 'Concrete', title: 'Culvert Construction', location: 'UP', image: '/images/placeholder.svg', aspect: 'landscape' },
+  { id: 12, category: 'Concrete', title: 'Checking Concrete Quality', location: 'UP', image: '/images/placeholder.svg', aspect: 'square' },
   // Irrigation
-  { id: 13, category: 'Irrigation', title: 'Minor Irrigation Scheme', location: 'UP', image: 'https://picsum.photos/800/600?random=613', aspect: 'landscape' },
-  { id: 14, category: 'Irrigation', title: 'Field Irrigation Channel', location: 'UP', image: 'https://picsum.photos/800/600?random=614', aspect: 'landscape' },
-  { id: 15, category: 'Irrigation', title: 'Distribution Network', location: 'MP', image: 'https://picsum.photos/600/800?random=615', aspect: 'portrait' },
+  { id: 13, category: 'Irrigation', title: 'Minor Irrigation Scheme', location: 'UP', image: '/images/placeholder.svg', aspect: 'landscape' },
+  { id: 14, category: 'Irrigation', title: 'Field Irrigation Channel', location: 'UP', image: '/images/placeholder.svg', aspect: 'landscape' },
+  { id: 15, category: 'Irrigation', title: 'Distribution Network', location: 'MP', image: '/images/placeholder.svg', aspect: 'portrait' },
   // Machinery
-  { id: 16, category: 'Machinery', title: 'Excavator - Canal Excavation', location: 'UP', image: 'https://picsum.photos/800/600?random=616', aspect: 'landscape' },
-  { id: 17, category: 'Machinery', title: 'JCB Loading Operations', location: 'UP', image: 'https://picsum.photos/800/600?random=617', aspect: 'landscape' },
-  { id: 18, category: 'Machinery', title: 'Vibratory Roller - Compaction', location: 'MP', image: 'https://picsum.photos/800/800?random=618', aspect: 'square' },
+  { id: 16, category: 'Machinery', title: 'Excavator - Canal Excavation', location: 'UP', image: '/images/placeholder.svg', aspect: 'landscape' },
+  { id: 17, category: 'Machinery', title: 'JCB Loading Operations', location: 'UP', image: '/images/placeholder.svg', aspect: 'landscape' },
+  { id: 18, category: 'Machinery', title: 'Vibratory Roller - Compaction', location: 'MP', image: '/images/placeholder.svg', aspect: 'square' },
   // Community Works
-  { id: 19, category: 'Community', title: 'Village Water Structure', location: 'UP', image: 'https://picsum.photos/800/600?random=619', aspect: 'landscape' },
-  { id: 20, category: 'Community', title: 'Community Building Handover', location: 'UP', image: 'https://picsum.photos/800/600?random=620', aspect: 'landscape' },
+  { id: 19, category: 'Community', title: 'Village Water Structure', location: 'UP', image: '/images/placeholder.svg', aspect: 'landscape' },
+  { id: 20, category: 'Community', title: 'Community Building Handover', location: 'UP', image: '/images/placeholder.svg', aspect: 'landscape' },
 ]
 
 const BEFORE_AFTER = [
   {
     title: 'Canal Desilting & Restoration',
     location: 'Banda, UP',
-    before: 'https://picsum.photos/800/500?random=621',
-    after: 'https://picsum.photos/800/500?random=622',
+    before: '/images/placeholder.svg',
+    after: '/images/placeholder.svg',
   },
   {
     title: 'Embankment Repair & Lining',
     location: 'Satna, MP',
-    before: 'https://picsum.photos/800/500?random=623',
-    after: 'https://picsum.photos/800/500?random=624',
+    before: '/images/placeholder.svg',
+    after: '/images/placeholder.svg',
   },
 ]
 
@@ -106,7 +106,7 @@ export default function GalleryPage() {
         {/* ── Hero ── */}
         <section className="relative pt-36 pb-24 overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <img src="https://picsum.photos/1600/700?random=625" alt="Site gallery" className="w-full h-full object-cover" />
+            <img src="/images/placeholder.svg" alt="Site gallery" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-r from-[#050d1a]/95 via-[#050d1a]/80 to-[#050d1a]/40" />
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

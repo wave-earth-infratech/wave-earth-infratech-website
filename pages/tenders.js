@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Turnstile from '@components/Turnstile'
 
 // Static tender data - replace with real tender details
 const ACTIVE_TENDERS = [
@@ -58,40 +59,62 @@ const DOWNLOADS = [
 export default function TendersPage() {
   const [inviteForm, setInviteForm] = useState({ name: '', org: '', email: '', phone: '', projectType: '', location: '', value: '', deadline: '', description: '' })
   const [inviteStatus, setInviteStatus] = useState(null)
+  const [inviteToken, setInviteToken] = useState('')
+  const inviteRef = useRef(null)
 
   const [vendorForm, setVendorForm] = useState({ company: '', contact: '', email: '', phone: '', category: '', regNo: '', address: '' })
   const [vendorStatus, setVendorStatus] = useState(null)
+  const [vendorToken, setVendorToken] = useState('')
+  const vendorRef = useRef(null)
 
   const handleInviteChange = (e) => setInviteForm((f) => ({ ...f, [e.target.name]: e.target.value }))
   const handleVendorChange = (e) => setVendorForm((f) => ({ ...f, [e.target.name]: e.target.value }))
 
   const handleInviteSubmit = async (e) => {
     e.preventDefault()
+    if (!inviteToken) return
     setInviteStatus('sending')
     try {
-      const res = await fetch('https://formspree.io/f/mayzlgke', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ ...inviteForm, _subject: 'Tender Invitation - Wave Earth Infratech' }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'invite', token: inviteToken, ...inviteForm }),
       })
-      setInviteStatus(res.ok ? 'sent' : 'error')
+      if (res.ok) {
+        setInviteStatus('sent')
+      } else {
+        setInviteStatus('error')
+        inviteRef.current?.reset()
+        setInviteToken('')
+      }
     } catch {
       setInviteStatus('error')
+      inviteRef.current?.reset()
+      setInviteToken('')
     }
   }
 
   const handleVendorSubmit = async (e) => {
     e.preventDefault()
+    if (!vendorToken) return
     setVendorStatus('sending')
     try {
-      const res = await fetch('https://formspree.io/f/mayzlgke', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ ...vendorForm, _subject: 'Vendor / Sub-contractor Registration - Wave Earth Infratech' }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'vendor', token: vendorToken, ...vendorForm }),
       })
-      setVendorStatus(res.ok ? 'sent' : 'error')
+      if (res.ok) {
+        setVendorStatus('sent')
+      } else {
+        setVendorStatus('error')
+        vendorRef.current?.reset()
+        setVendorToken('')
+      }
     } catch {
       setVendorStatus('error')
+      vendorRef.current?.reset()
+      setVendorToken('')
     }
   }
 
@@ -109,7 +132,7 @@ export default function TendersPage() {
         {/* ── Hero ── */}
         <section className="relative pt-36 pb-24 overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <img src="https://picsum.photos/1600/700?random=701" alt="Tender documents" className="w-full h-full object-cover" />
+            <img src="/images/placeholder.svg" alt="Tender documents" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-r from-[#050d1a]/95 via-[#050d1a]/80 to-[#050d1a]/40" />
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -291,8 +314,9 @@ export default function TendersPage() {
                   <label className="block text-[10px] uppercase tracking-widest font-sans text-theme-fg-3 mb-2">Project Description *</label>
                   <textarea required rows={4} name="description" value={inviteForm.description} onChange={handleInviteChange} className="w-full bg-theme-surface border border-theme-border/10 focus:border-[#52B788] text-theme-fg px-4 py-3 text-sm font-sans outline-none transition-colors resize-none" />
                 </div>
+                <Turnstile ref={inviteRef} onVerify={setInviteToken} />
                 {inviteStatus === 'error' && <p className="text-red-400 text-sm font-sans">Something went wrong. Please try again.</p>}
-                <button type="submit" disabled={inviteStatus === 'sending'} className="btn-primary w-full disabled:opacity-50">
+                <button type="submit" disabled={inviteStatus === 'sending' || !inviteToken} className="btn-primary w-full disabled:opacity-50">
                   {inviteStatus === 'sending' ? 'Sending...' : 'Submit Tender Invitation'}
                 </button>
               </form>
@@ -354,8 +378,9 @@ export default function TendersPage() {
                   <label className="block text-[10px] uppercase tracking-widest font-sans text-theme-fg-3 mb-2">Base Location / Operating Area *</label>
                   <input required name="address" value={vendorForm.address} onChange={handleVendorChange} className="w-full bg-theme-base border border-theme-border/10 focus:border-[#52B788] text-theme-fg px-4 py-3 text-sm font-sans outline-none transition-colors" />
                 </div>
+                <Turnstile ref={vendorRef} onVerify={setVendorToken} />
                 {vendorStatus === 'error' && <p className="text-red-400 text-sm font-sans">Something went wrong. Please try again.</p>}
-                <button type="submit" disabled={vendorStatus === 'sending'} className="btn-primary w-full disabled:opacity-50">
+                <button type="submit" disabled={vendorStatus === 'sending' || !vendorToken} className="btn-primary w-full disabled:opacity-50">
                   {vendorStatus === 'sending' ? 'Sending...' : 'Submit Vendor Registration'}
                 </button>
               </form>

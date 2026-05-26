@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 import Meta from '@components/Meta'
@@ -13,12 +12,12 @@ import { HOME_STATS } from '../data/siteConstants'
 // To update any number: edit data/siteConstants.js AND content/settings/stats.md
 
 const serviceBlocks = [
-  { title: 'Canal Construction & Lining',    desc: 'New canal construction, desilting, PCC/RCC lining, and embankment repair for state irrigation departments.',                          img: 'https://picsum.photos/900/600?random=21', href: '/services' },
-  { title: 'Irrigation Infrastructure',      desc: 'End-to-end distribution networks - primary canals, secondary channels, check structures, and farm connections.',                       img: 'https://picsum.photos/900/600?random=22', href: '/services' },
-  { title: 'Earthwork & Excavation',         desc: 'Large-scale bulk earthwork, rock cutting, cut-fill operations, and compacted embankment formation.',                                  img: 'https://picsum.photos/900/600?random=23', href: '/services' },
-  { title: 'Rural Redevelopment',            desc: 'CC roads, drainage networks, community platforms, and water harvesting works under MGNREGS & DRDA.',                                  img: 'https://picsum.photos/900/600?random=24', href: '/services' },
-  { title: 'Road & Drainage Works',          desc: 'Village access roads, rural drains, box culverts, causeways, and storm water systems.',                                               img: 'https://picsum.photos/900/600?random=25', href: '/services' },
-  { title: 'NGO Development Projects',       desc: 'Field execution for development sector and CSR-funded rural infrastructure programmes.',                                              img: 'https://picsum.photos/900/600?random=26', href: '/services' },
+  { title: 'Canal Construction & Lining',    desc: 'New canal construction, desilting, PCC/RCC lining, and embankment repair for state irrigation departments.',                          img: '/images/placeholder.svg', href: '/services' },
+  { title: 'Irrigation Infrastructure',      desc: 'End-to-end distribution networks - primary canals, secondary channels, check structures, and farm connections.',                       img: '/images/placeholder.svg', href: '/services' },
+  { title: 'Earthwork & Excavation',         desc: 'Large-scale bulk earthwork, rock cutting, cut-fill operations, and compacted embankment formation.',                                  img: '/images/placeholder.svg', href: '/services' },
+  { title: 'Rural Redevelopment',            desc: 'CC roads, drainage networks, community platforms, and water harvesting works under MGNREGS & DRDA.',                                  img: '/images/placeholder.svg', href: '/services' },
+  { title: 'Road & Drainage Works',          desc: 'Village access roads, rural drains, box culverts, causeways, and storm water systems.',                                               img: '/images/placeholder.svg', href: '/services' },
+  { title: 'NGO Development Projects',       desc: 'Field execution for development sector and CSR-funded rural infrastructure programmes.',                                              img: '/images/placeholder.svg', href: '/services' },
 ]
 
 const equipment = [
@@ -109,11 +108,10 @@ function BeforeAfter({ before, after }) {
 export default function Home({ featuredProjects = [] }) {
   return (
     <>
-      <Meta />
-      <Head>
-        <title>Wave Earth Infratech | Canal &amp; Irrigation Infrastructure Contractor - UP, MP</title>
-        <meta name="description" content="Wave Earth Infratech executes canal construction, nahar lining, irrigation infrastructure, earthwork, and rural redevelopment projects for government departments and NGOs across UP and MP." />
-      </Head>
+      <Meta
+        title="Wave Earth Infratech | Canal & Irrigation Infrastructure Contractor - UP, MP"
+        description="Wave Earth Infratech executes canal construction, nahar lining, irrigation infrastructure, earthwork, and rural redevelopment projects for government departments and NGOs across UP and MP."
+      />
       <Header />
 
       {/* ── 1. HERO ────────────────────────────────────────────────────────── */}
@@ -124,7 +122,7 @@ export default function Home({ featuredProjects = [] }) {
             <source src="/videos/hero-drone.mp4" type="video/mp4" />
           </video>
         */}
-        <img src="https://picsum.photos/1920/1080?random=10" alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-40" />
+        <img src="/images/placeholder.svg" alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-40" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#050d1a] via-[#050d1a]/70 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#050d1a] via-transparent to-[#050d1a]/30" />
         {/* Angular bottom cut */}
@@ -234,14 +232,14 @@ export default function Home({ featuredProjects = [] }) {
 
           <div className="flex flex-col gap-px bg-theme-border/5">
             {(featuredProjects.length > 0 ? featuredProjects.slice(0, 4) : [
-              { title: 'Canal Redevelopment & PCC Lining',   location: 'Chitrakoot, Uttar Pradesh', category: 'Canal Construction',      status: 'completed', client: 'Irrigation Department, UP', project_value: '₹ 62 Lakhs',  duration: '5 Months', excerpt: 'Full redevelopment and PCC M-15 lining of 4.8 km irrigation canal - 40% flow efficiency improvement.', featured_image: 'https://picsum.photos/800/600?random=101', slug: null },
-              { title: 'Nahar Lining Works - Banda District', location: 'Banda, Uttar Pradesh',       category: 'Nahar Lining Works',      status: 'completed', client: 'Minor Irrigation Dept, UP',  project_value: '₹ 38 Lakhs',  duration: '4 Months', excerpt: 'Concrete lining of 3.2 km nahar network, reducing seepage by 45% and serving 1,200+ farmers.',        featured_image: 'https://picsum.photos/800/600?random=201', slug: null },
-              { title: 'Irrigation Infrastructure Development', location: 'Rewa, Madhya Pradesh',    category: 'Irrigation Infrastructure', status: 'completed', client: 'Water Resources Dept, MP',  project_value: '₹ 95 Lakhs',  duration: '7 Months', excerpt: 'New distribution network - 5.6 km primary canal + 8.4 km secondary channels for 680 hectares.',     featured_image: 'https://picsum.photos/800/600?random=301', slug: null },
-              { title: 'Rural Infrastructure Redevelopment',  location: 'Satna, Madhya Pradesh',     category: 'Rural Redevelopment',     status: 'completed', client: 'DRDA, Madhya Pradesh',      project_value: '₹ 1.12 Crore', duration: '8 Months', excerpt: 'CC roads, drains, community platforms across 3 villages - benefiting 2,400+ residents.',               featured_image: 'https://picsum.photos/800/600?random=501', slug: null },
+              { title: 'Canal Redevelopment & PCC Lining',   location: 'Chitrakoot, Uttar Pradesh', category: 'Canal Construction',      status: 'completed', client: 'Irrigation Department, UP', project_value: '₹ 62 Lakhs',  duration: '5 Months', excerpt: 'Full redevelopment and PCC M-15 lining of 4.8 km irrigation canal - 40% flow efficiency improvement.', featured_image: '/images/placeholder.svg', slug: null },
+              { title: 'Nahar Lining Works - Banda District', location: 'Banda, Uttar Pradesh',       category: 'Nahar Lining Works',      status: 'completed', client: 'Minor Irrigation Dept, UP',  project_value: '₹ 38 Lakhs',  duration: '4 Months', excerpt: 'Concrete lining of 3.2 km nahar network, reducing seepage by 45% and serving 1,200+ farmers.',        featured_image: '/images/placeholder.svg', slug: null },
+              { title: 'Irrigation Infrastructure Development', location: 'Rewa, Madhya Pradesh',    category: 'Irrigation Infrastructure', status: 'completed', client: 'Water Resources Dept, MP',  project_value: '₹ 95 Lakhs',  duration: '7 Months', excerpt: 'New distribution network - 5.6 km primary canal + 8.4 km secondary channels for 680 hectares.',     featured_image: '/images/placeholder.svg', slug: null },
+              { title: 'Rural Infrastructure Redevelopment',  location: 'Satna, Madhya Pradesh',     category: 'Rural Redevelopment',     status: 'completed', client: 'DRDA, Madhya Pradesh',      project_value: '₹ 1.12 Crore', duration: '8 Months', excerpt: 'CC roads, drains, community platforms across 3 villages - benefiting 2,400+ residents.',               featured_image: '/images/placeholder.svg', slug: null },
             ]).map((project, idx) => (
               <div key={project.title} className={`group flex flex-col lg:flex-row bg-theme-card overflow-hidden ${idx % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                 <div className="relative w-full lg:w-[45%] h-64 lg:h-auto overflow-hidden flex-shrink-0">
-                  <img src={project.featured_image || 'https://picsum.photos/800/600?random=99'} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={project.featured_image || '/images/placeholder.svg'} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-[#050d1a]/30 group-hover:bg-transparent transition-colors duration-300" />
                   <div className="absolute top-4 left-4">
                     <span className="bg-[#0B2545]/80 text-[#52B788] text-[10px] font-bold px-3 py-1.5 uppercase tracking-widest border border-[#52B788]/30">{project.category}</span>
@@ -310,7 +308,7 @@ export default function Home({ featuredProjects = [] }) {
               </div>
             </div>
             <div className="relative">
-              <BeforeAfter before="https://picsum.photos/900/600?random=102" after="https://picsum.photos/900/600?random=103" />
+              <BeforeAfter before="/images/placeholder.svg" after="/images/placeholder.svg" />
               <p className="text-gray-600 text-[11px] text-center mt-3 uppercase tracking-widest font-sans">Drag slider &larr; &rarr; to compare</p>
             </div>
           </div>
@@ -406,7 +404,7 @@ export default function Home({ featuredProjects = [] }) {
 
       {/* ── 9. CTA BAND ────────────────────────────────────────────────────── */}
       <section className="relative py-28 overflow-hidden">
-        <img src="https://picsum.photos/1920/700?random=90" alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-20" />
+        <img src="/images/placeholder.svg" alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-20" />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(11,37,69,0.95) 0%, rgba(45,106,79,0.92) 100%)' }} />
         <div className="relative max-w-5xl mx-auto px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center gap-3 mb-6">

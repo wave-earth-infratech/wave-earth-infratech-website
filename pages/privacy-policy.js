@@ -9,12 +9,10 @@ import Js from '@components/Js'
 export default function Home() {
     return (
         <>
-            <Meta />
-            <Head>
-            <title>Wave Earth Infratech</title>
-            <meta name="description" content="" />
-
-            </Head>
+            <Meta
+              title="Privacy Policy | Wave Earth Infratech"
+              description="Read the privacy policy of Wave Earth Infratech, covering how we collect, use, and protect your information."
+            />
 
             <Header />
 

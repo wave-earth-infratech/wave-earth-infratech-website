@@ -121,7 +121,7 @@ export default function AboutPage() {
       {/* ── 1. HERO ───────────────────────────────────────────────────────── */}
       <section className="relative min-h-[55vh] flex items-end overflow-hidden bg-theme-surface">
         <img
-          src="https://picsum.photos/1600/900?random=41"
+          src="/images/placeholder.svg"
           alt=""
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover opacity-20"
@@ -161,7 +161,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <img
-                src="https://picsum.photos/700/520?random=11"
+                src="/images/placeholder.svg"
                 alt="Wave Earth Infratech canal construction site"
                 className="w-full object-cover"
                 style={{ aspectRatio: '4/3' }}
@@ -346,7 +346,7 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <img
-                src="https://picsum.photos/700/520?random=22"
+                src="/images/placeholder.svg"
                 alt="Infrastructure works site"
                 className="w-full object-cover"
                 style={{ aspectRatio: '4/3' }}

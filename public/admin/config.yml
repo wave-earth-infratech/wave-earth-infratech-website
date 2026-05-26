@@ -150,23 +150,9 @@ collections:
       - { label: Rating (1-5), name: rating, widget: number, value_type: int, min: 1, max: 5, default: 5 }
 
   # ─── SERVICES ──────────────────────────────────────────────────────────────
-  - name: services
-    label: Services
-    label_singular: Service
-    folder: content/services
-    create: true
-    slug: '{{slug}}'
-    fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Icon (emoji), name: icon, widget: string, hint: 'Paste an emoji e.g. 🌊' }
-      - { label: Short Description, name: excerpt, widget: text, hint: 'Shown on cards (max 160 chars)' }
-      - { label: Full Content, name: body, widget: markdown, required: false }
-      - { label: Featured Image, name: featured_image, widget: image, required: false }
-      - { label: Sort Order, name: order, widget: number, value_type: int, default: 10 }
-      - label: Anchor ID (for URL hash links)
-        name: anchor
-        widget: string
-        hint: 'e.g. canal-construction - must match your service nav links'
+  # NOTE: Services are code-managed in data/services.js (rich structured data).
+  # Editing services here has NO effect on the website. To update a service,
+  # edit data/services.js directly in the codebase.
 
   # ─── BLOG ──────────────────────────────────────────────────────────────────
   - name: blog
@@ -196,8 +182,11 @@ collections:
       - { label: Draft?, name: draft, widget: boolean, default: false }
 
   # ─── SITE SETTINGS ─────────────────────────────────────────────────────────
+  # IMPORTANT: Contact info (phone, email, address) is the canonical source of
+  # truth in data/siteConstants.js. Changes here do NOT auto-update the website.
+  # To update contact details: edit data/siteConstants.js in the codebase.
   - name: settings
-    label: Site Settings
+    label: Site Settings (Reference Only)
     files:
       - name: general
         label: General
@@ -206,7 +195,7 @@ collections:
           - { label: Site Title, name: site_title, widget: string }
           - { label: Tagline, name: tagline, widget: string }
           - { label: Phone (display), name: phone_display, widget: string }
-          - { label: Phone (tel: href), name: phone_href, widget: string, hint: 'e.g. +919453111377' }
+          - { label: "Phone (tel: href)", name: phone_href, widget: string, hint: 'e.g. +919453111377' }
           - { label: WhatsApp Number, name: whatsapp, widget: string, hint: 'Country code + number, no spaces' }
           - { label: Email, name: email, widget: string }
           - { label: Address Line 1, name: address_line1, widget: string }

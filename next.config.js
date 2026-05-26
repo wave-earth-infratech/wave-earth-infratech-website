@@ -3,6 +3,12 @@ const path = require('path')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   trailingSlash: true,
+  async rewrites() {
+    return [
+      { source: '/admin', destination: '/admin/index.html' },
+      { source: '/admin/', destination: '/admin/index.html' },
+    ]
+  },
   images: {
     domains: [],
     formats: ['image/avif', 'image/webp'],

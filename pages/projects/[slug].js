@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
@@ -7,9 +7,9 @@ import { getProjectSlugs, getProject, getAllProjects } from '@lib/content'
 const CATEGORY_LABELS = {
   'canal-construction':       'Canal & Irrigation',
   'nahar-lining':             'Nahar Lining',
-  'irrigation-infrastructure':'Irrigation Infrastructure',
-  'rural-redevelopment':      'Rural Redevelopment',
-  'earthwork-excavation':     'Earthwork & Excavation',
+  'irrigation':               'Irrigation Infrastructure',
+  'rural-redevelopment':       'Rural Redevelopment',
+  'earthwork':                'Earthwork & Excavation',
   'water-resource-projects':  'Water Resource',
   'concrete-structures':      'Concrete Structures',
   'road-drainage':            'Road & Drainage',
@@ -56,7 +56,7 @@ export default function ProjectDetail({ project, prev, next }) {
         {/* ── Hero ── */}
         <section className="relative min-h-[55vh] flex items-end overflow-hidden">
           <img
-            src={project.featured_image || 'https://picsum.photos/1600/700?random=50'}
+            src={project.featured_image || '/images/placeholder.svg'}
             alt={project.title}
             className="absolute inset-0 w-full h-full object-cover"
           />

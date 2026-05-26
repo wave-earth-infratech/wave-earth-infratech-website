@@ -9,12 +9,10 @@ import Js from '@components/Js'
 export default function Home() {
     return (
         <>
-            <Meta />
-            <Head>
-            <title>404 Page not found! | Wave Earth Infratech</title>
-            <meta name="description" content="" />
-
-            </Head>
+            <Meta
+              title="404 – Page Not Found | Wave Earth Infratech"
+              description="The page you are looking for does not exist. Explore our infrastructure services and projects."
+            />
 
             <Header />
 

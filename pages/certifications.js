@@ -49,7 +49,7 @@ export default function CertificationsPage() {
         {/* ── Hero ── */}
         <section className="relative pt-36 pb-24 overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <img src="https://picsum.photos/1600/700?random=501" alt="Compliance documentation" className="w-full h-full object-cover" />
+            <img src="/images/placeholder.svg" alt="Compliance documentation" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-r from-[#050d1a]/95 via-[#050d1a]/80 to-[#050d1a]/40" />
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
