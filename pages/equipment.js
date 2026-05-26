@@ -181,12 +181,12 @@ export default function EquipmentPage() {
                   Rapid Mobilisation
                 </h2>
                 <p className="text-white/70 text-sm leading-relaxed font-sans">
-                  We can mobilise our full equipment fleet and workforce to a new project site within 7–10 days of contract award. Our team is experienced in setting up site offices, labour camps, and material storage in remote rural locations across UP and MP.
+                  We can mobilise our full equipment fleet and workforce to a new project site within 7-10 days of contract award. Our team is experienced in setting up site offices, labour camps, and material storage in remote rural locations across UP and MP.
                 </p>
               </div>
               <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-px bg-theme-border/[0.05]">
                 {[
-                  { icon: '7–10', label: 'Days to Mobilise', desc: 'Full fleet and workforce deployed to new site after contract award.' },
+                  { icon: '7-10', label: 'Days to Mobilise', desc: 'Full fleet and workforce deployed to new site after contract award.' },
                   { icon: '2', label: 'States Active', desc: 'Simultaneous multi-site execution capacity across UP and MP.' },
                   { icon: '24/7', label: 'Site Support', desc: 'Equipment operators and site supervisors available for extended shifts.' },
                   { icon: '100%', label: 'Owned Fleet', desc: 'No dependency on third-party plant hire for core equipment.' },

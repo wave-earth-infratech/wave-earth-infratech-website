@@ -6,7 +6,7 @@ export default function Document() {
             <Head>
               <link rel="preconnect" href="https://fonts.googleapis.com" />
               <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-              {/* Cloudflare Turnstile – loaded on every page, rendered explicitly per-form */}
+              {/* Cloudflare Turnstile - loaded on every page, rendered explicitly per-form */}
               <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer />
             </Head>
             <body>

@@ -15,7 +15,7 @@ function esc(str) {
 function row(label, value) {
   return `<tr>
     <td style="padding:6px 14px;color:#666;width:160px;vertical-align:top;font-size:13px;white-space:nowrap">${esc(label)}</td>
-    <td style="padding:6px 14px;font-size:13px;white-space:pre-wrap">${esc(value) || '—'}</td>
+    <td style="padding:6px 14px;font-size:13px;white-space:pre-wrap">${esc(value) || '-'}</td>
   </tr>`
 }
 
@@ -71,7 +71,7 @@ function createTransporter() {
 
 function contactEmail(d) {
   return {
-    subject: `Contact Enquiry from ${esc(d.name)} – Wave Earth Infratech`,
+    subject: `Contact Enquiry from ${esc(d.name)} - Wave Earth Infratech`,
     html: wrap('New Contact Enquiry', [
       row('Name',    d.name),
       row('Email',   d.email),
@@ -84,7 +84,7 @@ function contactEmail(d) {
 
 function inviteEmail(d) {
   return {
-    subject: `Tender Invitation – ${esc(d.org)} – Wave Earth Infratech`,
+    subject: `Tender Invitation - ${esc(d.org)} - Wave Earth Infratech`,
     html: wrap('Tender Invitation Request', [
       row('Name',            d.name),
       row('Organisation',    d.org),
@@ -101,7 +101,7 @@ function inviteEmail(d) {
 
 function vendorEmail(d) {
   return {
-    subject: `Vendor Registration – ${esc(d.company)} – Wave Earth Infratech`,
+    subject: `Vendor Registration - ${esc(d.company)} - Wave Earth Infratech`,
     html: wrap('Vendor / Sub-contractor Registration', [
       row('Company',         d.company),
       row('Contact Person',  d.contact),
@@ -116,7 +116,7 @@ function vendorEmail(d) {
 
 function csrEmail(d) {
   return {
-    subject: `CSR/NGO Partnership Enquiry – ${esc(d.org)} – Wave Earth Infratech`,
+    subject: `CSR/NGO Partnership Enquiry - ${esc(d.org)} - Wave Earth Infratech`,
     html: wrap('CSR / NGO Partnership Enquiry', [
       row('Organisation',    d.org),
       row('Contact Person',  d.contact),

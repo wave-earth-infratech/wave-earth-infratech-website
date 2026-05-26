@@ -42,7 +42,7 @@ const Turnstile = forwardRef(function Turnstile({ onVerify, onExpire }, ref) {
     if (typeof window !== 'undefined' && window.turnstile) {
       mount()
     } else {
-      // Script is loading asynchronously – poll until it's ready
+      // Script is loading asynchronously - poll until it's ready
       const interval = setInterval(() => {
         if (window.turnstile) {
           clearInterval(interval)

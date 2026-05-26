@@ -17,7 +17,7 @@ export const services = [
       'Deteriorated canal banks cause embankment breaches, flooding adjacent agricultural land and destroying standing crops.',
       'Desilted and repaired canals restore original capacity, improving water delivery to tail-end commands that are often underserved.',
       'Government scheme compliance (PMKSY, Jal Shakti) requires certified canal works to unlock departmental funding and scheme benefits.',
-      'Properly constructed canals reduce operation and maintenance burden on departments for 15–20 years after completion.',
+      'Properly constructed canals reduce operation and maintenance burden on departments for 15-20 years after completion.',
     ],
     scope: [
       'New canal excavation (earthen and pucca)',
@@ -32,14 +32,14 @@ export const services = [
       { label: 'Bank Slope',              value: '1:1 (V:H) to 1:1.5 as per design' },
       { label: 'Canal Invert Level',      value: 'Set to departmental benchmark ±5 mm' },
       { label: 'Stone Pitching Grade',    value: 'Cement mortar 1:4 minimum' },
-      { label: 'Freeboard',               value: '0.3 – 0.6 m depending on design discharge' },
+      { label: 'Freeboard',               value: '0.3 - 0.6 m depending on design discharge' },
       { label: 'Subgrade CBR',            value: 'Minimum 3% for earthen canals' },
     ],
     process: [
       { title: 'Site Survey',             description: 'Alignment verification, bench marking, soil assessment, and reference level establishment against departmental plans.' },
       { title: 'Equipment Mobilisation',  description: 'Deployment of excavators, dumper trucks, compaction rollers, and water tankers to site with access track preparation.' },
       { title: 'Excavation',              description: 'Canal excavation to specified cross-section dimensions - bed width, depth, and side slopes as per approved drawings.' },
-      { title: 'Bank Formation',          description: 'Systematic earthwork compaction in 150–200 mm layers using roller compaction to IS standards.' },
+      { title: 'Bank Formation',          description: 'Systematic earthwork compaction in 150-200 mm layers using roller compaction to IS standards.' },
       { title: 'Slope Protection',        description: 'Stone pitching, RCC lining, or grass sodding of banks as per specification to prevent erosion.' },
       { title: 'Inspection & Handover',   description: 'Final profile check, measurement book recording, departmental inspection, and water test before formal handover.' },
     ],
@@ -72,7 +72,7 @@ export const services = [
       },
       {
         question: 'How long does a typical canal repair project take?',
-        answer: 'Depending on canal length and scope, repair projects typically span 3–6 months. A 5 km canal repair with full lining usually takes 4–5 months with a full equipment and workforce deployment.',
+        answer: 'Depending on canal length and scope, repair projects typically span 3-6 months. A 5 km canal repair with full lining usually takes 4-5 months with a full equipment and workforce deployment.',
       },
       {
         question: 'Do you handle measurement book (MB) and departmental documentation?',
@@ -94,10 +94,10 @@ export const services = [
     tagline: 'Cement concrete and HDPE lining for irrigation channels per BIS/IS standards',
     hero_image: '/images/placeholder.svg',
     description:
-      'Nahar lining prevents water seepage losses and extends canal lifespan by 3–5 times. We execute cement concrete and HDPE lining works for minor and major irrigation channels as per BIS/IS standards and departmental specifications.',
+      'Nahar lining prevents water seepage losses and extends canal lifespan by 3-5 times. We execute cement concrete and HDPE lining works for minor and major irrigation channels as per BIS/IS standards and departmental specifications.',
     importance_points: [
-      'Unlined canals lose 30–50% of water to seepage before reaching fields - lining eliminates this loss and makes irrigation reliable.',
-      'Concrete lining extends canal lifespan from 5–10 years (earthen) to 40–50 years, providing long-term asset value to departments.',
+      'Unlined canals lose 30-50% of water to seepage before reaching fields - lining eliminates this loss and makes irrigation reliable.',
+      'Concrete lining extends canal lifespan from 5-10 years (earthen) to 40-50 years, providing long-term asset value to departments.',
       'Smooth lined canals carry water faster with less turbulence, improving delivery to tail-end commands.',
       'Lining prevents weed growth on canal beds and banks, reducing annual O&M costs significantly.',
       'Central government schemes like PMKSY actively fund lining works as a priority intervention for water-use efficiency.',
@@ -112,10 +112,10 @@ export const services = [
     ],
     technical_specs: [
       { label: 'Concrete Grade',          value: 'M20 (minor canals) / M25 (major canals)' },
-      { label: 'Lining Thickness',        value: '75 mm bed / 75–100 mm side walls' },
+      { label: 'Lining Thickness',        value: '75 mm bed / 75-100 mm side walls' },
       { label: 'Expansion Joint Spacing', value: 'Every 3 m along canal length' },
       { label: 'Curing Period',           value: 'Minimum 21 days - wet jute / polythene cover' },
-      { label: 'HDPE Membrane Thickness', value: '0.5 mm – 1.0 mm as per discharge' },
+      { label: 'HDPE Membrane Thickness', value: '0.5 mm - 1.0 mm as per discharge' },
       { label: 'Water Absorption (IS)',   value: '≤ 0.5% per IS 456:2000' },
     ],
     process: [
@@ -154,11 +154,11 @@ export const services = [
       },
       {
         question: 'How does lining improve irrigation efficiency?',
-        answer: 'Concrete lining eliminates seepage (which accounts for 30–50% of water loss in earthen channels) and reduces surface roughness, increasing flow velocity and ensuring more water reaches the fields.',
+        answer: 'Concrete lining eliminates seepage (which accounts for 30-50% of water loss in earthen channels) and reduces surface roughness, increasing flow velocity and ensuring more water reaches the fields.',
       },
       {
         question: 'What is the lifespan of a lined canal?',
-        answer: 'A properly constructed M20/M25 concrete-lined canal lasts 40–50 years with minimal maintenance, compared to 5–10 years for an unlined earthen canal.',
+        answer: 'A properly constructed M20/M25 concrete-lined canal lasts 40-50 years with minimal maintenance, compared to 5-10 years for an unlined earthen canal.',
       },
       {
         question: 'Can lining be done on canals that carry water year-round?',
@@ -235,7 +235,7 @@ export const services = [
       },
       {
         question: 'What is the last-mile irrigation problem?',
-        answer: 'Many schemes have functional main canals but broken or incomplete field channels - water cannot reach the final 1–2 km to farms. We specialise in completing exactly this final link.',
+        answer: 'Many schemes have functional main canals but broken or incomplete field channels - water cannot reach the final 1-2 km to farms. We specialise in completing exactly this final link.',
       },
       {
         question: 'Can you construct lift irrigation systems?',
@@ -316,7 +316,7 @@ export const services = [
       },
       {
         question: 'Can you execute multiple villages in parallel?',
-        answer: 'Yes. Our workforce structure supports concurrent execution across 3–5 village clusters with separate site supervisors for each cluster, while central management monitors progress and quality.',
+        answer: 'Yes. Our workforce structure supports concurrent execution across 3-5 village clusters with separate site supervisors for each cluster, while central management monitors progress and quality.',
       },
     ],
     client_types: [
@@ -338,9 +338,9 @@ export const services = [
     importance_points: [
       'Water scarcity in the Bundelkhand and central MP belt directly reduces agricultural yields and forces seasonal migration.',
       'Farm ponds and percolation tanks recharge groundwater during monsoon, stabilising water table for post-monsoon irrigation.',
-      'Checkdams on seasonal streams convert episodic flood flows into storable water - extending effective availability by 3–4 months.',
+      'Checkdams on seasonal streams convert episodic flood flows into storable water - extending effective availability by 3-4 months.',
       'Overhead tanks and community water supply structures are basic civic infrastructure under Jal Jeevan Mission.',
-      'Every 100 farm ponds constructed can benefit 250–400 farming families through improved kharif and rabi irrigation.',
+      'Every 100 farm ponds constructed can benefit 250-400 farming families through improved kharif and rabi irrigation.',
     ],
     scope: [
       'Checkdam construction (masonry / RCC)',
@@ -429,7 +429,7 @@ export const services = [
     ],
     technical_specs: [
       { label: 'Compaction Standard',  value: 'IS 2720 Parts 7/8 - 95% Modified Proctor' },
-      { label: 'Layer Thickness',      value: '150–200 mm loose, 125–175 mm compacted' },
+      { label: 'Layer Thickness',      value: '150-200 mm loose, 125-175 mm compacted' },
       { label: 'Moisture Content',     value: 'OMC ± 2% as per field density test' },
       { label: 'Field Density Test',   value: 'Core cutter - every 500 m³' },
       { label: 'Excavation Tolerance', value: '±50 mm from specified level' },
@@ -440,13 +440,13 @@ export const services = [
       { title: 'Equipment Mobilisation', description: 'Deployment of excavators, tippers, grader, and compaction roller as per project scale.' },
       { title: 'Clearing & Stripping',  description: 'Removal of topsoil, vegetation, and unsuitable material from formation area.' },
       { title: 'Cut / Fill Operations', description: 'Excavation in cut zones, transport, and placing in fill zones - managed for minimum haul distance.' },
-      { title: 'Layer Compaction',      description: 'Material placed in 150–200 mm layers, moisture conditioned, and roller-compacted to proctor standard.' },
+      { title: 'Layer Compaction',      description: 'Material placed in 150-200 mm layers, moisture conditioned, and roller-compacted to proctor standard.' },
       { title: 'Profile & Testing',     description: 'Final level check, field density testing, and departmental inspection before proceeding to next stage.' },
     ],
     machinery: [
       { name: 'Excavators (multi)', type: 'excavator' },
       { name: 'Bulldozer',          type: 'other' },
-      { name: 'Tippers 10–20T',     type: 'truck' },
+      { name: 'Tippers 10-20T',     type: 'truck' },
       { name: 'Motor Grader',       type: 'grader' },
       { name: 'Vibratory Roller',   type: 'roller' },
       { name: 'JCB',                type: 'excavator' },
@@ -468,7 +468,7 @@ export const services = [
       },
       {
         question: 'Can you mobilise quickly for urgent projects?',
-        answer: 'Yes. Because we own our equipment fleet (excavators, tippers, rollers), we can mobilise within 3–5 days for projects within UP and MP - no rental lead time or third-party equipment availability issues.',
+        answer: 'Yes. Because we own our equipment fleet (excavators, tippers, rollers), we can mobilise within 3-5 days for projects within UP and MP - no rental lead time or third-party equipment availability issues.',
       },
       {
         question: 'Do you handle rock excavation?',
@@ -493,7 +493,7 @@ export const services = [
       'Design-and-build or drawing-based RCC structure construction for civil and infrastructure projects including retaining walls, slabs, columns, beams, foundations, and water-retaining structures.',
     importance_points: [
       'Concrete structures in irrigation and rural infrastructure bear direct hydraulic and structural loads - quality of concrete and reinforcement placement is non-negotiable.',
-      'Properly designed RCC structures outlast the asset lifecycle - poorly built ones fail within 5–7 years at far greater replacement cost.',
+      'Properly designed RCC structures outlast the asset lifecycle - poorly built ones fail within 5-7 years at far greater replacement cost.',
       'Cross-drainage structures are critical chokepoints - a failed culvert or aqueduct disrupts an entire canal command.',
       'Water-retaining structures must meet IS 3370 requirements for crack control - ordinary construction practice is insufficient.',
       'Our in-house bar bending, formwork, and concrete teams ensure single-point accountability from foundation to finishing.',
@@ -509,8 +509,8 @@ export const services = [
     technical_specs: [
       { label: 'Concrete Grade',           value: 'M20 minimum / M25 for water-retaining' },
       { label: 'Rebar Grade',              value: 'Fe 500 TMT as per IS 1786' },
-      { label: 'Cover (water-retaining)',  value: '40–50 mm as per IS 3370' },
-      { label: 'Slump (structural)',       value: '75–125 mm' },
+      { label: 'Cover (water-retaining)',  value: '40-50 mm as per IS 3370' },
+      { label: 'Slump (structural)',       value: '75-125 mm' },
       { label: 'Water Cement Ratio',       value: '≤ 0.45 for water-retaining structures' },
       { label: 'Cube Strength Test',       value: 'Min 3 cubes per 5 cum - IS 456' },
     ],
@@ -519,7 +519,7 @@ export const services = [
       { title: 'Formwork Fabrication',     description: 'Steel shuttering fabricated and assembled to specified dimensions, properly braced.' },
       { title: 'Reinforcement Placement',  description: 'Bar cutting, bending, and placement per drawing - spacing, cover, and lap lengths verified by site engineer.' },
       { title: 'Concrete Pouring',         description: 'Concrete poured continuously to avoid cold joints, vibrated thoroughly, and surface finished.' },
-      { title: 'Curing',                   description: 'Minimum 14–28 days curing (28 days for water-retaining) using wet jute or curing compound.' },
+      { title: 'Curing',                   description: 'Minimum 14-28 days curing (28 days for water-retaining) using wet jute or curing compound.' },
       { title: 'Deshuttering & QC',        description: 'Formwork removed at specified age, surface defects repaired, cube test results reviewed and recorded.' },
     ],
     machinery: [
@@ -620,7 +620,7 @@ export const services = [
     faqs: [
       {
         question: 'What is the difference between WBM, CC, and BT roads?',
-        answer: 'WBM (Water Bound Macadam) uses graded stone consolidated with water - low cost, moderate durability. CC (Cement Concrete) slabs are durable for 20–30 years. BT (Bituminous) uses asphalt surface - smooth but requires periodic resurfacing.',
+        answer: 'WBM (Water Bound Macadam) uses graded stone consolidated with water - low cost, moderate durability. CC (Cement Concrete) slabs are durable for 20-30 years. BT (Bituminous) uses asphalt surface - smooth but requires periodic resurfacing.',
       },
       {
         question: 'Do you handle PMGSY-compliant construction?',
@@ -741,7 +741,7 @@ export const services = [
       { label: 'Inspection Frequency',  value: 'Monthly (routine) + quarterly (detailed)' },
       { label: 'Canal Desilting',       value: 'Full cross-section restoration to design depth' },
       { label: 'Pothole Patching',      value: 'Hot mix / cold mix bituminous - MORTH spec' },
-      { label: 'Emergency Response',    value: 'Site mobilisation within 24–48 hours' },
+      { label: 'Emergency Response',    value: 'Site mobilisation within 24-48 hours' },
       { label: 'Report Submission',     value: 'Monthly maintenance report - prescribed format' },
       { label: 'Asset Record',          value: 'Asset register updated after each cycle' },
     ],
@@ -775,7 +775,7 @@ export const services = [
       },
       {
         question: 'Do you handle emergency repairs under AMC?',
-        answer: 'Yes. Our AMC contracts include an emergency mobilisation clause - we can deploy a JCB, workforce, and materials to site within 24–48 hours for breach events, storm damage, or urgent road failures.',
+        answer: 'Yes. Our AMC contracts include an emergency mobilisation clause - we can deploy a JCB, workforce, and materials to site within 24-48 hours for breach events, storm damage, or urgent road failures.',
       },
       {
         question: 'Can you take O&M responsibility for canals in multiple districts?',

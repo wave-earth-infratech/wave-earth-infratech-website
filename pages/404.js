@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <>
             <Meta
-              title="404 – Page Not Found | Wave Earth Infratech"
+              title="404 - Page Not Found | Wave Earth Infratech"
               description="The page you are looking for does not exist. Explore our infrastructure services and projects."
             />
 
