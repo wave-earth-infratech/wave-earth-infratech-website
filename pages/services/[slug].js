@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Header from '../../components/Header'
@@ -69,7 +69,7 @@ export async function getStaticProps({ params }) {
   const service = getServiceBySlug(params.slug)
   if (!service) return { notFound: true }
 
-  // Related projects — match slugs against the projects collection
+  // Related projects - match slugs against the projects collection
   const allProjects = getAllProjects()
   const relatedProjects = (service.related_project_slugs || [])
     .map((slug) => allProjects.find((p) => p.slug === slug))
@@ -91,21 +91,21 @@ export async function getStaticProps({ params }) {
 function FaqItem({ question, answer }) {
   const [open, setOpen] = useState(false)
   return (
-    <div className="border-b border-white/[0.07] last:border-0">
+    <div className="border-b border-theme-border/[0.07] last:border-0">
       <button
         className="w-full flex items-start justify-between gap-4 py-5 text-left"
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
       >
-        <span className="text-white text-[15px] font-sans font-medium leading-snug">{question}</span>
-        <span className={`flex-shrink-0 w-5 h-5 border border-white/20 flex items-center justify-center transition-transform duration-200 ${open ? 'rotate-45' : ''}`}>
+        <span className="text-theme-fg text-[15px] font-sans font-medium leading-snug">{question}</span>
+        <span className={`flex-shrink-0 w-5 h-5 border border-theme-border/20 flex items-center justify-center transition-transform duration-200 ${open ? 'rotate-45' : ''}`}>
           <svg className="w-3 h-3 text-[#52B788]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 5v14M5 12h14" />
           </svg>
         </span>
       </button>
       {open && (
-        <p className="pb-5 text-gray-400 text-[14px] font-sans leading-relaxed">{answer}</p>
+        <p className="pb-5 text-theme-fg-3 text-[14px] font-sans leading-relaxed">{answer}</p>
       )}
     </div>
   )
@@ -116,13 +116,13 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
   return (
     <>
       <Head>
-        <title>{service.name} | Services — Wave Earth Infratech</title>
+        <title>{service.name} | Services - Wave Earth Infratech</title>
         <meta name="description" content={service.description} />
       </Head>
 
       <Header />
 
-      <main className="bg-[#040c18] text-white min-h-screen">
+      <main className="bg-theme-base text-theme-fg min-h-screen">
 
         {/* ── 1. HERO ─────────────────────────────────────────────────────── */}
         <section className="relative min-h-[60vh] flex items-end overflow-hidden">
@@ -158,28 +158,28 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
         </section>
 
         {/* ── 2. QUICK FACTS BAR ──────────────────────────────────────────── */}
-        <div className="border-b border-white/[0.06] bg-[#050d1a]">
+        <div className="border-b border-theme-border/[0.06] bg-theme-surface">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-wrap gap-x-10 gap-y-3 items-center">
             <div className="flex items-center gap-2">
               <svg className="w-3.5 h-3.5 text-[#52B788]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              <span className="text-gray-400 text-[12px] font-sans uppercase tracking-wide">{service.scope?.length || 0} Work Scope Items</span>
+              <span className="text-theme-fg-3 text-[12px] font-sans uppercase tracking-wide">{service.scope?.length || 0} Work Scope Items</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-3.5 h-3.5 text-[#52B788]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-              <span className="text-gray-400 text-[12px] font-sans uppercase tracking-wide">{service.technical_specs?.length || 0} Technical Standards</span>
+              <span className="text-theme-fg-3 text-[12px] font-sans uppercase tracking-wide">{service.technical_specs?.length || 0} Technical Standards</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-3.5 h-3.5 text-[#52B788]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
-              <span className="text-gray-400 text-[12px] font-sans uppercase tracking-wide">{service.machinery?.length || 0} Equipment Types</span>
+              <span className="text-theme-fg-3 text-[12px] font-sans uppercase tracking-wide">{service.machinery?.length || 0} Equipment Types</span>
             </div>
             {relatedProjects.length > 0 && (
               <div className="flex items-center gap-2">
                 <svg className="w-3.5 h-3.5 text-[#52B788]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-                <span className="text-gray-400 text-[12px] font-sans uppercase tracking-wide">{relatedProjects.length} Related Project{relatedProjects.length !== 1 ? 's' : ''} Executed</span>
+                <span className="text-theme-fg-3 text-[12px] font-sans uppercase tracking-wide">{relatedProjects.length} Related Project{relatedProjects.length !== 1 ? 's' : ''} Executed</span>
               </div>
             )}
             <div className="ml-auto">
-              <Link href="/contact-us" className="text-[#52B788] text-[11px] uppercase tracking-widest font-semibold font-sans hover:text-white transition-colors flex items-center gap-1.5">
+              <Link href="/contact-us" className="text-[#52B788] text-[11px] uppercase tracking-widest font-semibold font-sans hover:text-[#2D6A4F] transition-colors flex items-center gap-1.5">
                 Request Quotation
                 <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
               </Link>
@@ -198,9 +198,9 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
               <div>
                 <div className="flex items-center gap-3 mb-6">
                   <span className="w-6 h-px bg-[#52B788]" />
-                  <h2 className="font-display text-[22px] text-white uppercase tracking-wide">Overview</h2>
+                  <h2 className="font-display text-[22px] text-theme-fg uppercase tracking-wide">Overview</h2>
                 </div>
-                <p className="text-gray-400 text-base leading-relaxed font-sans">{service.description}</p>
+                <p className="text-theme-fg-3 text-base leading-relaxed font-sans">{service.description}</p>
               </div>
 
               {/* 4. WHY THIS SERVICE MATTERS */}
@@ -208,7 +208,7 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
                 <div>
                   <div className="flex items-center gap-3 mb-7">
                     <span className="w-6 h-px bg-[#52B788]" />
-                    <h2 className="font-display text-[22px] text-white uppercase tracking-wide">Why This Matters</h2>
+                    <h2 className="font-display text-[22px] text-theme-fg uppercase tracking-wide">Why This Matters</h2>
                   </div>
                   <ul className="space-y-4">
                     {service.importance_points.map((point, i) => (
@@ -216,7 +216,7 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
                         <span className="flex-shrink-0 w-7 h-7 border border-[#52B788]/30 flex items-center justify-center text-[#52B788] text-[11px] font-display font-bold mt-0.5 group-hover:bg-[#52B788]/10 transition-colors">
                           {String(i + 1).padStart(2, '0')}
                         </span>
-                        <p className="text-gray-400 text-[15px] leading-relaxed font-sans">{point}</p>
+                        <p className="text-theme-fg-3 text-[15px] leading-relaxed font-sans">{point}</p>
                       </li>
                     ))}
                   </ul>
@@ -227,15 +227,15 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
               <div>
                 <div className="flex items-center gap-3 mb-6">
                   <span className="w-6 h-px bg-[#52B788]" />
-                  <h2 className="font-display text-[22px] text-white uppercase tracking-wide">Work Scope</h2>
+                    <h2 className="font-display text-[22px] text-theme-fg uppercase tracking-wide">Work Scope</h2>
                 </div>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {service.scope.map((item) => (
-                    <li key={item} className="flex items-start gap-3 bg-[#050d1a] border border-white/[0.05] px-4 py-3 hover:border-[#52B788]/20 transition-colors">
+                    <li key={item} className="flex items-start gap-3 bg-theme-surface border border-theme-border/[0.05] px-4 py-3 hover:border-[#52B788]/20 transition-colors">
                       <svg className="w-4 h-4 text-[#52B788] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
                       </svg>
-                      <span className="text-gray-300 text-[14px] leading-snug font-sans">{item}</span>
+                      <span className="text-theme-fg-2 text-[14px] leading-snug font-sans">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -246,16 +246,16 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
                 <div>
                   <div className="flex items-center gap-3 mb-6">
                     <span className="w-6 h-px bg-[#52B788]" />
-                    <h2 className="font-display text-[22px] text-white uppercase tracking-wide">Technical Specifications</h2>
+                    <h2 className="font-display text-[22px] text-theme-fg uppercase tracking-wide">Technical Specifications</h2>
                   </div>
-                  <div className="border border-white/[0.06] overflow-hidden">
+                  <div className="border border-theme-border/[0.06] overflow-hidden">
                     {service.technical_specs.map(({ label, value }, i) => (
-                      <div key={label} className={`flex ${i % 2 === 0 ? 'bg-[#050d1a]' : 'bg-[#071526]'} border-b border-white/[0.05] last:border-0`}>
-                        <div className="w-2/5 px-5 py-3.5 border-r border-white/[0.05]">
+                      <div key={label} className={`flex ${i % 2 === 0 ? 'bg-theme-surface' : 'bg-theme-card'} border-b border-theme-border/[0.05] last:border-0`}>
+                        <div className="w-2/5 px-5 py-3.5 border-r border-theme-border/[0.05]">
                           <span className="text-[#52B788] text-[11px] font-semibold uppercase tracking-widest font-sans">{label}</span>
                         </div>
                         <div className="flex-1 px-5 py-3.5">
-                          <span className="text-gray-300 text-[14px] font-sans">{value}</span>
+                          <span className="text-theme-fg-2 text-[14px] font-sans">{value}</span>
                         </div>
                       </div>
                     ))}
@@ -268,16 +268,16 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
                 <div>
                   <div className="flex items-center gap-3 mb-8">
                     <span className="w-6 h-px bg-[#52B788]" />
-                    <h2 className="font-display text-[22px] text-white uppercase tracking-wide">Work Process</h2>
+                    <h2 className="font-display text-[22px] text-theme-fg uppercase tracking-wide">Work Process</h2>
                   </div>
-                  <div className="relative pl-8 border-l border-white/[0.08]">
+                  <div className="relative pl-8 border-l border-theme-border/[0.08]">
                     {service.process.map((step, i) => (
                       <div key={i} className="relative pb-10 last:pb-0">
-                        <div className="absolute -left-[33px] flex items-center justify-center w-7 h-7 rounded-full bg-[#040c18] border border-[#52B788]/40">
+                        <div className="absolute -left-[33px] flex items-center justify-center w-7 h-7 rounded-full bg-theme-base border border-[#52B788]/40">
                           <span className="font-display text-[10px] text-[#52B788] font-bold">{String(i + 1).padStart(2, '0')}</span>
                         </div>
-                        <h3 className="font-display text-[17px] text-white uppercase tracking-wide mb-1.5">{step.title}</h3>
-                        <p className="text-gray-400 text-[14px] leading-relaxed font-sans">{step.description}</p>
+                        <h3 className="font-display text-[17px] text-theme-fg uppercase tracking-wide mb-1.5">{step.title}</h3>
+                        <p className="text-theme-fg-3 text-[14px] leading-relaxed font-sans">{step.description}</p>
                       </div>
                     ))}
                   </div>
@@ -291,18 +291,18 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
 
               {/* Machinery cards */}
               {service.machinery?.length > 0 && (
-                <div className="bg-[#050d1a] border border-white/[0.07] p-6">
+                <div className="bg-theme-surface border border-theme-border/[0.07] p-6">
                   <div className="flex items-center gap-3 mb-5">
                     <span className="w-4 h-px bg-[#52B788]" />
-                    <h3 className="font-display text-[14px] text-white uppercase tracking-[0.18em]">Machinery Used</h3>
+                    <h3 className="font-display text-[14px] text-theme-fg uppercase tracking-[0.18em]">Machinery Used</h3>
                   </div>
                   <div className="grid grid-cols-2 gap-2">
                     {service.machinery.map(({ name, type }) => (
-                      <div key={name} className="flex flex-col items-center gap-2 bg-[#071526] border border-white/[0.05] p-4 hover:border-[#52B788]/30 transition-colors text-center group">
-                        <span className="text-[#52B788] group-hover:text-white transition-colors">
+                      <div key={name} className="flex flex-col items-center gap-2 bg-theme-card border border-theme-border/[0.05] p-4 hover:border-[#52B788]/30 transition-colors text-center group">
+                        <span className="text-[#52B788] group-hover:text-theme-fg transition-colors">
                           {MACHINERY_ICONS[type] || MACHINERY_ICONS.other}
                         </span>
-                        <span className="text-gray-400 text-[11px] font-sans leading-tight">{name}</span>
+                        <span className="text-theme-fg-3 text-[11px] font-sans leading-tight">{name}</span>
                       </div>
                     ))}
                   </div>
@@ -311,14 +311,14 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
 
               {/* Typical clients */}
               {service.client_types?.length > 0 && (
-                <div className="bg-[#050d1a] border border-white/[0.07] p-6">
+                <div className="bg-theme-surface border border-theme-border/[0.07] p-6">
                   <div className="flex items-center gap-3 mb-5">
                     <span className="w-4 h-px bg-[#52B788]" />
-                    <h3 className="font-display text-[14px] text-white uppercase tracking-[0.18em]">Typical Clients</h3>
+                    <h3 className="font-display text-[14px] text-theme-fg uppercase tracking-[0.18em]">Typical Clients</h3>
                   </div>
                   <ul className="space-y-2">
                     {service.client_types.map((c) => (
-                      <li key={c} className="flex items-center gap-2.5 text-gray-400 text-[13px] font-sans">
+                      <li key={c} className="flex items-center gap-2.5 text-theme-fg-3 text-[13px] font-sans">
                         <span className="w-1.5 h-1.5 bg-[#52B788] flex-shrink-0" />
                         {c}
                       </li>
@@ -328,17 +328,17 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
               )}
 
               {/* CTA card */}
-              <div className="bg-[#071526] border border-[#52B788]/20 p-6">
-                <h3 className="font-display text-[18px] text-white uppercase tracking-wide mb-3">Need This Service?</h3>
-                <p className="text-gray-500 text-[13px] leading-relaxed font-sans mb-5">
+              <div className="bg-theme-card border border-[#52B788]/20 p-6">
+                <h3 className="font-display text-[18px] text-theme-fg uppercase tracking-wide mb-3">Need This Service?</h3>
+                <p className="text-theme-fg-3 text-[13px] leading-relaxed font-sans mb-5">
                   Send us your project brief or tender document and we will respond within 24 hours.
                 </p>
                 <Link href="/contact-us" className="btn-primary block text-center text-[13px]">Get in Touch</Link>
                 <a
-                  href="https://wa.me/912583683158?text=Hello%2C%20I%20am%20enquiring%20about%20your%20infrastructure%20services."
+                  href="https://wa.me/919453111377?text=Hello%2C%20I%20am%20enquiring%20about%20your%20infrastructure%20services."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 mt-3 text-gray-500 hover:text-white text-xs font-sans transition-colors"
+                  className="flex items-center justify-center gap-2 mt-3 text-theme-fg-3 hover:text-theme-fg text-xs font-sans transition-colors"
                 >
                   <svg className="w-3.5 h-3.5 fill-[#25D366]" viewBox="0 0 24 24">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
@@ -348,7 +348,7 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
               </div>
 
               {/* All services link */}
-              <Link href="/services" className="flex items-center gap-2 text-gray-500 hover:text-[#52B788] text-[11px] uppercase tracking-widest font-sans transition-colors">
+              <Link href="/services" className="flex items-center gap-2 text-theme-fg-3 hover:text-[#52B788] text-[11px] uppercase tracking-widest font-sans transition-colors">
                 <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
                 </svg>
@@ -360,7 +360,7 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
 
         {/* ── 8. RELATED PROJECTS ─────────────────────────────────────────── */}
         {relatedProjects.length > 0 && (
-          <section className="border-t border-white/[0.06] bg-[#050d1a] py-20">
+          <section className="border-t border-theme-border/[0.06] bg-theme-surface py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
                 <div>
@@ -368,17 +368,17 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
                     <span className="w-8 h-px bg-[#52B788]" />
                     <span className="text-[#52B788] text-[13px] uppercase tracking-[0.2em] font-sans font-semibold">Executed Work</span>
                   </div>
-                  <h2 className="font-display text-[32px] lg:text-[44px] text-white uppercase leading-none">
+                  <h2 className="font-display text-[32px] lg:text-[44px] text-theme-fg uppercase leading-none">
                     Projects Under This Service
                   </h2>
                 </div>
-                <Link href="/projects" className="text-[#52B788] text-[11px] uppercase tracking-widest font-sans font-semibold hover:text-white transition-colors whitespace-nowrap">
+                <Link href="/projects" className="text-[#52B788] text-[11px] uppercase tracking-widest font-sans font-semibold hover:text-[#2D6A4F] transition-colors whitespace-nowrap">
                   All Projects &rarr;
                 </Link>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.04]">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-theme-border/[0.04]">
                 {relatedProjects.map((project) => (
-                  <Link key={project.slug} href={`/projects/${project.slug}`} className="group bg-[#040c18] hover:bg-[#071526] transition-colors flex flex-col">
+                  <Link key={project.slug} href={`/projects/${project.slug}`} className="group bg-theme-base hover:bg-theme-card transition-colors flex flex-col">
                     <div className="relative aspect-[16/9] overflow-hidden">
                       <img
                         src={project.featured_image || 'https://picsum.photos/800/450?random=99'}
@@ -386,7 +386,7 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#040c18] via-transparent to-transparent opacity-60" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-theme-base via-transparent to-transparent opacity-60" />
                       <div className="absolute top-3 right-3">
                         <span className={`text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 ${project.status === 'completed' ? 'bg-[#52B788]/20 text-[#52B788] border border-[#52B788]/40' : 'bg-amber-500/20 text-amber-400 border border-amber-500/40'}`}>
                           {project.status === 'completed' ? 'Completed' : 'Ongoing'}
@@ -394,19 +394,19 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
                       </div>
                     </div>
                     <div className="p-6 flex flex-col flex-1">
-                      <h3 className="font-display text-[18px] text-white uppercase leading-tight mb-2 group-hover:text-[#52B788] transition-colors">
+                      <h3 className="font-display text-[18px] text-theme-fg uppercase leading-tight mb-2 group-hover:text-[#52B788] transition-colors">
                         {project.title}
                       </h3>
                       {project.location && (
-                        <p className="text-gray-500 text-[12px] font-sans uppercase tracking-wide mb-3 flex items-center gap-1.5">
+                        <p className="text-theme-fg-3 text-[12px] font-sans uppercase tracking-wide mb-3 flex items-center gap-1.5">
                           <svg className="w-3 h-3 text-[#52B788]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                           </svg>
                           {project.location}
                         </p>
                       )}
-                      <p className="text-gray-500 text-[13px] leading-relaxed font-sans flex-1 line-clamp-2">{project.excerpt}</p>
-                      <span className="mt-4 text-[#52B788] text-[11px] uppercase tracking-widest font-semibold font-sans flex items-center gap-1.5 group-hover:text-white transition-colors">
+                      <p className="text-theme-fg-3 text-[13px] leading-relaxed font-sans flex-1 line-clamp-2">{project.excerpt}</p>
+                      <span className="mt-4 text-[#52B788] text-[11px] uppercase tracking-widest font-semibold font-sans flex items-center gap-1.5 group-hover:text-[#2D6A4F] transition-colors">
                         View Case Study
                         <svg className="w-3 h-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -422,13 +422,13 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
 
         {/* ── 9. BEFORE / AFTER ───────────────────────────────────────────── */}
         {service.before_after?.before && service.before_after?.after && (
-          <section className="border-t border-white/[0.06] py-20">
+          <section className="border-t border-theme-border/[0.06] py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex items-center gap-3 mb-10">
                 <span className="w-8 h-px bg-[#52B788]" />
-                <h2 className="font-display text-[32px] lg:text-[44px] text-white uppercase leading-none">Before &amp; After</h2>
+                <h2 className="font-display text-[32px] lg:text-[44px] text-theme-fg uppercase leading-none">Before &amp; After</h2>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/[0.04]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-theme-border/[0.04]">
                 <div className="group relative overflow-hidden aspect-[4/3]">
                   <img src={service.before_after.before} alt="Before" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#040c18]/80 to-transparent" />
@@ -446,13 +446,13 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
 
         {/* ── 10. SITE GALLERY ────────────────────────────────────────────── */}
         {service.gallery?.length > 0 && (
-          <section className="border-t border-white/[0.06] py-16 bg-[#050d1a]">
+          <section className="border-t border-theme-border/[0.06] py-16 bg-theme-surface">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex items-center gap-3 mb-8">
                 <span className="w-6 h-px bg-[#52B788]" />
-                <h2 className="font-display text-[22px] text-white uppercase tracking-wide">Site Gallery</h2>
+                <h2 className="font-display text-[22px] text-theme-fg uppercase tracking-wide">Site Gallery</h2>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-px bg-white/[0.04]">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-px bg-theme-border/[0.04]">
                 {service.gallery.map((img, i) => (
                   <div key={i} className="aspect-[4/3] overflow-hidden group">
                     <img
@@ -470,7 +470,7 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
 
         {/* ── 11. FAQ ─────────────────────────────────────────────────────── */}
         {service.faqs?.length > 0 && (
-          <section className="border-t border-white/[0.06] py-20">
+          <section className="border-t border-theme-border/[0.06] py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid lg:grid-cols-3 gap-16">
                 <div>
@@ -478,14 +478,14 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
                     <span className="w-6 h-px bg-[#52B788]" />
                     <span className="text-[#52B788] text-[13px] uppercase tracking-[0.2em] font-sans font-semibold">Common Questions</span>
                   </div>
-                  <h2 className="font-display text-[32px] lg:text-[40px] text-white uppercase leading-none mb-4">
+                  <h2 className="font-display text-[32px] lg:text-[40px] text-theme-fg uppercase leading-none mb-4">
                     Frequently Asked
                   </h2>
-                  <p className="text-gray-500 text-[14px] font-sans leading-relaxed">
+                  <p className="text-theme-fg-3 text-[14px] font-sans leading-relaxed">
                     Common questions from engineers, procurement officers, and NGO teams about this service.
                   </p>
                 </div>
-                <div className="lg:col-span-2 divide-y divide-white/[0.07]">
+                <div className="lg:col-span-2 divide-y divide-theme-border/[0.07]">
                   {service.faqs.map((faq, i) => (
                     <FaqItem key={i} question={faq.question} answer={faq.answer} />
                   ))}
@@ -496,23 +496,23 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
         )}
 
         {/* ── 12. CTA BAND ────────────────────────────────────────────────── */}
-        <section className="border-t border-white/[0.06] bg-[#050d1a] py-20">
+        <section className="border-t border-theme-border/[0.06] bg-theme-surface py-20">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <div className="flex items-center justify-center gap-3 mb-5">
-              <span className="w-8 h-px bg-white/20" />
-              <span className="text-gray-500 text-[12px] uppercase tracking-[0.25em] font-sans">Ready to Execute</span>
-              <span className="w-8 h-px bg-white/20" />
+              <span className="w-8 h-px bg-theme-border/20" />
+              <span className="text-theme-fg-3 text-[12px] uppercase tracking-[0.25em] font-sans">Ready to Execute</span>
+              <span className="w-8 h-px bg-theme-border/20" />
             </div>
-            <h2 className="font-display text-[38px] lg:text-[54px] text-white uppercase leading-none mb-5">
+            <h2 className="font-display text-[38px] lg:text-[54px] text-theme-fg uppercase leading-none mb-5">
               Start Your Project
             </h2>
-            <p className="text-gray-400 text-base mb-10 font-sans leading-relaxed max-w-xl mx-auto">
+            <p className="text-theme-fg-2 text-base mb-10 font-sans leading-relaxed max-w-xl mx-auto">
               Share your tender brief or project scope. We respond within 24 hours with a proposal.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/contact-us" className="btn-primary min-w-[200px] text-center">Request Quotation</Link>
               <a
-                href="https://wa.me/912583683158?text=Hello%2C%20I%20have%20a%20project%20enquiry."
+                href="https://wa.me/919453111377?text=Hello%2C%20I%20have%20a%20project%20enquiry."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold text-xs uppercase tracking-widest px-8 py-4 hover:bg-[#1db954] transition-colors min-w-[200px]"
@@ -528,31 +528,31 @@ export default function ServiceDetailPage({ service, relatedProjects, prev, next
 
         {/* ── 13. PREV / NEXT ──────────────────────────────────────────────── */}
         {(prev || next) && (
-          <nav className="border-t border-white/[0.06] bg-[#040c18]">
+          <nav className="border-t border-theme-border/[0.06] bg-theme-base">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid grid-cols-2 divide-x divide-white/[0.06]">
+              <div className="grid grid-cols-2 divide-x divide-theme-border/[0.06]">
                 {prev ? (
-                  <Link href={`/services/${prev.slug}`} className="group flex flex-col gap-1 py-8 px-4 hover:bg-[#071526] transition-colors">
-                    <span className="text-[11px] text-gray-600 uppercase tracking-widest font-sans flex items-center gap-2">
+                  <Link href={`/services/${prev.slug}`} className="group flex flex-col gap-1 py-8 px-4 hover:bg-theme-card transition-colors">
+                    <span className="text-[11px] text-theme-fg-3 uppercase tracking-widest font-sans flex items-center gap-2">
                       <svg className="w-3 h-3 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M7 16l-4-4m0 0l4-4m-4 4h18"/>
                       </svg>
                       Previous
                     </span>
-                    <span className="font-display text-[15px] text-white uppercase tracking-wide group-hover:text-[#52B788] transition-colors">{prev.name}</span>
+                    <span className="font-display text-[15px] text-theme-fg uppercase tracking-wide group-hover:text-[#52B788] transition-colors">{prev.name}</span>
                   </Link>
                 ) : (
                   <div />
                 )}
                 {next ? (
-                  <Link href={`/services/${next.slug}`} className="group flex flex-col gap-1 py-8 px-4 text-right hover:bg-[#071526] transition-colors">
-                    <span className="text-[11px] text-gray-600 uppercase tracking-widest font-sans flex items-center justify-end gap-2">
+                  <Link href={`/services/${next.slug}`} className="group flex flex-col gap-1 py-8 px-4 text-right hover:bg-theme-card transition-colors">
+                    <span className="text-[11px] text-theme-fg-3 uppercase tracking-widest font-sans flex items-center justify-end gap-2">
                       Next
                       <svg className="w-3 h-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                       </svg>
                     </span>
-                    <span className="font-display text-[15px] text-white uppercase tracking-wide group-hover:text-[#52B788] transition-colors">{next.name}</span>
+                    <span className="font-display text-[15px] text-theme-fg uppercase tracking-wide group-hover:text-[#52B788] transition-colors">{next.name}</span>
                   </Link>
                 ) : (
                   <div />

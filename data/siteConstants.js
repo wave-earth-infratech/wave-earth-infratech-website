@@ -26,9 +26,9 @@ export const COMPANY = {
 // ─── Contact ──────────────────────────────────────────────────────────────────
 
 export const CONTACT = {
-  phone:      '+91 258 368 3158',
-  phoneTel:   'tel:+912583683158',
-  whatsapp:   'https://wa.me/912583683158?text=Hello%2C%20I%20am%20enquiring%20about%20your%20infrastructure%20services.',
+  phone:      '+91 945 311 1377',
+  phoneTel:   'tel:+919453111377',
+  whatsapp:   'https://wa.me/919453111377?text=Hello%2C%20I%20am%20enquiring%20about%20your%20infrastructure%20services.',
   email:      'contact@waveearthinfratech.com',
   address1:   'M38, Sector-12 Pratap Vihar',
   address2:   '',

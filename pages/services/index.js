@@ -140,7 +140,7 @@ export default function ServicesPage() {
                   className="group relative flex flex-col p-8 bg-theme-base hover:bg-theme-card transition-all duration-300 overflow-hidden"
                 >
                   {/* Background index number */}
-                  <span className="absolute top-3 right-5 font-display text-6xl text-white/[0.03] group-hover:text-white/[0.06] transition-colors select-none">
+                  <span className="absolute top-3 right-5 font-display text-6xl text-theme-fg/[0.06] group-hover:text-theme-fg/[0.12] transition-colors select-none">
                     {String(i + 1).padStart(2, '0')}
                   </span>
 
@@ -224,7 +224,7 @@ export default function ServicesPage() {
                 Discuss Your Project
               </Link>
               <a
-                href="https://wa.me/912583683158?text=Hello%2C%20I%20am%20enquiring%20about%20your%20infrastructure%20services."
+                href="https://wa.me/919453111377?text=Hello%2C%20I%20am%20enquiring%20about%20your%20infrastructure%20services."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-theme-fg-2 hover:text-theme-fg text-sm font-sans transition-colors"

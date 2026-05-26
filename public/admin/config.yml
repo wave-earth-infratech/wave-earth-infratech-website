@@ -206,7 +206,7 @@ collections:
           - { label: Site Title, name: site_title, widget: string }
           - { label: Tagline, name: tagline, widget: string }
           - { label: Phone (display), name: phone_display, widget: string }
-          - { label: Phone (tel: href), name: phone_href, widget: string, hint: 'e.g. +912583683158' }
+          - { label: Phone (tel: href), name: phone_href, widget: string, hint: 'e.g. +919453111377' }
           - { label: WhatsApp Number, name: whatsapp, widget: string, hint: 'Country code + number, no spaces' }
           - { label: Email, name: email, widget: string }
           - { label: Address Line 1, name: address_line1, widget: string }

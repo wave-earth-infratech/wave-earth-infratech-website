@@ -447,13 +447,13 @@ export default function AboutPage() {
               Contact Us
             </Link>
             <a
-              href="tel:+912583683158"
+              href="tel:+919453111377"
               className="border border-white/40 hover:border-white text-white font-bold text-[11px] uppercase tracking-widest px-8 py-4 transition-colors hover:bg-white/5"
             >
-              +91 258 368 3158
+              +91 945 311 1377
             </a>
             <a
-              href="https://wa.me/912583683158?text=Hello%2C%20I%20am%20enquiring%20about%20your%20infrastructure%20services."
+              href="https://wa.me/919453111377?text=Hello%2C%20I%20am%20enquiring%20about%20your%20infrastructure%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] hover:bg-[#1db954] text-white font-bold text-[11px] uppercase tracking-widest px-8 py-4 transition-colors flex items-center justify-center gap-2"

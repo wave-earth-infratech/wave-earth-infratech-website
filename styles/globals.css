@@ -6,7 +6,7 @@
 
 /* Light mode (default) */
 :root {
-  /* Backgrounds — RGB channel format for Tailwind opacity modifiers */
+  /* Backgrounds - RGB channel format for Tailwind opacity modifiers */
   --bg-base:    240 244 248;   /* #f0f4f8 */
   --bg-surface: 255 255 255;   /* #ffffff */
   --bg-card:    238 242 247;   /* #eef2f7 */

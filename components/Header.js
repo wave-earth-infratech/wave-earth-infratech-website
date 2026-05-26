@@ -33,11 +33,11 @@ const NAV = [
     href: '/projects',
     children: [
       { label: 'All Projects',        href: '/projects' },
-      { label: 'Completed Projects',  href: '/projects' },
-      { label: 'Ongoing Projects',    href: '/projects' },
-      { label: 'Canal Projects',      href: '/projects' },
-      { label: 'Irrigation Projects', href: '/projects' },
-      { label: 'Redevelopment Works', href: '/projects' },
+      { label: 'Completed Projects',  href: '/projects/completed' },
+      { label: 'Ongoing Projects',    href: '/projects/ongoing' },
+      { label: 'Canal Projects',      href: '/projects/canal' },
+      { label: 'Irrigation Projects', href: '/projects/irrigation' },
+      { label: 'Redevelopment Works', href: '/projects/redevelopment' },
     ],
   },
   {
@@ -155,7 +155,7 @@ export default function Header() {
                         )}
                       </button>
 
-                      {/* Mega panel — 3 columns */}
+                      {/* Mega panel - 3 columns */}
                       <div
                         className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[820px]
                                    bg-[#071526] border border-white/[0.08]
@@ -267,13 +267,13 @@ export default function Header() {
                 aria-label="Toggle theme"
               >
                 {theme === 'dark' ? (
-                  /* Sun icon — click to go light */
+                  /* Sun icon - click to go light */
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                       d="M12 3v1m0 16v1m8.66-9H21M3 12H2m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10A5 5 0 0012 7z" />
                   </svg>
                 ) : (
-                  /* Moon icon — click to go dark */
+                  /* Moon icon - click to go dark */
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                       d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
@@ -383,7 +383,7 @@ export default function Header() {
               {/* Mobile CTAs */}
               <div className="pt-4 pb-2 border-t border-theme-border/[0.08] flex gap-3 mt-4">
                 <a
-                  href="tel:+912583683158"
+                  href="tel:+919453111377"
                   className="flex-1 flex items-center justify-center gap-2 border border-theme-border/10 text-theme-fg-2 text-[11px] font-semibold py-3 hover:border-[#52B788]/50 hover:text-theme-fg transition-colors uppercase tracking-widest"
                 >
                   <svg className="w-4 h-4 text-[#52B788]" fill="none" stroke="currentColor" viewBox="0 0 24 24">

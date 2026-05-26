@@ -20,10 +20,10 @@ address_line1: "M38, Sector-12 Pratap Vihar"
 city: "Ghaziabad"
 state_registered: "Uttar Pradesh"
 pincode: "201309"
-phone_display: "+91 258 368 3158"
-phone_href: "+912583683158"
+phone_display: "+91 945 311 1377"
+phone_href: "+919453111377"
 email: "contact@waveearthinfratech.com"
-whatsapp_number: "912583683158"
+whatsapp_number: "919453111377"
 
 # Key stats - UPDATE ONLY HERE when numbers change
 years_experience: 8
