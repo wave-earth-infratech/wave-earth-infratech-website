@@ -119,7 +119,7 @@ export default function AboutPage() {
       <Header />
 
       {/* ── 1. HERO ───────────────────────────────────────────────────────── */}
-      <section className="relative min-h-[55vh] flex items-end overflow-hidden bg-[#050d1a]">
+      <section className="relative min-h-[55vh] flex items-end overflow-hidden bg-theme-surface">
         <img
           src="https://picsum.photos/1600/900?random=41"
           alt=""
@@ -131,7 +131,7 @@ export default function AboutPage() {
 
         {/* angular bottom cut */}
         <div
-          className="absolute bottom-0 left-0 right-0 h-20 bg-[#0a0a0a]"
+          className="absolute bottom-0 left-0 right-0 h-20 bg-theme-base"
           style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0)' }}
         />
 
@@ -156,7 +156,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── 2. WHO WE ARE ─────────────────────────────────────────────────── */}
-      <section className="py-32 bg-[#0a0a0a]">
+      <section className="py-32 bg-theme-base">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
@@ -177,22 +177,22 @@ export default function AboutPage() {
                 <span className="w-10 h-px bg-[#52B788]" />
                 <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.25em]">Who We Are</span>
               </div>
-              <h2 className="font-display text-[40px] lg:text-[54px] font-bold text-white uppercase leading-none mb-6">
+              <h2 className="font-display text-[40px] lg:text-[54px] font-bold text-theme-fg uppercase leading-none mb-6">
                 Civil Infrastructure Built on<br />
-                <span className="text-gray-400">{STATS.yearsExperience.value} Years of Ground-Level Experience</span>
+                <span className="text-theme-fg-2">{STATS.yearsExperience.value} Years of Ground-Level Experience</span>
               </h2>
-              <p className="text-gray-400 leading-relaxed mb-5 text-lg">
+              <p className="text-theme-fg-2 leading-relaxed mb-5 text-lg">
                 Wave Earth Infratech Private Limited is a rural infrastructure and civil works company
                 specialising in canal construction, nahar lining, irrigation works, and rural redevelopment
                 projects across Uttar Pradesh and Madhya Pradesh.
               </p>
-              <p className="text-gray-400 leading-relaxed mb-5 text-lg">
+              <p className="text-theme-fg-2 leading-relaxed mb-5 text-lg">
                 Founded with a mission to bring professional infrastructure execution to India&apos;s
                 underserved rural zones, we work closely with state government irrigation departments,
                 Jal Shakti Ministry projects, and development-sector NGOs to deliver durable,
                 impactful civil works.
               </p>
-              <p className="text-gray-400 leading-relaxed mb-10 text-lg">
+              <p className="text-theme-fg-2 leading-relaxed mb-10 text-lg">
                 Our team has direct field experience since {COMPANY.foundedYear} in earthwork, concrete structures,
                 water channel development, and large-scale civil maintenance contracts - with a {STATS.workforce.value}{STATS.workforce.suffix}
                 strong workforce deployed across {COMPANY.statesShort}.
@@ -201,7 +201,7 @@ export default function AboutPage() {
                 <Link href="/contact-us" className="bg-[#52B788] text-white text-[15px] font-semibold uppercase tracking-[0.06em] px-8 py-4 hover:bg-[#2D6A4F] transition-colors">
                   Get in Touch
                 </Link>
-                <Link href="/projects" className="border border-white/20 text-white text-[15px] font-semibold uppercase tracking-[0.06em] px-8 py-4 hover:border-[#52B788]/60 hover:text-[#52B788] transition-colors">
+                <Link href="/projects" className="border border-theme-border/20 text-theme-fg text-[15px] font-semibold uppercase tracking-[0.06em] px-8 py-4 hover:border-[#52B788]/60 hover:text-[#52B788] transition-colors">
                   Our Projects
                 </Link>
               </div>
@@ -211,12 +211,12 @@ export default function AboutPage() {
       </section>
 
       {/* ── 3. KEY FACTS STRIP ────────────────────────────────────────────── */}
-      <section className="bg-[#0f1b2d] py-12 border-y border-white/5">
+      <section className="bg-theme-card py-12 border-y border-theme-border/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
             {KEY_FACTS.map((f) => (
-              <div key={f.label} className="text-center border-r border-white/5 last:border-0 px-2">
-                <p className="text-[11px] text-gray-500 uppercase tracking-widest font-semibold mb-1.5">{f.label}</p>
+              <div key={f.label} className="text-center border-r border-theme-border/5 last:border-0 px-2">
+                <p className="text-[11px] text-theme-fg-3 uppercase tracking-widest font-semibold mb-1.5">{f.label}</p>
                 <p className="text-[#52B788] font-display text-base font-semibold uppercase">{f.value}</p>
               </div>
             ))}
@@ -225,14 +225,14 @@ export default function AboutPage() {
       </section>
 
       {/* ── 4. MISSION & VISION ───────────────────────────────────────────── */}
-      <section className="py-32 bg-[#111827]">
+      <section className="py-32 bg-theme-card">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="mb-14">
             <div className="flex items-center gap-3 mb-4">
               <span className="w-10 h-px bg-[#52B788]" />
               <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.25em]">Purpose &amp; Direction</span>
             </div>
-            <h2 className="font-display text-[40px] lg:text-[54px] font-bold text-white uppercase">Mission &amp; Vision</h2>
+            <h2 className="font-display text-[40px] lg:text-[54px] font-bold text-theme-fg uppercase">Mission &amp; Vision</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-[#0B2545] border border-white/5 p-10 flex flex-col gap-5">
@@ -266,25 +266,25 @@ export default function AboutPage() {
       </section>
 
       {/* ── 5. OUR JOURNEY ────────────────────────────────────────────────── */}
-      <section className="py-32 bg-[#0a0a0a]">
+      <section className="py-32 bg-theme-base">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="mb-14">
             <div className="flex items-center gap-3 mb-4">
               <span className="w-10 h-px bg-[#52B788]" />
               <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.25em]">Our Story</span>
             </div>
-            <h2 className="font-display text-[40px] lg:text-[54px] font-bold text-white uppercase">Our Journey</h2>
+            <h2 className="font-display text-[40px] lg:text-[54px] font-bold text-theme-fg uppercase">Our Journey</h2>
           </div>
           <div className="relative">
-            <div className="absolute left-[23px] top-0 bottom-0 w-px bg-white/5 hidden sm:block" />
+            <div className="absolute left-[23px] top-0 bottom-0 w-px bg-theme-border/5 hidden sm:block" />
             <div className="flex flex-col gap-6">
               {timeline.map((t, i) => (
                 <div key={t.year} className="flex gap-6 items-start group">
                   <div className="flex-shrink-0 w-12 h-12 bg-[#0B2545] border border-[#52B788]/30 group-hover:border-[#52B788] flex items-center justify-center z-10 transition-colors">
                     <span className="font-display text-[#52B788] font-bold text-[10px] leading-tight text-center tracking-wider">{t.year}</span>
                   </div>
-                  <div className="bg-[#0f1b2d] border border-white/5 group-hover:border-white/10 px-6 py-4 flex-1 mt-1 transition-colors">
-                    <p className="text-gray-400 text-base leading-relaxed">{t.event}</p>
+                  <div className="bg-theme-card border border-theme-border/5 group-hover:border-theme-border/10 px-6 py-4 flex-1 mt-1 transition-colors">
+                    <p className="text-theme-fg-2 text-base leading-relaxed">{t.event}</p>
                   </div>
                 </div>
               ))}
@@ -294,25 +294,25 @@ export default function AboutPage() {
       </section>
 
       {/* ── 6. CORE VALUES ────────────────────────────────────────────────── */}
-      <section className="py-32 bg-[#0f1b2d]">
+      <section className="py-32 bg-theme-card">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="mb-14">
             <div className="flex items-center gap-3 mb-4">
               <span className="w-10 h-px bg-[#52B788]" />
               <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.25em]">Our Principles</span>
             </div>
-            <h2 className="font-display text-[40px] lg:text-[54px] font-bold text-white uppercase">What Drives Us</h2>
+            <h2 className="font-display text-[40px] lg:text-[54px] font-bold text-theme-fg uppercase">What Drives Us</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {values.map((v) => (
-              <div key={v.title} className="bg-[#071830] border border-white/5 hover:border-[#52B788]/30 p-7 transition-all group">
+              <div key={v.title} className="bg-theme-surface border border-theme-border/5 hover:border-[#52B788]/30 p-7 transition-all group">
                 <div className="w-14 h-14 bg-[#52B788]/10 border border-[#52B788]/20 flex items-center justify-center mb-6 group-hover:bg-[#52B788]/20 transition-colors">
                   <svg className="w-7 h-7 text-[#52B788]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={v.icon} />
                   </svg>
                 </div>
-                <h4 className="font-display text-[22px] font-bold text-white uppercase mb-3">{v.title}</h4>
-                <p className="text-gray-400 text-base leading-relaxed">{v.desc}</p>
+                <h4 className="font-display text-[22px] font-bold text-theme-fg uppercase mb-3">{v.title}</h4>
+                <p className="text-theme-fg-2 text-base leading-relaxed">{v.desc}</p>
               </div>
             ))}
           </div>
@@ -320,7 +320,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── 7. EXPERTISE ──────────────────────────────────────────────────── */}
-      <section className="py-32 bg-[#111827]">
+      <section className="py-32 bg-theme-card">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -328,12 +328,12 @@ export default function AboutPage() {
                 <span className="w-10 h-px bg-[#52B788]" />
                 <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.25em]">Capabilities</span>
               </div>
-              <h2 className="font-display text-[40px] lg:text-[54px] font-bold text-white uppercase leading-none mb-10">
+              <h2 className="font-display text-[40px] lg:text-[54px] font-bold text-theme-fg uppercase leading-none mb-10">
                 Our Areas of<br />Expertise
               </h2>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {expertise.map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-base text-gray-400 group">
+                  <li key={item} className="flex items-start gap-3 text-base text-theme-fg-2 group">
                     <span className="mt-0.5 flex-shrink-0 w-5 h-5 bg-[#52B788]/10 border border-[#52B788]/20 flex items-center justify-center">
                       <svg className="w-3 h-3 text-[#52B788]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
@@ -387,7 +387,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── 9. CERTIFICATIONS STRIP ───────────────────────────────────────── */}
-      <section className="py-14 bg-[#0f1b2d] border-y border-white/5">
+      <section className="py-14 bg-theme-card border-y border-theme-border/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-8">
             <div>
@@ -395,11 +395,11 @@ export default function AboutPage() {
                 <span className="w-6 h-px bg-[#52B788]" />
                 <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.25em]">Registrations &amp; Compliance</span>
               </div>
-              <h3 className="font-display text-2xl font-bold text-white uppercase">Fully Documented &amp; Compliant</h3>
+              <h3 className="font-display text-2xl font-bold text-theme-fg uppercase">Fully Documented &amp; Compliant</h3>
             </div>
             <div className="flex flex-wrap gap-3 justify-center sm:justify-end">
               {certBadges.map((b) => (
-                <div key={b} className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2.5 text-[11px] font-semibold text-gray-300 uppercase tracking-wide">
+                <div key={b} className="flex items-center gap-2 bg-theme-border/5 border border-theme-border/10 px-4 py-2.5 text-[11px] font-semibold text-theme-fg-2 uppercase tracking-wide">
                   <svg className="w-3.5 h-3.5 text-[#52B788] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                   </svg>
@@ -408,8 +408,8 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-          <div className="mt-8 pt-6 border-t border-white/5">
-            <Link href="/certifications" className="inline-flex items-center gap-2 border border-white/20 text-white text-[15px] font-semibold uppercase tracking-[0.06em] px-8 py-4 hover:border-[#52B788]/60 hover:text-[#52B788] transition-colors">
+          <div className="mt-8 pt-6 border-t border-theme-border/5">
+            <Link href="/certifications" className="inline-flex items-center gap-2 border border-theme-border/20 text-theme-fg text-[15px] font-semibold uppercase tracking-[0.06em] px-8 py-4 hover:border-[#52B788]/60 hover:text-[#52B788] transition-colors">
               View All Documents &amp; Certifications
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

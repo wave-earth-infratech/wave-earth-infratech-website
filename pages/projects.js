@@ -44,31 +44,31 @@ export default function ProjectsPage({ projects }) {
 
       <Header />
 
-      <main className="bg-[#040c18] text-white min-h-screen">
+      <main className="bg-theme-base text-theme-fg min-h-screen">
 
         {/* ── Hero ── */}
-        <section className="pt-36 pb-16 bg-[#050d1a] border-b border-white/[0.06]">
+        <section className="pt-36 pb-16 bg-theme-surface border-b border-theme-border/[0.06]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <nav className="flex items-center gap-2 text-[11px] uppercase tracking-widest text-gray-500 font-sans mb-8" aria-label="Breadcrumb">
+            <nav className="flex items-center gap-2 text-[11px] uppercase tracking-widest text-theme-fg-3 font-sans mb-8" aria-label="Breadcrumb">
               <Link href="/" className="hover:text-[#52B788] transition-colors">Home</Link>
-              <span className="text-gray-700">/</span>
+              <span className="text-theme-fg-3">/</span>
               <span className="text-[#52B788]">Projects</span>
             </nav>
             <div className="flex items-center gap-3 mb-5">
               <span className="w-8 h-px bg-[#52B788]" />
               <span className="text-[#52B788] text-[13px] uppercase tracking-[0.2em] font-sans font-semibold">Portfolio</span>
             </div>
-            <h1 className="font-display text-[54px] lg:text-[80px] text-white uppercase leading-none tracking-tight mb-4">
+            <h1 className="font-display text-[54px] lg:text-[80px] text-theme-fg uppercase leading-none tracking-tight mb-4">
               Our Projects
             </h1>
-            <p className="text-gray-400 text-lg max-w-2xl leading-relaxed font-sans">
+            <p className="text-theme-fg-2 text-lg max-w-2xl leading-relaxed font-sans">
               Completed &amp; ongoing infrastructure works - canal, irrigation, earthwork &amp; redevelopment across UP &amp; MP.
             </p>
           </div>
         </section>
 
         {/* ── Stats bar ── */}
-        <div className="border-b border-white/[0.06]">
+        <div className="border-b border-theme-border/[0.06]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-wrap gap-10">
             {[
               [projects.length.toString(),                                                'Total Projects'],
@@ -77,15 +77,15 @@ export default function ProjectsPage({ projects }) {
               [Array.from(new Set(projects.map((p) => p.category))).length.toString(),   'Work Categories'],
             ].map(([v, l]) => (
               <div key={l} className="flex items-center gap-3">
-                <span className="font-display text-2xl text-white">{v}</span>
-                <span className="text-gray-500 text-[11px] uppercase tracking-widest font-sans">{l}</span>
+                <span className="font-display text-2xl text-theme-fg">{v}</span>
+                <span className="text-theme-fg-3 text-[11px] uppercase tracking-widest font-sans">{l}</span>
               </div>
             ))}
           </div>
         </div>
 
         {/* ── Filters ── */}
-        <div className="border-b border-white/[0.06] bg-[#050d1a] sticky top-[80px] z-30">
+        <div className="border-b border-theme-border/[0.06] bg-theme-surface sticky top-[80px] z-30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap items-center gap-6">
             {/* Category filter */}
             <div className="flex flex-wrap gap-2">
@@ -96,7 +96,7 @@ export default function ProjectsPage({ projects }) {
                   className={`text-[11px] uppercase tracking-widest font-sans font-semibold px-4 py-1.5 border transition-colors duration-150 ${
                     activeCategory === cat
                       ? 'border-[#52B788] text-[#52B788]'
-                      : 'border-white/10 text-gray-500 hover:text-white hover:border-white/30'
+                      : 'border-theme-border/10 text-theme-fg-3 hover:text-theme-fg hover:border-theme-border/30'
                   }`}
                 >
                   {cat === 'all' ? 'All' : (CATEGORY_LABELS[cat] || cat)}
@@ -113,7 +113,7 @@ export default function ProjectsPage({ projects }) {
                   className={`text-[11px] uppercase tracking-widest font-sans font-semibold px-4 py-1.5 border transition-colors duration-150 ${
                     activeStatus === s
                       ? s === 'completed' ? 'border-[#52B788] text-[#52B788]' : s === 'ongoing' ? 'border-amber-500 text-amber-400' : 'border-[#52B788] text-[#52B788]'
-                      : 'border-white/10 text-gray-500 hover:text-white hover:border-white/30'
+                      : 'border-theme-border/10 text-theme-fg-3 hover:text-theme-fg hover:border-theme-border/30'
                   }`}
                 >
                   {s === 'all' ? 'All Status' : s}
@@ -127,13 +127,13 @@ export default function ProjectsPage({ projects }) {
         <section className="py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {filtered.length === 0 ? (
-              <div className="py-24 text-center text-gray-500 font-sans text-sm uppercase tracking-widest">
+              <div className="py-24 text-center text-theme-fg-3 font-sans text-sm uppercase tracking-widest">
                 No projects match the selected filters.
               </div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.05]">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-theme-border/[0.05]">
                 {filtered.map((project) => (
-                  <div key={project.slug} className="group bg-[#040c18] hover:bg-[#071526] transition-colors duration-300 flex flex-col">
+                  <div key={project.slug} className="group bg-theme-base hover:bg-theme-card transition-colors duration-300 flex flex-col">
                     {/* Image */}
                     <div className="relative overflow-hidden aspect-[16/9]">
                       <img
@@ -142,10 +142,10 @@ export default function ProjectsPage({ projects }) {
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#040c18] via-transparent to-transparent opacity-60" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-theme-base via-transparent to-transparent opacity-60" />
                       {/* Category pill */}
                       <div className="absolute top-4 left-4">
-                        <span className="bg-[#040c18]/80 text-[#52B788] text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 border border-[#52B788]/30">
+                        <span className="bg-theme-base/80 text-[#52B788] text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 border border-[#52B788]/30">
                           {CATEGORY_LABELS[project.category] || project.category || 'Infrastructure'}
                         </span>
                       </div>
@@ -163,14 +163,14 @@ export default function ProjectsPage({ projects }) {
 
                     {/* Content */}
                     <div className="p-7 flex flex-col flex-1">
-                      <h3 className="font-display text-[20px] text-white uppercase tracking-wide mb-2 leading-tight group-hover:text-[#52B788] transition-colors">
+                      <h3 className="font-display text-[20px] text-theme-fg uppercase tracking-wide mb-2 leading-tight group-hover:text-[#52B788] transition-colors">
                         {project.title}
                       </h3>
 
                       {/* Meta row */}
                       <div className="flex flex-wrap gap-4 mb-4">
                         {project.location && (
-                          <span className="flex items-center gap-1.5 text-gray-500 text-[11px] font-sans uppercase tracking-wide">
+                            <span className="flex items-center gap-1.5 text-theme-fg-3 text-[11px] font-sans uppercase tracking-wide">
                             <svg className="w-3 h-3 text-[#52B788]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -179,19 +179,19 @@ export default function ProjectsPage({ projects }) {
                           </span>
                         )}
                         {project.project_value && (
-                          <span className="text-gray-500 text-[11px] font-sans uppercase tracking-wide">
+                          <span className="text-theme-fg-3 text-[11px] font-sans uppercase tracking-wide">
                             {project.project_value}
                           </span>
                         )}
                       </div>
 
-                      <p className="text-gray-500 text-sm leading-relaxed font-sans mb-6 flex-1">
+                      <p className="text-theme-fg-3 text-sm leading-relaxed font-sans mb-6 flex-1">
                         {project.excerpt}
                       </p>
 
                       {project.client && (
-                        <p className="text-gray-600 text-[11px] font-sans uppercase tracking-widest mb-5 border-t border-white/5 pt-4">
-                          Client: <span className="text-gray-400">{project.client}</span>
+                        <p className="text-theme-fg-3 text-[11px] font-sans uppercase tracking-widest mb-5 border-t border-theme-border/5 pt-4">
+                          Client: <span className="text-theme-fg-2">{project.client}</span>
                         </p>
                       )}
 
@@ -213,12 +213,12 @@ export default function ProjectsPage({ projects }) {
         </section>
 
         {/* ── CTA ── */}
-        <section className="py-20 bg-[#050d1a] border-t border-white/[0.06]">
+        <section className="py-20 bg-theme-surface border-t border-theme-border/[0.06]">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="font-display text-[40px] lg:text-[54px] text-white uppercase leading-none mb-6">
+            <h2 className="font-display text-[40px] lg:text-[54px] text-theme-fg uppercase leading-none mb-6">
               Have a Project?
             </h2>
-            <p className="text-gray-400 text-base mb-10 leading-relaxed font-sans">
+            <p className="text-theme-fg-2 text-base mb-10 leading-relaxed font-sans">
               Share your tender or project brief. We respond within 24 hours.
             </p>
             <Link href="/contact-us" className="btn-primary">Discuss Your Project</Link>

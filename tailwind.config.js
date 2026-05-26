@@ -8,6 +8,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // ── Theme tokens (respond to dark/light via CSS variables) ──────────
+        theme: {
+          base:    'rgb(var(--bg-base)    / <alpha-value>)',
+          surface: 'rgb(var(--bg-surface) / <alpha-value>)',
+          card:    'rgb(var(--bg-card)    / <alpha-value>)',
+          fg:      'rgb(var(--text-fg)    / <alpha-value>)',
+          'fg-2':  'rgb(var(--text-fg-2)  / <alpha-value>)',
+          'fg-3':  'rgb(var(--text-fg-3)  / <alpha-value>)',
+          border:  'rgb(var(--border-color) / <alpha-value>)',
+        },
+        // ── Fixed brand colors ────────────────────────────────────────────
         primary: {
           DEFAULT: '#0B2545',
           light: '#1A3A6B',

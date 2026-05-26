@@ -47,7 +47,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="bg-[#040c18] text-white">
+      <footer className="bg-theme-base text-theme-fg">
 
         {/* ── Top accent bar ── */}
         <div className="h-px bg-gradient-to-r from-transparent via-[#52B788]/40 to-transparent" />
@@ -64,27 +64,27 @@ export default function Footer() {
                   alt="Wave Earth Infratech"
                   width={180}
                   height={50}
-                  className="h-11 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                  className="h-11 w-auto object-contain footer-logo hover:opacity-100 transition-opacity"
                 />
               </Link>
 
               {/* Est. badge */}
-              <div className="inline-flex items-center gap-2 border border-white/10 px-3 py-1.5 mb-4">
+              <div className="inline-flex items-center gap-2 border border-theme-border/10 px-3 py-1.5 mb-4">
                 <span className="w-1.5 h-1.5 bg-[#52B788]" />
-                <span className="text-[11px] text-gray-400 uppercase tracking-widest font-sans">{COMPANY.estLabel}</span>
+                <span className="text-[11px] text-theme-fg-2 uppercase tracking-widest font-sans">{COMPANY.estLabel}</span>
               </div>
 
-              <p className="text-gray-500 text-sm leading-relaxed mb-6 max-w-xs">
+              <p className="text-theme-fg-3 text-sm leading-relaxed mb-6 max-w-xs">
                 {COMPANY.legalName} - serious infrastructure execution across
                 Uttar Pradesh &amp; Madhya Pradesh {COMPANY.sinceLabel}.
               </p>
 
               {/* Stats mini strip */}
-              <div className="flex gap-6 mb-6 border-t border-white/5 pt-5">
+              <div className="flex gap-6 mb-6 border-t border-theme-border/5 pt-5">
                 {FOOTER_STATS.map(([v, l]) => (
                   <div key={l}>
-                    <div className="font-display text-xl font-bold text-white">{v}</div>
-                    <div className="text-[10px] text-gray-600 uppercase tracking-widest">{l}</div>
+                    <div className="font-display text-xl font-bold text-theme-fg">{v}</div>
+                    <div className="text-[10px] text-theme-fg-3 uppercase tracking-widest">{l}</div>
                   </div>
                 ))}
               </div>
@@ -98,7 +98,7 @@ export default function Footer() {
                     aria-label={label}
                     target={href.startsWith('http') ? '_blank' : undefined}
                     rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="w-9 h-9 bg-white/5 hover:bg-[#52B788] border border-white/5 hover:border-[#52B788] flex items-center justify-center transition-all duration-200"
+                    className="w-9 h-9 bg-theme-border/5 hover:bg-[#52B788] border border-theme-border/5 hover:border-[#52B788] flex items-center justify-center transition-all duration-200"
                   >
                     <svg className="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d={icon} /></svg>
                   </a>
@@ -110,16 +110,16 @@ export default function Footer() {
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <span className="w-4 h-px bg-[#52B788]" />
-                <h4 className="font-display text-sm font-semibold text-white uppercase tracking-[0.2em]">Company</h4>
+                <h4 className="font-display text-sm font-semibold text-theme-fg uppercase tracking-[0.2em]">Company</h4>
               </div>
               <ul className="space-y-2.5">
                 {footerLinks.company.map(({ label, href }) => (
                   <li key={label}>
                     <Link
                       href={href}
-                      className="text-gray-500 text-xs hover:text-[#52B788] transition-colors duration-150 flex items-center gap-2 group font-sans uppercase tracking-wide"
+                      className="text-theme-fg-3 text-xs hover:text-[#52B788] transition-colors duration-150 flex items-center gap-2 group font-sans uppercase tracking-wide"
                     >
-                      <svg className="w-2.5 h-2.5 text-gray-700 group-hover:text-[#52B788] transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-2.5 h-2.5 text-theme-fg-3 group-hover:text-[#52B788] transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
                       {label}
@@ -133,16 +133,16 @@ export default function Footer() {
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <span className="w-4 h-px bg-[#52B788]" />
-                <h4 className="font-display text-sm font-semibold text-white uppercase tracking-[0.2em]">Services</h4>
+                <h4 className="font-display text-sm font-semibold text-theme-fg uppercase tracking-[0.2em]">Services</h4>
               </div>
               <ul className="space-y-2.5">
                 {footerLinks.services.map(({ label, href }) => (
                   <li key={label}>
                     <Link
                       href={href}
-                      className="text-gray-500 text-xs hover:text-[#52B788] transition-colors duration-150 flex items-center gap-2 group font-sans uppercase tracking-wide"
+                      className="text-theme-fg-3 text-xs hover:text-[#52B788] transition-colors duration-150 flex items-center gap-2 group font-sans uppercase tracking-wide"
                     >
-                      <svg className="w-2.5 h-2.5 text-gray-700 group-hover:text-[#52B788] transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-2.5 h-2.5 text-theme-fg-3 group-hover:text-[#52B788] transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
                       {label}
@@ -156,7 +156,7 @@ export default function Footer() {
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <span className="w-4 h-px bg-[#52B788]" />
-                <h4 className="font-display text-sm font-semibold text-white uppercase tracking-[0.2em]">Contact</h4>
+                <h4 className="font-display text-sm font-semibold text-theme-fg uppercase tracking-[0.2em]">Contact</h4>
               </div>
               <ul className="space-y-4">
                 <li className="flex gap-3 items-start">
@@ -164,14 +164,14 @@ export default function Footer() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <span className="text-gray-500 text-xs leading-relaxed font-sans">
+                  <span className="text-theme-fg-3 text-xs leading-relaxed font-sans">
                     Wave Earth Infratech<br />
                     M38, Sector-12 Pratap Vihar<br />
                     Ghaziabad, UP 201309
                   </span>
                 </li>
                 <li>
-                  <a href="tel:+912583683158" className="flex gap-3 items-center text-gray-500 text-xs hover:text-[#52B788] transition-colors font-sans">
+                  <a href="tel:+912583683158" className="flex gap-3 items-center text-theme-fg-3 text-xs hover:text-[#52B788] transition-colors font-sans">
                     <svg className="w-4 h-4 text-[#52B788] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
@@ -179,7 +179,7 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:contact@waveearthinfratech.com" className="flex gap-3 items-start text-gray-500 text-xs hover:text-[#52B788] transition-colors break-all font-sans">
+                  <a href="mailto:contact@waveearthinfratech.com" className="flex gap-3 items-start text-theme-fg-3 text-xs hover:text-[#52B788] transition-colors break-all font-sans">
                     <svg className="w-4 h-4 text-[#52B788] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
@@ -205,15 +205,15 @@ export default function Footer() {
         </div>
 
         {/* ── Bottom bar ── */}
-        <div className="border-t border-white/[0.05] bg-[#020710]">
+        <div className="border-t border-theme-border/[0.05] bg-theme-base">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p className="text-gray-600 text-[11px] font-sans uppercase tracking-wider">
+            <p className="text-theme-fg-3 text-[11px] font-sans uppercase tracking-wider">
               &copy; {year} {COMPANY.legalName}. All rights reserved.
-              <span className="mx-2 text-gray-700">|</span>
+              <span className="mx-2 text-theme-fg-3">|</span>
               Pvt. Ltd. · {COMPANY.estLabel}
-              <span className="mx-2 text-gray-700">|</span>
+              <span className="mx-2 text-theme-fg-3">|</span>
               MSME Registered
-              <span className="mx-2 text-gray-700">|</span>
+              <span className="mx-2 text-theme-fg-3">|</span>
               GST Compliant
             </p>
             <div className="flex items-center gap-5">
@@ -222,7 +222,7 @@ export default function Footer() {
                 { label: 'Terms & Conditions',  href: '/terms-and-conditions' },
                 { label: 'Tenders',             href: '/tenders' },
               ].map(({ label, href }) => (
-                <Link key={label} href={href} className="text-gray-600 text-[11px] hover:text-[#52B788] transition-colors uppercase tracking-wider font-sans">
+                <Link key={label} href={href} className="text-theme-fg-3 text-[11px] hover:text-[#52B788] transition-colors uppercase tracking-wider font-sans">
                   {label}
                 </Link>
               ))}

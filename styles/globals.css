@@ -3,16 +3,35 @@
 @tailwind utilities;
 
 /* ── Design System Variables ─────────────────────────────────────────────── */
+
+/* Light mode (default) */
 :root {
-  --bg-primary:    #07111F;
-  --bg-secondary:  #0B1D33;
+  /* Backgrounds — RGB channel format for Tailwind opacity modifiers */
+  --bg-base:    240 244 248;   /* #f0f4f8 */
+  --bg-surface: 255 255 255;   /* #ffffff */
+  --bg-card:    238 242 247;   /* #eef2f7 */
+  /* Text */
+  --text-fg:    11 37 69;      /* #0B2545 */
+  --text-fg-2:  51 65 85;      /* #334155 */
+  --text-fg-3:  100 116 139;   /* #64748b */
+  /* Borders / dividers */
+  --border-color: 11 37 69;    /* #0B2545 */
+  /* Legacy / unchanged */
   --accent:        #52B788;
   --accent-bright: #39D98A;
-  --text-primary:  #FFFFFF;
-  --text-secondary:#A9B3C1;
-  --border:        rgba(255, 255, 255, 0.08);
   --section-pad:   120px;
   --section-pad-sm: 80px;
+}
+
+/* Dark mode */
+html.dark {
+  --bg-base:    4 12 24;       /* #040c18 */
+  --bg-surface: 5 13 26;       /* #050d1a */
+  --bg-card:    7 21 38;       /* #071526 */
+  --text-fg:    255 255 255;   /* #ffffff */
+  --text-fg-2:  209 213 219;   /* #d1d5db */
+  --text-fg-3:  107 114 128;   /* #6b7280 */
+  --border-color: 255 255 255; /* white */
 }
 
 @layer base {
@@ -22,7 +41,7 @@
   }
 
   body {
-    @apply text-gray-100 bg-[#050d1a] antialiased;
+    @apply text-theme-fg bg-theme-surface antialiased;
     font-size: 16px;
     line-height: 1.7;
   }
@@ -53,9 +72,9 @@
   }
 
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 border border-white/30 text-white
+    @apply inline-flex items-center justify-center gap-2 border border-theme-border/30 text-theme-fg
            font-semibold text-[15px] uppercase tracking-[0.06em] px-8 py-4
-           hover:border-white hover:bg-white/5 transition-colors duration-300;
+           hover:border-theme-border hover:bg-theme-border/5 transition-colors duration-300;
   }
 
   .btn-outline-dark {
@@ -75,7 +94,7 @@
     @apply text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.2em];
   }
   .section-heading-light {
-    @apply font-display font-bold text-white uppercase leading-none;
+    @apply font-display font-bold text-theme-fg uppercase leading-none;
     font-size: clamp(38px, 4vw, 54px);
   }
   .section-heading-dark {
@@ -96,6 +115,10 @@
     @apply bg-amber-400/20 text-amber-400 text-[10px] font-bold px-3 py-1 uppercase tracking-widest;
   }
 }
+
+/* ── Footer logo: invert in dark mode, natural in light mode ── */
+html.dark .footer-logo   { filter: brightness(0) invert(1); opacity: 0.8; }
+html:not(.dark) .footer-logo { filter: none; opacity: 1; }
 
 /* Swiper overrides */
 .swiper-pagination-bullet-active {

@@ -117,7 +117,7 @@ export default function Home({ featuredProjects = [] }) {
       <Header />
 
       {/* ── 1. HERO ────────────────────────────────────────────────────────── */}
-      <section className="relative h-screen min-h-[680px] flex items-end justify-start overflow-hidden bg-[#050d1a]">
+      <section className="relative h-screen min-h-[680px] flex items-end justify-start overflow-hidden bg-theme-surface">
         {/*
           REAL PHOTO / VIDEO: Replace the <img> below with a <video> tag for drone footage.
           <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover opacity-40">
@@ -128,7 +128,7 @@ export default function Home({ featuredProjects = [] }) {
         <div className="absolute inset-0 bg-gradient-to-r from-[#050d1a] via-[#050d1a]/70 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#050d1a] via-transparent to-[#050d1a]/30" />
         {/* Angular bottom cut */}
-        <div className="absolute bottom-0 left-0 right-0 h-20 bg-[#0a0a0a]" style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0%)' }} />
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-theme-base" style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0%)' }} />
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-10 pb-28 pt-40">
           <div className="max-w-3xl">
@@ -168,16 +168,16 @@ export default function Home({ featuredProjects = [] }) {
       </section>
 
       {/* ── 2. STATS ───────────────────────────────────────────────────────── */}
-      <section className="bg-[#0a0a0a] py-16 border-b border-white/5">
+      <section className="bg-theme-base py-16 border-b border-theme-border/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 divide-x divide-white/[0.07]">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 divide-x divide-theme-border/[0.07]">
             {HOME_STATS.map(({ value, suffix, label }, i) => (
               <div key={label} className={`px-6 py-4 text-center ${i === 0 ? 'pl-0' : ''} ${i === HOME_STATS.length - 1 ? 'pr-0' : ''}`}>
-                <div className="font-display text-[60px] sm:text-[72px] font-bold text-white mb-2">
+                <div className="font-display text-[60px] sm:text-[72px] font-bold text-theme-fg mb-2">
                   <AnimatedCounter value={value} suffix={suffix} />
                 </div>
                 <div className="w-8 h-px bg-[#52B788] mx-auto mb-3" />
-                <p className="text-gray-500 text-[13px] uppercase tracking-[0.18em] font-sans">{label}</p>
+                <p className="text-theme-fg-3 text-[13px] uppercase tracking-[0.18em] font-sans">{label}</p>
               </div>
             ))}
           </div>
@@ -185,7 +185,7 @@ export default function Home({ featuredProjects = [] }) {
       </section>
 
       {/* ── 3. SERVICES ────────────────────────────────────────────────────── */}
-      <section className="bg-[#0f1b2d] py-24">
+      <section className="bg-theme-card py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-14 gap-6">
             <div>
@@ -193,13 +193,13 @@ export default function Home({ featuredProjects = [] }) {
                 <span className="w-10 h-px bg-[#52B788]" />
                 <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.2em]">What We Execute</span>
               </div>
-              <h2 className="font-display text-[40px] md:text-[54px] font-bold text-white uppercase leading-none">Our Services</h2>
-              <p className="text-gray-400 mt-3 max-w-lg font-sans font-light text-base leading-relaxed">Specialised civil works for irrigation departments, rural development bodies, and development organisations.</p>
+              <h2 className="font-display text-[40px] md:text-[54px] font-bold text-theme-fg uppercase leading-none">Our Services</h2>
+              <p className="text-theme-fg-2 mt-3 max-w-lg font-sans font-light text-base leading-relaxed">Specialised civil works for irrigation departments, rural development bodies, and development organisations.</p>
             </div>
             <Link href="/services" className="text-[#52B788] text-[13px] font-semibold uppercase tracking-widest hover:text-white transition-colors whitespace-nowrap">All Services &rarr;</Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-theme-border/5">
             {serviceBlocks.map(({ title, desc, img, href }) => (
               <Link key={title} href={href} className="group relative overflow-hidden aspect-[4/3] block">
                 <img src={img} alt={title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -218,7 +218,7 @@ export default function Home({ featuredProjects = [] }) {
       </section>
 
       {/* ── 4. FEATURED PROJECTS ───────────────────────────────────────────── */}
-      <section className="bg-[#111827] py-24">
+      <section className="bg-theme-card py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-14 gap-6">
             <div>
@@ -226,20 +226,20 @@ export default function Home({ featuredProjects = [] }) {
                 <span className="w-10 h-px bg-[#52B788]" />
                 <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.2em]">Portfolio</span>
               </div>
-              <h2 className="font-display text-[40px] md:text-[54px] font-bold text-white uppercase leading-none">Recent Projects</h2>
-              <p className="text-gray-400 mt-3 max-w-lg font-sans font-light text-base">Executed across Uttar Pradesh and Madhya Pradesh for state departments and development bodies.</p>
+              <h2 className="font-display text-[40px] md:text-[54px] font-bold text-theme-fg uppercase leading-none">Recent Projects</h2>
+              <p className="text-theme-fg-2 mt-3 max-w-lg font-sans font-light text-base">Executed across Uttar Pradesh and Madhya Pradesh for state departments and development bodies.</p>
             </div>
             <Link href="/projects" className="text-[#52B788] text-[13px] font-semibold uppercase tracking-widest hover:text-white transition-colors whitespace-nowrap">All Projects &rarr;</Link>
           </div>
 
-          <div className="flex flex-col gap-px bg-white/5">
+          <div className="flex flex-col gap-px bg-theme-border/5">
             {(featuredProjects.length > 0 ? featuredProjects.slice(0, 4) : [
               { title: 'Canal Redevelopment & PCC Lining',   location: 'Chitrakoot, Uttar Pradesh', category: 'Canal Construction',      status: 'completed', client: 'Irrigation Department, UP', project_value: '₹ 62 Lakhs',  duration: '5 Months', excerpt: 'Full redevelopment and PCC M-15 lining of 4.8 km irrigation canal - 40% flow efficiency improvement.', featured_image: 'https://picsum.photos/800/600?random=101', slug: null },
               { title: 'Nahar Lining Works - Banda District', location: 'Banda, Uttar Pradesh',       category: 'Nahar Lining Works',      status: 'completed', client: 'Minor Irrigation Dept, UP',  project_value: '₹ 38 Lakhs',  duration: '4 Months', excerpt: 'Concrete lining of 3.2 km nahar network, reducing seepage by 45% and serving 1,200+ farmers.',        featured_image: 'https://picsum.photos/800/600?random=201', slug: null },
               { title: 'Irrigation Infrastructure Development', location: 'Rewa, Madhya Pradesh',    category: 'Irrigation Infrastructure', status: 'completed', client: 'Water Resources Dept, MP',  project_value: '₹ 95 Lakhs',  duration: '7 Months', excerpt: 'New distribution network - 5.6 km primary canal + 8.4 km secondary channels for 680 hectares.',     featured_image: 'https://picsum.photos/800/600?random=301', slug: null },
               { title: 'Rural Infrastructure Redevelopment',  location: 'Satna, Madhya Pradesh',     category: 'Rural Redevelopment',     status: 'completed', client: 'DRDA, Madhya Pradesh',      project_value: '₹ 1.12 Crore', duration: '8 Months', excerpt: 'CC roads, drains, community platforms across 3 villages - benefiting 2,400+ residents.',               featured_image: 'https://picsum.photos/800/600?random=501', slug: null },
             ]).map((project, idx) => (
-              <div key={project.title} className={`group flex flex-col lg:flex-row bg-[#0f1b2d] overflow-hidden ${idx % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+              <div key={project.title} className={`group flex flex-col lg:flex-row bg-theme-card overflow-hidden ${idx % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                 <div className="relative w-full lg:w-[45%] h-64 lg:h-auto overflow-hidden flex-shrink-0">
                   <img src={project.featured_image || 'https://picsum.photos/800/600?random=99'} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-[#050d1a]/30 group-hover:bg-transparent transition-colors duration-300" />
@@ -251,9 +251,9 @@ export default function Home({ featuredProjects = [] }) {
                   <div className="flex items-center gap-3 mb-4">
                     <span className={project.status === 'completed' ? 'badge-completed' : 'badge-ongoing'}>{project.status === 'completed' ? 'Completed' : 'Ongoing'}</span>
                   </div>
-                  <h3 className="font-display text-[26px] lg:text-[32px] font-semibold text-white uppercase leading-none mb-4">{project.title}</h3>
-                  <p className="text-gray-400 text-base leading-relaxed font-sans mb-6 max-w-lg">{project.excerpt}</p>
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8 border-t border-white/5 pt-6">
+                  <h3 className="font-display text-[26px] lg:text-[32px] font-semibold text-theme-fg uppercase leading-none mb-4">{project.title}</h3>
+                  <p className="text-theme-fg-2 text-base leading-relaxed font-sans mb-6 max-w-lg">{project.excerpt}</p>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8 border-t border-theme-border/5 pt-6">
                     {[
                       { label: 'Client',    value: project.client },
                       { label: 'Location',  value: project.location },
@@ -262,7 +262,7 @@ export default function Home({ featuredProjects = [] }) {
                     ].map(({ label, value }) => (
                       <div key={label}>
                         <p className="text-[#52B788] text-[10px] font-semibold uppercase tracking-widest mb-0.5">{label}</p>
-                        <p className="text-white text-[13px] font-medium font-sans">{value}</p>
+                        <p className="text-theme-fg text-[13px] font-medium font-sans">{value}</p>
                       </div>
                     ))}
                   </div>
@@ -283,7 +283,7 @@ export default function Home({ featuredProjects = [] }) {
       </section>
 
       {/* ── 5. BEFORE / AFTER ──────────────────────────────────────────────── */}
-      <section className="bg-[#050d1a] py-24">
+      <section className="bg-theme-surface py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -291,9 +291,9 @@ export default function Home({ featuredProjects = [] }) {
                 <span className="w-10 h-px bg-[#52B788]" />
                 <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.2em]">Transformation</span>
               </div>
-              <h2 className="font-display text-[40px] md:text-[54px] font-bold text-white uppercase leading-none mb-6">Before &amp;<br />After</h2>
-              <p className="text-gray-400 text-base leading-relaxed font-sans mb-8 max-w-md">Every project begins with a deteriorated or missing structure and ends with a functioning, long-life infrastructure asset. Drag the slider to see the difference on a live canal project.</p>
-              <div className="space-y-4 border-t border-white/5 pt-8">
+              <h2 className="font-display text-[40px] md:text-[54px] font-bold text-theme-fg uppercase leading-none mb-6">Before &amp;<br />After</h2>
+              <p className="text-theme-fg-2 text-base leading-relaxed font-sans mb-8 max-w-md">Every project begins with a deteriorated or missing structure and ends with a functioning, long-life infrastructure asset. Drag the slider to see the difference on a live canal project.</p>
+              <div className="space-y-4 border-t border-theme-border/5 pt-8">
                 {[
                   ['Project',  'Canal Redevelopment, Chitrakoot UP'],
                   ['Work Done','PCC M-15 Lining - 4.8 KM'],
@@ -301,7 +301,7 @@ export default function Home({ featuredProjects = [] }) {
                 ].map(([label, value]) => (
                   <div key={label} className="flex items-start gap-4">
                     <span className="text-[#52B788] text-[10px] font-bold uppercase tracking-widest w-20 flex-shrink-0 mt-0.5">{label}</span>
-                    <span className="text-gray-300 text-base font-sans">{value}</span>
+                    <span className="text-theme-fg-2 text-base font-sans">{value}</span>
                   </div>
                 ))}
               </div>
@@ -355,7 +355,7 @@ export default function Home({ featuredProjects = [] }) {
       </section>
 
       {/* ── 7. WHY TRUST US ────────────────────────────────────────────────── */}
-      <section className="bg-[#0a0a0a] py-24">
+      <section className="bg-theme-base py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -363,9 +363,9 @@ export default function Home({ featuredProjects = [] }) {
               <span className="text-[#52B788] text-[13px] font-semibold uppercase tracking-[0.2em]">Our Edge</span>
               <span className="w-10 h-px bg-[#52B788]" />
             </div>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-white uppercase">Why Government Departments<br />Trust Us</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-theme-fg uppercase">Why Government Departments<br />Trust Us</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.04]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-theme-border/[0.04]">
             {[
               { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>, title: 'Government Project Expertise', desc: 'Consistent delivery across state irrigation, PWD, DRDA, and Jal Shakti department contracts in UP and MP.' },
               { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>, title: 'On-Time, Every Time', desc: 'Track record of meeting government project milestones and completion dates on schedule - critical for billing and contract renewal.' },
@@ -374,10 +374,10 @@ export default function Home({ featuredProjects = [] }) {
               { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>, title: 'Transparent Documentation', desc: 'Measurement books, progress reports, billing formats, and compliance records maintained to department standards.' },
               { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>, title: 'Rural Impact Focus', desc: 'Every canal lined and every road built has a direct effect on irrigation efficiency, farming income, and village connectivity.' },
             ].map(({ icon, title, desc }) => (
-              <div key={title} className="bg-[#0a0a0a] p-8 hover:bg-[#0f1b2d] transition-colors duration-300 group">
+              <div key={title} className="bg-theme-base p-8 hover:bg-theme-card transition-colors duration-300 group">
                 <div className="text-[#52B788] mb-5 group-hover:text-white transition-colors duration-300">{icon}</div>
-                <h3 className="font-display text-lg font-semibold text-white uppercase mb-3 leading-tight">{title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed font-sans">{desc}</p>
+                <h3 className="font-display text-lg font-semibold text-theme-fg uppercase mb-3 leading-tight">{title}</h3>
+                <p className="text-theme-fg-3 text-sm leading-relaxed font-sans">{desc}</p>
               </div>
             ))}
           </div>
@@ -385,14 +385,14 @@ export default function Home({ featuredProjects = [] }) {
       </section>
 
       {/* ── 8. CERTIFICATIONS ──────────────────────────────────────────────── */}
-      <section className="bg-[#0f1b2d] py-14 border-t border-white/5 border-b border-b-white/5">
+      <section className="bg-theme-card py-14 border-t border-theme-border/5 border-b border-b-theme-border/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
-              <p className="text-gray-600 text-[11px] font-semibold uppercase tracking-[0.25em] mb-4">Registered &amp; Compliant</p>
+              <p className="text-theme-fg-3 text-[11px] font-semibold uppercase tracking-[0.25em] mb-4">Registered &amp; Compliant</p>
               <div className="flex flex-wrap gap-3">
                 {certs.map((c) => (
-                  <span key={c} className="flex items-center gap-1.5 border border-white/10 text-gray-300 text-xs font-semibold px-4 py-2 uppercase tracking-wide hover:border-[#52B788]/40 hover:text-white transition-colors duration-200 font-sans">
+                  <span key={c} className="flex items-center gap-1.5 border border-theme-border/10 text-theme-fg-2 text-xs font-semibold px-4 py-2 uppercase tracking-wide hover:border-[#52B788]/40 hover:text-theme-fg transition-colors duration-200 font-sans">
                     <svg className="w-3 h-3 text-[#52B788]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/></svg>
                     {c}
                   </span>

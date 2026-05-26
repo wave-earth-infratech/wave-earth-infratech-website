@@ -10,10 +10,11 @@ export default function EquipmentPage() {
       <main className="min-h-screen flex items-center justify-center py-24">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-primary mb-4">Equipment</h1>
-          <p className="text-gray-500">Content coming soon.</p>
+          <p className="text-theme-fg-3">Content coming soon.</p>
         </div>
       </main>
       <Footer />
     </>
   )
 }
+

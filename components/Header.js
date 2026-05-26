@@ -60,13 +60,13 @@ export default function Header() {
   const [scrolled,     setScrolled]     = useState(false)
   const [mobileOpen,   setMobileOpen]   = useState(false)
   const [openDropdown, setOpenDropdown] = useState(null)
-  const [theme,        setTheme]        = useState('dark')
+  const [theme,        setTheme]        = useState('light')
   const router = useRouter()
 
   // Initialise theme from localStorage on mount
   useEffect(() => {
     const saved = localStorage.getItem('theme')
-    const preferred = saved || 'dark'
+    const preferred = saved || 'light'
     setTheme(preferred)
     if (preferred === 'dark') {
       document.documentElement.classList.add('dark')
@@ -108,7 +108,7 @@ export default function Header() {
 
   const navBtnClass = (active) =>
     `relative flex items-center gap-1 px-3.5 py-2 text-[13px] font-semibold tracking-[1.5px] uppercase transition-colors duration-200 ${
-      active ? 'text-[#52B788]' : 'text-gray-400 hover:text-white'
+      active ? 'text-[#52B788]' : 'text-theme-fg-3 hover:text-theme-fg'
     }`
 
   return (
@@ -116,8 +116,8 @@ export default function Header() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? 'h-16 bg-[#050d1a]/97 backdrop-blur-md border-b border-white/10 shadow-[0_4px_40px_rgba(0,0,0,0.6)]'
-            : 'h-[78px] bg-[#050d1a] border-b border-white/[0.06]'
+            ? 'h-16 bg-theme-surface/95 backdrop-blur-md border-b border-theme-border/10 shadow-[0_4px_24px_rgba(0,0,0,0.12)]'
+            : 'h-[78px] bg-theme-surface border-b border-theme-border/[0.08]'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
@@ -131,7 +131,7 @@ export default function Header() {
                 width={180}
                 height={48}
                 priority
-                className="h-12 w-auto object-contain brightness-0 invert opacity-90 group-hover:opacity-100 transition-opacity"
+                className="h-12 w-auto object-contain dark:brightness-0 dark:invert opacity-90 group-hover:opacity-100 transition-opacity"
               />
             </Link>
 
@@ -262,7 +262,7 @@ export default function Header() {
               {/* Theme switcher */}
               <button
                 onClick={toggleTheme}
-                className="text-gray-400 hover:text-[#52B788] transition-colors p-2"
+                className="text-theme-fg-3 hover:text-[#52B788] transition-colors p-2"
                 title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
                 aria-label="Toggle theme"
               >
@@ -290,7 +290,7 @@ export default function Header() {
 
             {/* ── Mobile hamburger ── */}
             <button
-              className="lg:hidden p-2 text-gray-400 hover:text-white transition-colors col-start-3"
+              className="lg:hidden p-2 text-theme-fg-3 hover:text-theme-fg transition-colors col-start-3"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Toggle navigation"
             >
@@ -310,7 +310,7 @@ export default function Header() {
 
         {/* ── Mobile Menu ── */}
         {mobileOpen && (
-          <div className="lg:hidden bg-[#040c18] border-t border-white/5 max-h-[85vh] overflow-y-auto">
+          <div className="lg:hidden bg-theme-base border-t border-theme-border/[0.08] max-h-[85vh] overflow-y-auto">
             <div className="px-4 py-4 space-y-0.5">
               {NAV.map((link) => {
                 const mobileChildren = link.mega ? SERVICE_COLS.flat() : link.children
@@ -321,7 +321,7 @@ export default function Header() {
                     <div key={link.label}>
                       <button
                         className={`flex items-center justify-between w-full px-3 py-3 text-[13px] font-semibold uppercase tracking-[1.5px] transition-colors ${
-                          active ? 'text-[#52B788]' : 'text-gray-400 hover:text-white'
+                          active ? 'text-[#52B788]' : 'text-theme-fg-3 hover:text-theme-fg'
                         }`}
                         onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
                       >
@@ -345,7 +345,7 @@ export default function Header() {
                               className={`block px-3 py-2.5 text-[11px] uppercase tracking-wider transition-colors ${
                                 router.pathname === child.href
                                   ? 'text-[#52B788]'
-                                  : 'text-gray-500 hover:text-[#52B788]'
+                                  : 'text-theme-fg-3 hover:text-[#52B788]'
                               }`}
                             >
                               {child.label}
@@ -372,7 +372,7 @@ export default function Header() {
                     className={`block px-3 py-3 text-[13px] font-semibold uppercase tracking-[1.5px] transition-colors ${
                       isActive(link)
                         ? 'text-[#52B788] border-l border-[#52B788] pl-4'
-                        : 'text-gray-400 hover:text-white'
+                        : 'text-theme-fg-3 hover:text-theme-fg'
                     }`}
                   >
                     {link.label}
@@ -381,10 +381,10 @@ export default function Header() {
               })}
 
               {/* Mobile CTAs */}
-              <div className="pt-4 pb-2 border-t border-white/5 flex gap-3 mt-4">
+              <div className="pt-4 pb-2 border-t border-theme-border/[0.08] flex gap-3 mt-4">
                 <a
                   href="tel:+912583683158"
-                  className="flex-1 flex items-center justify-center gap-2 border border-white/10 text-gray-300 text-[11px] font-semibold py-3 hover:border-[#52B788]/50 hover:text-white transition-colors uppercase tracking-widest"
+                  className="flex-1 flex items-center justify-center gap-2 border border-theme-border/10 text-theme-fg-2 text-[11px] font-semibold py-3 hover:border-[#52B788]/50 hover:text-theme-fg transition-colors uppercase tracking-widest"
                 >
                   <svg className="w-4 h-4 text-[#52B788]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
