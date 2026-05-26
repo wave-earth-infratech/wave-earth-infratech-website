@@ -151,10 +151,10 @@ export default function Home({ featuredProjects = [] }) {
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/projects" className="btn-primary">View Our Projects &rarr;</Link>
               <Link href="/contact-us" className="btn-outline-white">Request Quotation</Link>
-              <a href="/company-profile.pdf" download className="inline-flex items-center justify-center gap-2 text-gray-400 hover:text-white text-xs font-semibold uppercase tracking-widest px-4 py-4 transition-colors border border-transparent hover:border-white/10">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+              <Link href="/certifications" className="inline-flex items-center justify-center gap-2 text-white/70 hover:text-white text-xs font-semibold uppercase tracking-widest px-4 py-4 transition-colors border border-white/20 hover:border-white/50">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 Company Profile
-              </a>
+              </Link>
             </div>
           </div>
         </div>
